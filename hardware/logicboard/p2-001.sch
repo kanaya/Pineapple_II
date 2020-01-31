@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -20406,6 +20406,11 @@ CONN_03
 <part name="X3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="PWRSPL"/>
+<part name="X4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
+<part name="X5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
+<part name="X6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
+<part name="X7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
+<part name="X8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20422,14 +20427,14 @@ CONN_03
 <attribute name="VALUE" x="34.036" y="204.089" size="1.778" layer="96"/>
 </instance>
 <instance part="MC1" gate="G$1" x="137.16" y="129.54" smashed="yes" rot="R180"/>
-<instance part="C6" gate="G$1" x="63.5" y="27.94" smashed="yes">
-<attribute name="NAME" x="64.516" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="64.516" y="23.749" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="91.44" y="27.94" smashed="yes">
+<attribute name="NAME" x="92.456" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.456" y="23.749" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="63.5" y="38.1" smashed="yes">
-<attribute name="VALUE" x="61.595" y="41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="G$1" x="91.44" y="38.1" smashed="yes">
+<attribute name="VALUE" x="89.535" y="41.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY18" gate="GND" x="63.5" y="12.7" smashed="yes"/>
+<instance part="SUPPLY18" gate="GND" x="91.44" y="12.7" smashed="yes"/>
 <instance part="OK1" gate="A" x="254" y="134.62" smashed="yes" rot="MR0">
 <attribute name="NAME" x="246.38" y="144.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="246.38" y="127" size="1.778" layer="96"/>
@@ -20587,17 +20592,17 @@ CONN_03
 <attribute name="NAME" x="256.54" y="89.535" size="1.778" layer="95"/>
 <attribute name="VALUE" x="256.54" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="D" x="129.54" y="43.18" smashed="yes">
-<attribute name="NAME" x="132.08" y="46.355" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="38.1" size="1.778" layer="96"/>
+<instance part="IC4" gate="D" x="124.46" y="43.18" smashed="yes">
+<attribute name="NAME" x="127" y="46.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="E" x="129.54" y="30.48" smashed="yes">
-<attribute name="NAME" x="132.08" y="33.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="25.4" size="1.778" layer="96"/>
+<instance part="IC4" gate="E" x="124.46" y="30.48" smashed="yes">
+<attribute name="NAME" x="127" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="F" x="129.54" y="17.78" smashed="yes">
-<attribute name="NAME" x="132.08" y="20.955" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="12.7" size="1.778" layer="96"/>
+<instance part="IC4" gate="F" x="124.46" y="17.78" smashed="yes">
+<attribute name="NAME" x="127" y="20.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="1" x="292.1" y="180.34" smashed="yes">
 <attribute name="VALUE" x="289.56" y="175.26" size="1.778" layer="96" rot="R90"/>
@@ -20643,21 +20648,21 @@ CONN_03
 <instance part="SUPPLY9" gate="G$1" x="165.1" y="134.62" smashed="yes">
 <attribute name="VALUE" x="163.195" y="137.795" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="76.2" y="27.94" smashed="yes">
-<attribute name="NAME" x="77.216" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="77.216" y="23.749" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="101.6" y="27.94" smashed="yes">
+<attribute name="NAME" x="102.616" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.616" y="23.749" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="76.2" y="38.1" smashed="yes">
-<attribute name="VALUE" x="74.295" y="41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY16" gate="G$1" x="101.6" y="38.1" smashed="yes">
+<attribute name="VALUE" x="99.695" y="41.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY20" gate="G$1" x="86.36" y="38.1" smashed="yes">
-<attribute name="VALUE" x="84.455" y="41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY20" gate="G$1" x="81.28" y="38.1" smashed="yes">
+<attribute name="VALUE" x="79.375" y="41.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY21" gate="GND" x="76.2" y="12.7" smashed="yes"/>
-<instance part="SUPPLY22" gate="GND" x="86.36" y="12.7" smashed="yes"/>
-<instance part="C5" gate="G$1" x="86.36" y="27.94" smashed="yes">
-<attribute name="NAME" x="87.376" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="87.376" y="23.749" size="1.778" layer="96"/>
+<instance part="SUPPLY21" gate="GND" x="101.6" y="12.7" smashed="yes"/>
+<instance part="SUPPLY22" gate="GND" x="81.28" y="12.7" smashed="yes"/>
+<instance part="C5" gate="G$1" x="81.28" y="27.94" smashed="yes">
+<attribute name="NAME" x="82.296" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.296" y="23.749" size="1.778" layer="96"/>
 </instance>
 <instance part="RN2" gate="1" x="172.72" y="129.54" smashed="yes">
 <attribute name="NAME" x="170.18" y="132.08" size="1.778" layer="95"/>
@@ -20684,14 +20689,14 @@ CONN_03
 <attribute name="NAME" x="195.58" y="182.88" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="208.28" y="172.72" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C3" gate="G$1" x="96.52" y="27.94" smashed="yes">
-<attribute name="NAME" x="97.536" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="97.536" y="23.749" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="60.96" y="27.94" smashed="yes">
+<attribute name="NAME" x="61.976" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="61.976" y="23.749" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY25" gate="G$1" x="96.52" y="38.1" smashed="yes">
-<attribute name="VALUE" x="94.615" y="41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY25" gate="G$1" x="60.96" y="38.1" smashed="yes">
+<attribute name="VALUE" x="59.055" y="41.275" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY26" gate="GND" x="96.52" y="12.7" smashed="yes"/>
+<instance part="SUPPLY26" gate="GND" x="60.96" y="12.7" smashed="yes"/>
 <instance part="IC2" gate="P" x="50.8" y="25.4" smashed="yes">
 <attribute name="NAME" x="49.53" y="24.765" size="1.778" layer="95"/>
 </instance>
@@ -20701,21 +20706,21 @@ CONN_03
 </instance>
 <instance part="SUPPLY28" gate="GND" x="88.9" y="160.02" smashed="yes"/>
 <instance part="JP3" gate="G$1" x="40.64" y="220.98" smashed="yes" rot="MR0">
-<attribute name="NAME" x="46.99" y="226.695" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="46.99" y="215.9" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="40.64" y="228.6" size="1.778" layer="95"/>
+<attribute name="VALUE" x="38.1" y="220.98" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="142.24" y="220.98" smashed="yes">
 <attribute name="VALUE" x="140.335" y="224.155" size="1.778" layer="96"/>
 </instance>
 <instance part="S1" gate="1" x="139.7" y="210.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="136.652" y="212.09" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="143.002" y="211.836" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="VALUE" x="144.78" y="213.36" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="R4" gate="G$1" x="276.86" y="147.32" smashed="yes">
 <attribute name="NAME" x="273.05" y="148.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="273.05" y="144.018" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY24" gate="GND" x="116.84" y="12.7" smashed="yes"/>
+<instance part="SUPPLY24" gate="GND" x="111.76" y="12.7" smashed="yes"/>
 <instance part="IC3" gate="G$1" x="254" y="71.12" smashed="yes">
 <attribute name="NAME" x="246.38" y="77.47" size="1.778" layer="95"/>
 <attribute name="VALUE" x="246.38" y="60.96" size="1.778" layer="96"/>
@@ -20850,13 +20855,13 @@ CONN_03
 <attribute name="VALUE" x="287.02" y="200.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="129.54" y="109.22" smashed="yes"/>
-<instance part="SUPPLY12" gate="GND" x="106.68" y="12.7" smashed="yes"/>
-<instance part="C4" gate="G$1" x="106.68" y="27.94" smashed="yes">
-<attribute name="NAME" x="107.696" y="28.575" size="1.778" layer="95"/>
-<attribute name="VALUE" x="107.696" y="23.749" size="1.778" layer="96"/>
+<instance part="SUPPLY12" gate="GND" x="71.12" y="12.7" smashed="yes"/>
+<instance part="C4" gate="G$1" x="71.12" y="27.94" smashed="yes">
+<attribute name="NAME" x="72.136" y="28.575" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.136" y="23.749" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY32" gate="G$1" x="106.68" y="38.1" smashed="yes">
-<attribute name="VALUE" x="104.775" y="41.275" size="1.778" layer="96"/>
+<instance part="SUPPLY32" gate="G$1" x="71.12" y="38.1" smashed="yes">
+<attribute name="VALUE" x="69.215" y="41.275" size="1.778" layer="96"/>
 </instance>
 <instance part="J1" gate="J$1" x="302.26" y="195.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="304.8" y="202.946" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -20874,14 +20879,19 @@ CONN_03
 <attribute name="VALUE" x="30.48" y="238.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY34" gate="GND" x="154.94" y="73.66" smashed="yes"/>
-<instance part="X1" gate="G$1" x="139.7" y="43.18" smashed="yes"/>
-<instance part="X2" gate="G$1" x="139.7" y="30.48" smashed="yes"/>
-<instance part="X3" gate="G$1" x="139.7" y="17.78" smashed="yes"/>
+<instance part="X1" gate="G$1" x="134.62" y="43.18" smashed="yes"/>
+<instance part="X2" gate="G$1" x="134.62" y="30.48" smashed="yes"/>
+<instance part="X3" gate="G$1" x="134.62" y="17.78" smashed="yes"/>
 <instance part="SUPPLY35" gate="GND" x="30.48" y="160.02" smashed="yes"/>
 <instance part="JP2" gate="A" x="17.78" y="167.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="24.13" y="173.355" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="24.13" y="160.02" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="X4" gate="G$1" x="119.38" y="116.84" smashed="yes"/>
+<instance part="X5" gate="G$1" x="127" y="116.84" smashed="yes"/>
+<instance part="X6" gate="G$1" x="132.08" y="142.24" smashed="yes"/>
+<instance part="X7" gate="G$1" x="134.62" y="142.24" smashed="yes"/>
+<instance part="X8" gate="G$1" x="119.38" y="142.24" smashed="yes"/>
 </instances>
 <busses>
 <bus name="ISQC:SCL,SDA">
@@ -20944,7 +20954,7 @@ CONN_03
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="63.5" y1="22.86" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY23" gate="GND" pin="GND"/>
@@ -21032,17 +21042,17 @@ CONN_03
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="76.2" y1="22.86" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
-<wire x1="86.36" y1="22.86" x2="86.36" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="22.86" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
-<wire x1="96.52" y1="22.86" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="22.86" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VSS"/>
@@ -21058,16 +21068,16 @@ CONN_03
 <segment>
 <pinref part="IC4" gate="D" pin="I"/>
 <pinref part="SUPPLY24" gate="GND" pin="GND"/>
-<wire x1="119.38" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="43.18" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="43.18" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="F" pin="I"/>
-<wire x1="116.84" y1="30.48" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="17.78" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="17.78" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
-<junction x="116.84" y="17.78"/>
+<wire x1="111.76" y1="30.48" x2="111.76" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="17.78" x2="111.76" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="17.78" x2="111.76" y2="17.78" width="0.1524" layer="91"/>
+<junction x="111.76" y="17.78"/>
 <pinref part="IC4" gate="E" pin="I"/>
-<wire x1="119.38" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
-<junction x="116.84" y="30.48"/>
+<wire x1="114.3" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<junction x="111.76" y="30.48"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
@@ -21084,7 +21094,7 @@ CONN_03
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<wire x1="106.68" y1="22.86" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="22.86" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -21108,7 +21118,7 @@ CONN_03
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="VCC"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="35.56" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="35.56" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY19" gate="G$1" pin="VCC"/>
@@ -21174,17 +21184,17 @@ CONN_03
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="35.56" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="35.56" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="35.56" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="VCC"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="35.56" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY27" gate="G$1" pin="VCC"/>
@@ -21211,7 +21221,7 @@ CONN_03
 <segment>
 <pinref part="SUPPLY32" gate="G$1" pin="VCC"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="35.56" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="35.56" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
@@ -21847,14 +21857,14 @@ CONN_03
 <wire x1="139.7" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="A1PULLUP" class="0">
 <segment>
 <pinref part="RN3" gate="1" pin="2"/>
 <pinref part="IC2" gate="A" pin="A"/>
 <wire x1="152.4" y1="205.74" x2="152.4" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="A2PULLUP" class="0">
 <segment>
 <pinref part="IC2" gate="B" pin="A"/>
 <wire x1="167.64" y1="193.04" x2="167.64" y2="198.12" width="0.1524" layer="91"/>
@@ -21863,7 +21873,7 @@ CONN_03
 <wire x1="157.48" y1="198.12" x2="157.48" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="A3PULLUP" class="0">
 <segment>
 <pinref part="RN3" gate="1" pin="4"/>
 <wire x1="162.56" y1="205.74" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
@@ -21872,7 +21882,7 @@ CONN_03
 <wire x1="182.88" y1="200.66" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="A4PULLUP" class="0">
 <segment>
 <pinref part="RN3" gate="1" pin="5"/>
 <wire x1="167.64" y1="205.74" x2="167.64" y2="203.2" width="0.1524" layer="91"/>
@@ -21962,18 +21972,23 @@ CONN_03
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,139.7,43.18,IC4D,O,,,,"/>
-<approved hash="101,1,139.7,30.48,IC4E,O,,,,"/>
-<approved hash="101,1,139.7,17.78,IC4F,O,,,,"/>
+<approved hash="101,1,134.62,43.18,IC4D,O,,,,"/>
+<approved hash="101,1,134.62,30.48,IC4E,O,,,,"/>
+<approved hash="101,1,134.62,17.78,IC4F,O,,,,"/>
 <approved hash="104,1,86.36,175.26,U1,VDD,VCC,,,"/>
 <approved hash="104,1,50.8,17.78,IC2P,VSS,GND,,,"/>
 <approved hash="104,1,50.8,33.02,IC2P,VDD,VCC,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
 <approved hash="113,1,298.852,175.26,SV2,,,,,"/>
 <approved hash="113,1,21.188,213.36,SV1,,,,,"/>
-<approved hash="113,1,139.7,43.18,X1,,,,,"/>
-<approved hash="113,1,139.7,30.48,X2,,,,,"/>
-<approved hash="113,1,139.7,17.78,X3,,,,,"/>
+<approved hash="113,1,134.62,43.18,X1,,,,,"/>
+<approved hash="113,1,134.62,30.48,X2,,,,,"/>
+<approved hash="113,1,134.62,17.78,X3,,,,,"/>
+<approved hash="113,1,119.38,116.84,X4,,,,,"/>
+<approved hash="113,1,127,116.84,X5,,,,,"/>
+<approved hash="113,1,132.08,142.24,X6,,,,,"/>
+<approved hash="113,1,134.62,142.24,X7,,,,,"/>
+<approved hash="113,1,119.38,142.24,X8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
