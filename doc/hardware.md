@@ -10,9 +10,11 @@ Pineapple II has followirng ports.
 * DC12V In
 * Maintenance (USB)
 
-## GeekPort II
+## Front Panel
 
-### Type 1 (3.5mm TRRS jack)
+### GeekPort II
+
+#### Type 1 (3.5mm TRRS jack)
 
 | Pinout | Meaning       | Alternative mode |
 |--------|---------------|------------------|
@@ -21,7 +23,7 @@ Pineapple II has followirng ports.
 | Ring 2 | Plug detector | PWM out          |
 | Sleeve | GND           | GND              |
 
-### Type 2 (Hirose HR-10A)
+#### Type 2 (Hirose HR-10A)
 
 | Pinout | Meaning       | Alternative mode |
 |--------|---------------|------------------|
@@ -32,7 +34,7 @@ Pineapple II has followirng ports.
 | 5      | I2C SDA       | Digital I/O      |
 | 6      | I2C SCL       | Digital I/O      |
 
-## Maintenance Port (2.5mm phone jack)
+### Maintenance Port (2.5mm phone jack)
 
 | Pinout | Meaning |
 |--------|---------|
@@ -41,90 +43,81 @@ Pineapple II has followirng ports.
 | Ring 2 | GND     |
 | Sleeve | Vbus    |
 
-## Front LEDs
+## Back Panel
 
-| LED | Meaning  |
-|-----|----------|
-| 0/G | Status   |
-| 1/W | Analog 1 |
-| 2/B | Analog 2 |
-| 3/Y | Analog 3 |
-| 4/R | Analog 4 |
-
-## MIDI OUT+ (DIN connector)
+### MIDI OUT+ (DIN connector)
 
 | MIDI Pin | Meaning | 1/8 Pin |
 |----------|---------|---------|
-| M1       | Vcc     |         |
+| M1       | TX+     |         |
 | M2       | GND     | Sleeve  |
-| M3       | 1-Wire  |         |
-| M4       | Source  | Ring    |
-| M5       | Drain   | Tip     |
-| M6       | XLEDg   |         |
-| M7       | XLEDb   |         |
-| M8       | XLEDr   |         |
+| M3       | TX-     |         |
+| M4       | Send    | Ring    |
+| M5       | Return  | Tip     |
 
-## MIDI IN+ (DIN connector)
+### MIDI IN+ (DIN connector)
 
 | MIDI Pin | Meaning | 1/8 Pin |
 |----------|---------|---------|
-| m1       | NC      |         |
-| m2       | NC      |         |
-| m3       | NC      |         |
-| m4       | Source  | Ring    |
-| m5       | Drain   | Tip     |
+| m1       | Vcc     |         |
+| m2       | GND     |         |
+| m3       | Vcc     |         |
+| m4       | Send    | Ring    |
+| m5       | Return  | Tip     |
 
-## DC Jack
+### DC Jack
 
 | DC Jack | Meaning |
 |---------|---------|
-| P1      | DC +12V |
-| P2      | GND     |
+| PWR1    | DC +12V |
+| PWR2    | GND     |
 
-## Reset SW/LED
+### Reset SW/LED
 
 | SW/LED | Meaning                          |
 |--------|----------------------------------|
-| LED    | Power                            |
+| LED    | Status                           |
 | SW     | Reset (double-push to boot-load) |
 
 ## MPU Pinout
 
-| Pin Group     | Pin        | Arduino Micro | Connect to         | Via                | Bus    |
-|---------------|------------|---------------|--------------------|--------------------|--------|
-| **MIDI**      | IN         | D0 (RX)       | m5                 | B06, B18           | SERIAL |
-|               | OUT        | D1 (TX)       | M5                 | B11, B16           | SERIAL |
-| **I2C**       | SDA        | D2            | Gx-5               | F05, F11. F17, F23 | I2C    |
-|               | SCL        | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | I2C    |
-| **Monitor**   | 0/G, XLEDg | D13 (PWM)     | LED0, XLEDg        | F25, B12           | LED    |
-|               | 1/W        | D4/A6         | LED1               | F27                | LED    |
-|               | 2/B, XLEDb | D5 (PWM)      | LED2, XLEDb        | F29, B13           | LED    |
-|               | 3/Y        | D8/A8         | LED3               | F31                | LED    |
-|               | 4/R, XLEDr | D11 (PWM)     | LED4, XLEDr        | F33, B14           | LED    |
-| **Analog**    | 1          | A0            | G1-4/g1-R1         | F04                | ANALOG |
-|               | 2          | A1            | G2-4/g2-R1         | F10                | ANALOG |
-|               | 3          | A2            | G3-4/g3-R1         | F16                | ANALOG |
-|               | 4          | A3            | G4-4/g4-R1         | F22                | ANALOG |
-|               | PULLUP     | D7            | NC                 | NC                 | ANALOG |
-| **Detector**  | 1          | A7/D6 (PMW)   | G1-3/g1-R2         | F03                | DETECT |
-|               | 2          | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DETECT |
-|               | 3          | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DETECT |
-|               | 4          | A11/D12       | G4-3/g4-R2         | F21                | DETECT |
-| **Power**     | DC+12V     | VIN           | P1                 | B01                | ---    |
-|               | Vout       | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
-|               | Vcc        | VCC           | M1                 | B07                | ---    |
-|               | Vcc+R      | ---           | M4                 | B10                | ---    |
-|               | Vdd        | 3V            | ---                | B19                | ---    |
-|               | GND        | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
-|               |            |               | P2, M2             | B02, B04, B08, B20 |        |
-|               | GND+R      | ---           |                    | F26, F28, F30, F32 |        |
-|               |            |               |                    | F34                | ---    |
-| **Reset**     | RST        | Reset         | SW1                | B03                | INTL   |
-| **Internal**  | THS, 1-W   | A4            | Thermal sensor, M3 | B09                | INTL   |
-|               | RLY        | A5            | Thermal breaker    | NC                 | INTL   |
+| Pin Group     | Pin      | Arduino Micro | Connect to         | Via                | Bus    |
+|---------------|----------|---------------|--------------------|--------------------|--------|
+| **MIDI**      | IN       | D0 (RX)       | m5                 | B11, B20           | SERL   |
+|               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERL   |
+| **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | ISQC   |
+|               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | ISQC   |
+| **Analog**    | A1       | A0            | G1-4/g1-R1         | F04                | ANLG   |
+|               | A2       | A1            | G2-4/g2-R1         | F10                | ANLG   |
+|               | A3       | A2            | G3-4/g3-R1         | F16                | ANLG   |
+|               | A4       | A3            | G4-4/g4-R1         | F22                | ANLG   |
+|               | PULLUP   | A4            | NC                 | NC                 | ANLG   |
+| **Detector**  | D1       | D6/A7 (PMW)   | G1-3/g1-R2         | F03                | DTCT   |
+|               | D2       | D9/A9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   |
+|               | D3       | D10/A10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
+|               | D4       | D12/A11       | G4-3/g4-R2         | F21                | DTCT   |
+| **Indicator** | FLED     | D11 (PWM)     | Front LED          | F25                | ---    |
+| **Monitor**   | LED      | D13 (PWM)     | Back LED           | B05                | INTL   |
+| **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
+| **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
+|               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
+|               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    |
+|               | Vcc+R    | ---           | M4                 | B12                | ---    |
+|               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
+|               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
+|               |          |               |                    | B13, P02, X07      |        |
+|               | GND+R    | ---           |                    | F26                | ---    |
+| **Display**   | MOSI     | MOSI          | Display 1          | X01                | DSPL   |
+|               | SCLK     | SCLK          | Display 2          | X02                | DSPL   |
+|               | GPIO1    | D5 (PWM)      | Display 3          | X03                | DSPL   |
+|               | GPIO2    | D7            | Display 4          | X04                | DSPL   |
+|               | GPIO3    | D8/A8         | Display 5          | X05                | DSPL   |
+| **Internal**  | THS      | A5            | Thermal sensor     | NC                 | INTL   |
+|               | RLY      | A6/D4         | Thermal breaker    | NC                 | INTL   |
 
 ## Board Connectors
-### Front Connector (MIL 34p Connector)
+
+### Front Connector (MIL 26p Connector)
 
 | Pin | Meaning    | Connect to | Arduino Micro |
 |-----|------------|------------|---------------|
@@ -152,39 +145,49 @@ Pineapple II has followirng ports.
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
-| F25 | LED0/G     | LED0A      | D13 (PWM)     |
-| F26 | GND+R      | LED0K      | ---           |
-| F27 | LED1/W     | LED1A      | D4/A6         |
-| F28 | GND+R      | LED1K      | ---           |
-| F29 | LED2/B     | LED2A      | D5 (PWM)      |
-| F30 | GND+R      | LED2K      | ---           |
-| F31 | LED3/Y     | LED3A      | D8/A8         |
-| F32 | GND+R      | LED3K      | ---           |
-| F33 | LED4/R     | LED4A      | D11 (PWM)     |
-| F34 | GND+R      | LED4K      | ---           |
+| F25 | Indicator  | FLED A     | D11 (PWM)     |
+| F26 | GND+R      | FLED K     | ---           |
+
 
 ### Back Connector (MIL 20p Connector)
 
 | Pin | Meaning          | Connect to | Arduino Micro |
 |-----|------------------|------------|---------------|
-| B01 | DC12V            | P1         | Vin           |
-| B02 | GND              | P2         | GND           |
+| B01 | DC12V            | PWR1       | Vin           |
+| B02 | GND              | PWR2       | GND           |
 | B03 | Reset            | SW1        | Reset         |
 | B04 | GND              | SW2        | GND           |
-| B05 | MIDI IN Send     | m4         | ---           |
-| B06 | MIDI IN Return   | m5         | D0 (RX)       |
-| B07 | Vcc              | M1         | Vcc           |
-| B08 | GND              | M2         | GND           |
-| B09 | 1-W              | M3         | A4            |
-| B10 | MIDI OUT Send    | M4         | ---           |
-| B11 | MIDI OUT Return  | M5         | D1 (TX)       |
-| B12 | XLEDg            | M6         | D13 (PWM)     |
-| B13 | XLEDb            | M7         | D5 (PWM)      |
-| B14 | XLEDr            | M8         | D11 (PWM)     |
-| B15 | MIDI OUT2 Send   | NC         | ---           |
-| B16 | MIDI OUT2 Return | NC         | D1 (TX)       |
-| B17 | MIDI THRU Send   | NC         | ---           |
-| B18 | MIDI THRU Return | NC         | D0 (RX)       |
-| B19 | Vdd              | NC         | 3V            |
-| B20 | GND              | NC         | GND           |
+| B05 | LED              | LEDA       | D13           |
+| B06 | GND              | LEDK       | GND           |
+| B07 | Vcc              | m1         | Vcc           |
+| B08 | GND              | m2         | GND           |
+| B09 | Vcc              | m3         | Vcc           |
+| B10 | MIDI IN Send     | m4         | ---           |
+| B11 | MIDI IN Return   | m5         | D0 (RX)       |
+| B12 | MIDI TX+         | M1         | D1 (TX)       |
+| B13 | GND              | M2         | GND           |
+| B14 | MIDI TX-         | M3         | D1 (TX)       |
+| B15 | MIDI OUT Send    | M4         | ---           |
+| B16 | MIDI OUT Return  | M5         | D1 (TX)       |
+| B17 | MIDI OUT2 Send   | NC         | ---           |
+| B18 | MIDI OUT2 Return | NC         | D1 (TX)       |
+| B19 | MIDI THRU Send   | NC         | ---           |
+| B20 | MIDI THRU Return | NC         | D0 (RX)       |
 
+### Top Connector
+
+| Pin | Meaning |
+|-----|---------|
+| X01 | MOSI    |
+| X02 | SCLK    |
+| X03 | GPIO1   |
+| X04 | GPIO2   |
+| X05 | GPIO3   |
+
+### Power Connector
+
+| Pin | Meaning |
+|-----|---------|
+| P01 | Vcc     |
+| P02 | GND     |
+| P03 | Vdd     |
