@@ -1,14 +1,44 @@
 # Pineapple II
 
+Pineapple II is an artist-friendly computer that can convert analog voltage to MIDI signal.
+
 ## Overview
 
-Pineapple II has the followirng ports.
+Pineapple II can take upto 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V or 5V down to 4.9V) causes MIDI Note On signal with a corresponding note number (e.g. Analog 1 trigers F4, Analog 2 trigers A4, Analog 3 trigers C5...) A continuous change of the input voltage causes MIDI Control Change, and drop to 0V (or rise up to 5V) causes MIDI Note Off.
 
-* 4x GeekPort II (Analog input)
-* MIDI In+ (MIDI In with Vcc power)
-* MIDI Out+ (MIDI Out with RS-422 long-distance communication capability)
-* DC12V In
-* Maintenance (USB)
+Up to 4 analog sensors can be attached to Pineapple II. The sensor can be (A) variable-resistance type (nonconductive when not active), (B) analog voltage output (0V when not active), or (C) I2C sensor.
+
+The sensor port (named GeekPort II) of Pineapple II has 6 pins as follows.
+
+| Pin | Meaning      |
+|-----|--------------|
+| G1  | Vcc (5V)     |
+| G2  | GND          |
+| G3  | Detector     |
+| G4  | Anaolg input |
+| G5  | I2C SDA (5V) |
+| G6  | I2C SCL (5V) |
+
+If all Detectors are open, Pineapple II assumes that all Analog inputs are in mode (A). A pull-up voltage is supplied to Analog input pin in mode (A). The front indicator (LED) blinks in green when Pinelappe II sends MIDI Note On signal.
+
+If at least one of Detectors is connected to GND, Pinepple II assumes that all Analog inputs are in mode (B). Pull-up voltage is cut in mode (B). The front indicator (LED) blinks in orange when Pineapple II sends MIDI Note On signal.
+
+If at least one of Decetors is connected to GND via 4.7k-Ohm resistor, Pineapple II ignores Analog inputs and works in mode (C).
+
+The future version of Pineapple II will be able to work with 3.3V-I2C devices. To indicate the connected I2C sensor operates at 3.3V, 1k-Ohm resistor will be used to connect with Detector and GND.
+
+| Detector (G3)      | Mode                              |
+|--------------------|-----------------------------------|
+| Open               | (A) Sensor is variable-resistance |
+| GND                | (B) Sensor is voltage output      |
+| 4.7k-Ohm pull-down | (C) Sensor is I2C connected (5V)  |
+| 1k-Ohm pull-down   | Reserved for 3.3V I2C connection  |
+
+Pineapple II's MIDI Out port has long-distance connection capability. A specially designed twisted-pair cable (that uses pin 1 and pin 3 of MIDI Out) can carry MIDI signals more than 100m. Design of a long-distance receiver is available with the schematic of Pineapple II.
+
+Pineapple II has an _alternative_ operating mode that _receives_ MIDI signal and drives up to 4 digital outputs. Pineapple II's MIDI In port has power supply (pin 1 and pin 2) so that it can drive a long-distance receiver without installing separate power supply.
+
+**If the pin 3 of MIDI In is connected to the pin 2 of MIDI In, Pineapple II switches to _alternative_ mode.**
 
 ## Front Panel
 
