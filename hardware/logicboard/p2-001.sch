@@ -22295,7 +22295,7 @@ part number 2062-2P from STA</description>
 <wire x1="190.5" y1="233.68" x2="190.5" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VPULLUP" class="0">
+<net name="VPULLUP" class="2">
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="132.08" y1="236.22" x2="132.08" y2="233.68" width="0.1524" layer="91"/>
