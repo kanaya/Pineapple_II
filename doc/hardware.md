@@ -145,8 +145,8 @@ Pineapple II has followirng ports.
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
-| F25 | Indicator  | FLED A     | D11 (PWM)     |
-| F26 | GND+R      | FLED K     | ---           |
+| F25 | Vdd        | ---        | Vdd           |
+| F26 | GND        | ---        | GND           |
 
 
 ### Back Connector (MIL 20p Connector)
@@ -157,7 +157,7 @@ Pineapple II has followirng ports.
 | B02 | GND              | PWR2       | GND           |
 | B03 | Reset            | SW1        | Reset         |
 | B04 | GND              | SW2        | GND           |
-| B05 | LED              | LEDA       | D13           |
+| B05 | PWRLED           | LEDA       | ---           |
 | B06 | GND              | LEDK       | GND           |
 | B07 | Vcc              | m1         | Vcc           |
 | B08 | GND              | m2         | GND           |
