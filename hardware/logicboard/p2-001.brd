@@ -210,6 +210,11 @@
 <wire x1="1" y1="63" x2="8" y2="63" width="0.2" layer="22"/>
 <wire x1="8" y1="63" x2="8" y2="57" width="0.2" layer="22"/>
 <wire x1="8" y1="57" x2="1" y2="57" width="0.2" layer="22"/>
+<text x="9" y="11" size="1" layer="21" rot="R90" align="center">K</text>
+<text x="9" y="59" size="1" layer="21" rot="R90" align="center">–</text>
+<text x="9" y="61" size="1" layer="21" rot="R90" align="center">+</text>
+<text x="9" y="13" size="1" layer="21" rot="R90" align="center">G</text>
+<text x="9" y="9" size="1" layer="21" rot="R90" align="center">R</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
@@ -3726,10 +3731,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="18" y="33" size="0.8128" layer="27" ratio="10" rot="R90" align="bottom-center"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="JST-3-PTH" package3d_urn="urn:adsk.eagle:package:38069/1" value="LEDs" x="6" y="11" smashed="yes" rot="R90">
-<attribute name="NAME" x="9" y="11" size="1.27" layer="25" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="11" y="11" size="1.27" layer="25" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="WIRE-10037" x="6" y="11" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_ID" value="PRT-09915" x="6" y="11" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="10" y="11" size="0.8128" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13" y="11" size="0.8128" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X01" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN" x="10" y="4" smashed="yes">
 <attribute name="NAME" x="10" y="1" size="1.27" layer="25" ratio="10" align="bottom-center"/>
@@ -3778,8 +3783,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="50.143" y="12" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="JST-2-PTH-NS" package3d_urn="urn:adsk.eagle:package:38056/1" value="PWR" x="6" y="60" smashed="yes" rot="R90">
-<attribute name="NAME" x="9" y="60" size="1.27" layer="25" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="10" y="60" size="0.8128" layer="27" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="11" y="60" size="1.27" layer="25" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="12" y="60" size="0.8128" layer="27" ratio="20" rot="R90" align="bottom-center"/>
 </element>
 <element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k" x="52" y="43" smashed="yes">
 <attribute name="NAME" x="47" y="43" size="1.27" layer="25" ratio="10" rot="R90" align="bottom-center"/>
