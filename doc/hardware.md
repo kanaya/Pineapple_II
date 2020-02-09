@@ -10,6 +10,8 @@ Up to 4 analog sensors can be attached to Pineapple II. The sensor can be (A) va
 
 The sensor port (named GeekPort II) of Pineapple II has 6 pins as follows.
 
+Table. GeekPort II Pinout
+
 | Pin | Meaning      |
 |-----|--------------|
 | G1  | Vcc (5V)     |
@@ -27,6 +29,8 @@ If at least one of Decetors is connected to GND via 4.7k-Ohm resistor, Pineapple
 
 The future version of Pineapple II will be able to work with 3.3V-I2C devices. To indicate the connected I2C sensor operates at 3.3V, 1k-Ohm resistor will be used to connect with Detector and GND.
 
+Table. Sensor modes of Pineapple II
+
 | Detector (G3)      | Mode                              |
 |--------------------|-----------------------------------|
 | Open               | (A) Sensor is variable-resistance |
@@ -36,32 +40,46 @@ The future version of Pineapple II will be able to work with 3.3V-I2C devices. T
 
 Pineapple II's MIDI Out port has long-distance connection capability. A specially designed twisted-pair cable (that uses pin 1 and pin 3 of MIDI Out) can carry MIDI signals more than 100m. Design of a long-distance receiver is available with the schematic of Pineapple II.
 
+Table. MIDI Out+ Pinout
+
+| Pin | Meaning |
+|-----|---------|
+| M1  | TX+     |
+| M2  | GND     |
+| M3  | TX-     |
+| M4  | Send    |
+| M5  | Return  |
+
 Pineapple II has an _alternative_ operating mode that _receives_ MIDI signal and drives up to 4 digital outputs. Pineapple II's MIDI In port has power supply (pin 1 and pin 2) so that it can drive a long-distance receiver without installing separate power supply.
 
-**If the pin 3 of MIDI In is connected to the pin 2 of MIDI In, Pineapple II switches to _alternative_ mode.**
+Table. MIDI In+ Pinout
 
-## Front Panel
+| Pin | Meaning  |
+|-----|----------|
+| m1  | Vcc (5V) |
+| m2  | GND      |
+| m3  | Selector |
+| m4  | Send     |
+| m5  | Return   |
 
-### GeekPort II
+If the pin 3 of MIDI In is connected to the pin 2 of MIDI In at boot time, Pineapple II switches to _alternative_ mode.
 
-#### Type 1 (3.5mm TRRS jack)
+| Selector (m3)      | Mode                                      |
+|--------------------|-------------------------------------------|
+| Open               | Default mode. Sensor to MIDI Out.         |
+| GND                | Alternative mode. MIDI In to digital out. |
 
-| Pinout | Meaning       | Alternative mode |
-|--------|---------------|------------------|
-| Tip    | Power         | Power            |
-| Ring 1 | Analog in     | Digital I/O      |
-| Ring 2 | Plug detector | PWM out          |
-| Sleeve | GND           | GND              |
+## Design
 
-Note: If Ring 2 is connected to Sleeve (GND), Pineapple II cut plug-in power (pull-up) of Ring 1; otherwise Pineapple II provides 4.7k-Ohm pull-up to Ring 1.
+### Front Panel
 
-| Status of Ring 2 | Pull-up of Ring 1 | Sensor Mode                                     |
-|------------------|-------------------|-------------------------------------------------|
-| Open             | Yes               | Inverse. Higher voltage results lower velocity. |
-| Connected to GND | No                | Linear. Higher voltage results higher velocity. |
+Front panel of Pineapple II has 4x GeekPort II and Maintenance port.
 
+#### GeekPort II
 
-#### Type 2 (Hirose HR-10A)
+GeekPort II can be configured as Type 1 and Type 2.
+
+##### Type 1 (Hirose HR-10A)
 
 | Pinout | Meaning       | Alternative mode |
 |--------|---------------|------------------|
@@ -79,7 +97,16 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | Open             | Yes              | Inverse. Higher voltage results lower velocity. |
 | Connected to GND | No               | Linear. Higher voltage results higher velocity. |
 
-### Maintenance Port (2.5mm phone jack)
+##### Type 2 (3.5mm TRRS jack)
+
+| Pinout | Meaning       | Alternative mode |
+|--------|---------------|------------------|
+| Tip    | Power         | Power            |
+| Ring 1 | Analog in     | Digital I/O      |
+| Ring 2 | Plug detector | PWM out          |
+| Sleeve | GND           | GND              |
+
+#### Maintenance Port (2.5mm phone jack)
 
 | Pinout | Meaning |
 |--------|---------|
@@ -88,9 +115,9 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | Ring 2 | GND     |
 | Sleeve | Vbus    |
 
-## Back Panel
+### Back Panel
 
-### MIDI OUT+ (DIN connector)
+#### MIDI OUT+ (DIN connector)
 
 | MIDI Pin | Meaning | 3.5mm Audio Plug |
 |----------|---------|------------------|
@@ -100,7 +127,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | M4       | Send    | Ring             |
 | M5       | Return  | Tip              |
 
-### MIDI IN+ (DIN connector)
+#### MIDI IN+ (DIN connector)
 
 | MIDI Pin | Meaning | 3.5mm Audio Plug |
 |----------|---------|------------------|
@@ -110,21 +137,21 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | m4       | Send    | Ring             |
 | m5       | Return  | Tip              |
 
-### DC Jack
+#### DC Jack
 
 | DC Jack | Meaning |
 |---------|---------|
 | PWR1    | DC +12V |
 | PWR2    | GND     |
 
-### Reset SW/LED
+#### Reset SW/LED
 
 | SW/LED | Meaning                          |
 |--------|----------------------------------|
 | LED    | Status                           |
 | SW     | Reset (double-push to boot-load) |
 
-## MPU Pinout
+### MPU Pinout
 
 | Pin Group     | Pin      | Arduino Micro | Connect to         | Via                |
 |---------------|----------|---------------|--------------------|--------------------|
@@ -136,7 +163,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 |               | ANLG2    | A1            | G2-4/g2-R1         | F10                |
 |               | ANLG3    | A2            | G3-4/g3-R1         | F16                |
 |               | ANLG4    | A3            | G4-4/g4-R1         | F22                |
-|               | PUP      | A4            | NC                 | NC                 |
+|               | PUP/SEL  | A4            | m3                 | B09                |
 | **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2         | F03                |
 |               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2         | F09                |
 |               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2         | F15                |
@@ -161,9 +188,9 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | **Internal**  | THS      | A5            | Thermal sensor     | NC                 |
 |               | RLY      | A6/D4         | Thermal breaker    | NC                 |
 
-## Board Connectors
+### Board Connectors
 
-### Front Connector (MIL 26p Connector)
+#### Front Connector (MIL 26p Connector)
 
 | Pin | Meaning    | Connect to | Arduino Micro |
 |-----|------------|------------|---------------|
@@ -195,7 +222,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | F26 | GND        | ---        | GND           |
 
 
-### Back Connector (MIL 20p Connector)
+#### Back Connector (MIL 20p Connector)
 
 | Pin | Meaning          | Connect to | Arduino Micro |
 |-----|------------------|------------|---------------|
@@ -207,7 +234,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | B06 | GND              | LEDK       | GND           |
 | B07 | Vcc              | m1         | Vcc           |
 | B08 | GND              | m2         | GND           |
-| B09 | Vcc              | m3         | Vcc           |
+| B09 | Pull-up/Select   | m3         | Vcc           |
 | B10 | MIDI IN Send     | m4         | ---           |
 | B11 | MIDI IN Return   | m5         | D0 (RX)       |
 | B12 | MIDI TX+         | M1         | D1 (TX)       |
@@ -220,7 +247,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | B19 | MIDI THRU Send   | NC         | ---           |
 | B20 | MIDI THRU Return | NC         | D0 (RX)       |
 
-### Display Connector
+#### Display Connector
 
 | Pin | Meaning |
 |-----|---------|
@@ -230,14 +257,14 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | X4  | DISP2   |
 | X5  | DISP3   |
 
-### Power Connector
+#### Power Connector
 
 | Pin | Meaning |
 |-----|---------|
 | V1  | GND     |
 | V2  | Vcc     |
 
-### LED Connector
+#### LED Connector
 
 | Pin | Meaning   |
 |-----|-----------|
