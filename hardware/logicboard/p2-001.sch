@@ -22882,7 +22882,7 @@ part number 2062-2P from STA</description>
 <approved hash="106,1,170.18,60.96,SS,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
 <approved hash="113,1,344.572,193.04,SV2,,,,,"/>
-<approved hash="113,1,23.728,190.5,SV1,,,,,"/>
+<approved hash="113,1,23.728,185.42,SV1,,,,,"/>
 <approved hash="113,1,152.4,43.18,X1,,,,,"/>
 <approved hash="113,1,152.4,30.48,X2,,,,,"/>
 <approved hash="113,1,152.4,17.78,X3,,,,,"/>
