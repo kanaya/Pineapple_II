@@ -4,7 +4,7 @@ Pineapple II is an artist-friendly computer that can convert analog voltage to M
 
 ## Overview
 
-Pineapple II can take up to 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V or 5V down to 4.9V) causes MIDI Note On signal with a corresponding note number (e.g. Analog 1 trigers F4, Analog 2 trigers A4, Analog 3 trigers C5...) A continuous change of the input voltage causes MIDI Control Change, and drop to 0V (or rise up to 5V) causes MIDI Note Off.
+Pineapple II can take up to 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V or 5V down to 4.9V) causes MIDI Note On signal. Continuous change of the input voltage causes MIDI Control Change, and drop to 0V (or rise up to 5V) causes MIDI Note Off.
 
 Up to 4 analog sensors can be attached to Pineapple II. The sensor can be (A) variable-resistance type (nonconductive when not active), (B) analog voltage output (0V when not active), or (C) I2C sensor.
 
@@ -21,11 +21,11 @@ Table. GeekPort II Pinout
 | G5  | I2C SDA (5V) |
 | G6  | I2C SCL (5V) |
 
-If all Detectors are open, Pineapple II assumes that all Analog inputs are in mode (A). A pull-up voltage is supplied to Analog input pin in mode (A). The front indicator (LED) blinks in green when Pinelappe II sends MIDI Note On signal.
+If all (four) Detectors are open, Pineapple II assumes that all Analog inputs are in mode (A). Pull-up voltage is supplied to Analog input pin in mode (A). The front indicator (LED) blinks in green when Pinelappe II sends MIDI Note On signal.
 
-If at least one of Detectors is connected to GND, Pinepple II assumes that all Analog inputs are in mode (B). Pull-up voltage is cut in mode (B). The front indicator (LED) blinks in orange when Pineapple II sends MIDI Note On signal.
+If at least one of Detectors is connected to GND, Pinepple II assumes that all Analog inputs are in mode (B). Pull-up voltage is cut in mode (B). The front indicator (LED) blinks in orange when Pineapple II sends MIDI Note On signal. Connectors whose Detectors don't connect to GND in mode (B) are ignored.
 
-If at least one of Decetors is connected to GND via 4.7k-Ohm resistor, Pineapple II ignores Analog inputs and works in mode (C).
+If at least one of Decetors is connected to GND via 4.7k-Ohm resistor, Pineapple II ignores all Analog inputs and works in mode (C).
 
 The future version of Pineapple II will be able to work with 3.3V-I2C devices. To indicate the connected I2C sensor operates at 3.3V, 1k-Ohm resistor will be used to connect with Detector and GND.
 
