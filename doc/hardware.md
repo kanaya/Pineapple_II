@@ -4,7 +4,7 @@ Pineapple II is an artist-friendly computer that can convert analog voltage to M
 
 ## Overview
 
-Pineapple II can take upto 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V or 5V down to 4.9V) causes MIDI Note On signal with a corresponding note number (e.g. Analog 1 trigers F4, Analog 2 trigers A4, Analog 3 trigers C5...) A continuous change of the input voltage causes MIDI Control Change, and drop to 0V (or rise up to 5V) causes MIDI Note Off.
+Pineapple II can take up to 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V or 5V down to 4.9V) causes MIDI Note On signal with a corresponding note number (e.g. Analog 1 trigers F4, Analog 2 trigers A4, Analog 3 trigers C5...) A continuous change of the input voltage causes MIDI Control Change, and drop to 0V (or rise up to 5V) causes MIDI Note Off.
 
 Up to 4 analog sensors can be attached to Pineapple II. The sensor can be (A) variable-resistance type (nonconductive when not active), (B) analog voltage output (0V when not active), or (C) I2C sensor.
 
@@ -62,12 +62,27 @@ Table. MIDI In+ Pinout
 | m4  | Send     |
 | m5  | Return   |
 
-If the pin 3 of MIDI In is connected to the pin 2 of MIDI In at boot time, Pineapple II switches to _alternative_ mode.
+If the pin 3 of MIDI In+ is connected to the pin 2 of MIDI In at boot time, Pineapple II switches to _alternative_ mode.
+
+Table. Working mode of Pineapple II
 
 | Selector (m3)      | Mode                                      |
 |--------------------|-------------------------------------------|
 | Open               | Default mode. Sensor to MIDI Out.         |
 | GND                | Alternative mode. MIDI In to digital out. |
+
+When Pineapple II operates in _alternative_ mode, GeekPort II works as follows.
+
+Table. GeekPort II in _alternative_ mode
+
+| Pin | Meaning      |
+|-----|--------------|
+| G1  | Vcc (5V)     |
+| G2  | GND          |
+| G3  | Digital out  |
+| G4  | N/A          |
+| G5  | I2C SDA (5V) |
+| G6  | I2C SCL (5V) |
 
 ## Design
 
@@ -77,18 +92,18 @@ Front panel of Pineapple II has 4x GeekPort II and Maintenance port.
 
 #### GeekPort II
 
-GeekPort II can be configured as Type 1 and Type 2.
+GeekPort II can be configured as Type 1 or Type 2.
 
 ##### Type 1 (Hirose HR-10A)
 
-| Pinout | Meaning       | Alternative mode |
-|--------|---------------|------------------|
-| 1      | Power         | Power            |
-| 2      | GND           | GND              |
-| 3      | Plug detector | PWM out          |
-| 4      | Analog in     | Digital I/O      |
-| 5      | I2C SDA       | Digital I/O      |
-| 6      | I2C SCL       | Digital I/O      |
+| Pinout | Meaning       |
+|--------|---------------|
+| 1      | Power         |
+| 2      | GND           |
+| 3      | Plug detector |
+| 4      | Analog in     |
+| 5      | I2C SDA       |
+| 6      | I2C SCL       |
 
 Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull-up) of Pin 4; otherwise Pineapple II provides 4.7k-Ohm pull-up to Pin 4.
 
@@ -99,12 +114,12 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 
 ##### Type 2 (3.5mm TRRS jack)
 
-| Pinout | Meaning       | Alternative mode |
-|--------|---------------|------------------|
-| Tip    | Power         | Power            |
-| Ring 1 | Analog in     | Digital I/O      |
-| Ring 2 | Plug detector | PWM out          |
-| Sleeve | GND           | GND              |
+| Pinout | Meaning       |
+|--------|---------------|
+| Tip    | Power         |
+| Ring 1 | Analog in     |
+| Ring 2 | Plug detector |
+| Sleeve | GND           |
 
 #### Maintenance Port (2.5mm phone jack)
 
