@@ -233,7 +233,7 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
-| F25 | Vdd        | ---        | Vdd           |
+| F25 | LED0       | ---        | D13           |
 | F26 | GND        | ---        | GND           |
 
 
@@ -281,8 +281,8 @@ Note: If Pin 3 is connected to Pin 2 (GND), Pineapple II cut plug-in power (pull
 
 #### LED Connector
 
-| Pin | Meaning   |
-|-----|-----------|
-| L1  | Red LED   |
-| L2  | GND       |
-| L3  | Green LED |
+| Pin | Meaning          |
+|-----|------------------|
+| L1  | Red LED (LED0)   |
+| L2  | GND              |
+| L3  | Green LED (LED1) |
