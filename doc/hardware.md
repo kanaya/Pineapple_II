@@ -6,9 +6,9 @@ Pineapple II is an artist-friendly computer that can convert analog voltage to M
 
 ## Overview
 
-Pineapple II can take up to 4 analog inputs (0-5V) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V) causes MIDI Note On signal. Continuous change of the input voltage causes MIDI Control Change, and drop to 0V causes MIDI Note Off.
+Pineapple II can take up to 4 analog inputs (0-5V or 0-50mA) and converts them to MIDI signals. An edge of the analog signal (e.g. 0V to 0.1V) causes MIDI Note On signal. Continuous change of the input voltage causes MIDI Control Change, and drop to 0V causes MIDI Note Off.
 
-Up to 4 analog sensors can be attached to Pineapple II. The sensor can be (1) **Passive:** variable-resistance type (nonconductive when not active), (2) **Active:** analog voltage output (0V when not active), or (3) **Digital:** I2C sensor.
+Up to 4 analog sensors can be attached to Pineapple II. The sensor can be **(1) voltage mode:** analog voltage output (0V when not active), **(2) current mode:** variable resistance (nonconductive when not active), or **(3) digital mode:** I2C connected sensor.
 
 The sensor port (named GeekPort II) of Pineapple II has 6 pins as follows.
 
@@ -23,21 +23,18 @@ Table. GeekPort II Pinout
 | G5  | I2C SDA (5V) |
 | G6  | I2C SCL (5V) |
 
-If Detector is open (not connected to anything), Pineapple II assumes that a sensor is not attached.
+If Detector is open (not connected to anything electrically), Pineapple II assumes that the sensor works in **current mode.** In this mode a _pull-down_ resistor attached to Analog Input is activated, and thus even if Analog Input is open, it means zero input. The front indicator (LED) blinks in green when Pinepple II sends MIDI Note On signal.
 
-If Detector is connected to GND, Pineapple II assumes that a **passive** sensor is attached and automatically activate _pull-down_ resistor of Analog Input. The front indicator (LED) blinks in green when Pinepple II sends MIDI Note On signal.
-
-If Detector is connected to GND via 4.7k-Ohm resistor, Pineapple II assumes that an **active** sensor is attached and automatically deactivate pull-down resistor of Analog input. The front indicator (LED) blinks in orange when Pineapple II sends MIDI Note On signal.
+If Detector is connected to GND, Pineapple II assumes that the sensor works in **voltage mode.** The front indicator (LED) blinks in orange when Pineapple II sends MIDI Note On signal.
 
 Table. Sensor modes of Pineapple II
 
 | Detector (G3)      | Mode                              |
 |--------------------|-----------------------------------|
-| Open               | Sensor is not attached.           |
-| GND                | **Passive** sensor is attached.   |
-| 4.7k-Ohm pull-down | **Active** sensor is attached.    |
-| 1k-Ohm pull-down   | Reserved for I2C connection.      |
-| ---                | Reserved for 3.3V I2C connection. |
+| Open               | Current mode.                     |
+| GND                | Voltage mode.                     |
+| 4.7k-Ohm pull-down | Digital mode.                     |
+| 1k-Ohm pull-down   | Reserved for 3.3V I2C connection. |
 
 Pineapple II's MIDI Out port has long-distance connection capability. A specially designed twisted-pair cable (that uses pin 1 and pin 3 of MIDI Out) can carry MIDI signals more than 100m. Design of a long-distance receiver is available with the schematic of Pineapple II.
 
@@ -117,7 +114,7 @@ Some imprementation of Pineapple II would come with the type 2 ports instead of 
 | Ring 2 | Detector  |
 | Sleeve | GND       |
 
-Note that the plug for the type 2 can be TRS (tip-ring-sleave) if the sensor requires **passive** mode of Pineapple II.
+_Note that the plug for the type 2 can be TRS (tip-ring-sleave) if the sensor requires **voltage** mode of Pineapple II._
 
 #### Maintenance Port (2.5mm phone jack)
 
@@ -181,7 +178,7 @@ Note that the plug for the type 2 can be TRS (tip-ring-sleave) if the sensor req
 |               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2         | F09                |
 |               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2         | F15                |
 |               | DTCT4    | D12/A11       | G4-3/g4-R2         | F21                |
-| **Indicator** | LED0     | D13 (PWM)     | Red LED            | L1                 |
+| **Indicator** | LED0     | D13 (PWM)     | Red LED            | F25, L1            |
 |               | LED1     | D11 (PWM)     | Green LED          | L3                 |
 | **Reset**     | RST      | Reset         | SW                 | B03                |
 | **Power**     | Vin      | VIN           | P1                 | B01                |
