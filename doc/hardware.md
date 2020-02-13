@@ -82,6 +82,17 @@ Table. GeekPort II in _alternative_ mode
 | G5  | I2C SDA (5V) |
 | G6  | I2C SCL (5V) |
 
+Pineapple II also has SparkFun's _Qwiic_ compatible connector on logicboard. Qwiic compatible sensors (3.3V) can be connected to the logicboard.
+
+Table. Qwiic-compatible connector.
+
+| Pin | Meaning    |
+|-----|------------|
+| Q1  | GND        |
+| Q2  | Vdd (3.3V) |
+| Q3  | SDA (3.3V) |
+| Q4  | SCL (3.3V) |
+
 ## Design
 
 ### Front Panel
