@@ -4480,6 +4480,18 @@ design rules under a new name.</description>
 <via x="20.6502" y="47.7774" extent="1-16" drill="0.35"/>
 <via x="10.3632" y="56.6166" extent="1-16" drill="0.35"/>
 <via x="26.8986" y="50.0634" extent="1-16" drill="0.35"/>
+<polygon width="0.2" layer="1">
+<vertex x="-1" y="-1"/>
+<vertex x="73" y="-1"/>
+<vertex x="73" y="73"/>
+<vertex x="-1" y="73"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC4" pad="14"/>
