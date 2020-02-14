@@ -292,3 +292,13 @@ _Note that the plug for the type 2 can be TRS (tip-ring-sleave) if the sensor re
 | L1  | Red LED (LED0)   |
 | L2  | GND              |
 | L3  | Green LED (LED1) |
+
+## Experimental Feature
+
+### Power Connector
+
+Pineapple II has 2-pin PH connector (pad) 
+
+### Qwiic-Compatible Connector
+
+Pineapple II has SparkFun's Qwiic-compatible connector pad at the back of the front port. This connector is connected to I2C bus via 3.3V-5V level shifting circuit.
