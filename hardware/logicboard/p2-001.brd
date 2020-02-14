@@ -331,12 +331,6 @@
 <text x="38" y="11" size="1" layer="22" rot="MR0" align="center-right">GND</text>
 <text x="34" y="11" size="1" layer="22" rot="MR0" align="center-left">+12V</text>
 <polygon width="0.2" layer="43">
-<vertex x="10" y="61"/>
-<vertex x="10" y="59"/>
-<vertex x="8.5" y="59"/>
-<vertex x="8.5" y="61"/>
-</polygon>
-<polygon width="0.2" layer="43">
 <vertex x="2.5" y="49"/>
 <vertex x="1.5" y="49"/>
 <vertex x="1.5" y="52"/>
@@ -385,142 +379,10 @@
 <vertex x="5.5" y="20"/>
 </polygon>
 <polygon width="0.2" layer="43">
-<vertex x="10" y="12"/>
-<vertex x="10" y="10"/>
-<vertex x="8.5" y="10"/>
-<vertex x="8.5" y="12"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="8.5" y="7"/>
-<vertex x="8.5" y="6"/>
-<vertex x="11.5" y="6"/>
-<vertex x="11.5" y="7"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="11.5" y="18.5"/>
-<vertex x="11.5" y="14.5"/>
-<vertex x="10" y="14.5"/>
-<vertex x="10" y="18.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="14" y="18"/>
-<vertex x="14" y="16"/>
-<vertex x="12.5" y="16"/>
-<vertex x="12.5" y="18"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="16.5" y="7.5"/>
-<vertex x="19.5" y="7.5"/>
-<vertex x="19.5" y="9"/>
-<vertex x="16.5" y="9"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="23" y="18.5"/>
-<vertex x="21.5" y="18.5"/>
-<vertex x="21.5" y="15.5"/>
-<vertex x="23" y="15.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="23" y="22.5"/>
-<vertex x="21.5" y="22.5"/>
-<vertex x="21.5" y="25.5"/>
-<vertex x="23" y="25.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="26" y="32.5"/>
-<vertex x="27.5" y="32.5"/>
-<vertex x="27.5" y="29.5"/>
-<vertex x="26" y="29.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="22.5" y="35.5"/>
-<vertex x="25.5" y="35.5"/>
-<vertex x="25.5" y="34"/>
-<vertex x="22.5" y="34"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="18" y="48"/>
-<vertex x="18" y="44"/>
-<vertex x="16.5" y="44"/>
-<vertex x="16.5" y="48"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="15.5" y="50.5"/>
-<vertex x="15.5" y="47.5"/>
-<vertex x="14" y="47.5"/>
-<vertex x="14" y="50.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="22" y="50.5"/>
-<vertex x="26" y="50.5"/>
-<vertex x="26" y="49"/>
-<vertex x="22" y="49"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="25" y="58.5"/>
-<vertex x="26.5" y="58.5"/>
-<vertex x="26.5" y="55.5"/>
-<vertex x="25" y="55.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="34.5" y="59.5"/>
-<vertex x="34.5" y="58"/>
-<vertex x="37.5" y="58"/>
-<vertex x="37.5" y="59.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="45.5" y="58.5"/>
-<vertex x="47" y="58.5"/>
-<vertex x="47" y="55.5"/>
-<vertex x="45.5" y="55.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="47" y="53.5"/>
-<vertex x="47" y="50.5"/>
-<vertex x="45.5" y="50.5"/>
-<vertex x="45.5" y="53.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="52.5" y="50.5"/>
-<vertex x="52.5" y="47.5"/>
-<vertex x="51" y="47.5"/>
-<vertex x="51" y="50.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="55.5" y="47.5"/>
-<vertex x="55.5" y="44.5"/>
-<vertex x="57" y="44.5"/>
-<vertex x="57" y="47.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="55.5" y="44.5"/>
-<vertex x="55.5" y="41.5"/>
-<vertex x="57" y="41.5"/>
-<vertex x="57" y="44.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
 <vertex x="46.5" y="33"/>
 <vertex x="46.5" y="29"/>
 <vertex x="45" y="29"/>
 <vertex x="45" y="33"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="46.5" y="21"/>
-<vertex x="46.5" y="17"/>
-<vertex x="45" y="17"/>
-<vertex x="45" y="21"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="47.5" y="13.5"/>
-<vertex x="47.5" y="10.5"/>
-<vertex x="46" y="10.5"/>
-<vertex x="46" y="13.5"/>
-</polygon>
-<polygon width="0.2" layer="43">
-<vertex x="51.5" y="7"/>
-<vertex x="54.5" y="7"/>
-<vertex x="54.5" y="8.5"/>
-<vertex x="51.5" y="8.5"/>
 </polygon>
 <polygon width="0.2" layer="43">
 <vertex x="51.5" y="5.5"/>
@@ -535,16 +397,40 @@
 <vertex x="51.5" y="18.5"/>
 </polygon>
 <polygon width="0.2" layer="43">
-<vertex x="59" y="22"/>
-<vertex x="63" y="22"/>
-<vertex x="63" y="23.5"/>
-<vertex x="59" y="23.5"/>
+<vertex x="1" y="48"/>
+<vertex x="3" y="48"/>
+<vertex x="3" y="44"/>
+<vertex x="1" y="44"/>
 </polygon>
 <polygon width="0.2" layer="43">
-<vertex x="63" y="60"/>
-<vertex x="63" y="58"/>
-<vertex x="61.5" y="58"/>
-<vertex x="61.5" y="60"/>
+<vertex x="5" y="48"/>
+<vertex x="7" y="48"/>
+<vertex x="7" y="44"/>
+<vertex x="5" y="44"/>
+</polygon>
+<polygon width="0.2" layer="43">
+<vertex x="2.5" y="43.5"/>
+<vertex x="5.5" y="43.5"/>
+<vertex x="5.5" y="40.5"/>
+<vertex x="2.5" y="40.5"/>
+</polygon>
+<polygon width="0.2" layer="43">
+<vertex x="2.5" y="31.5"/>
+<vertex x="5.5" y="31.5"/>
+<vertex x="5.5" y="28.5"/>
+<vertex x="2.5" y="28.5"/>
+</polygon>
+<polygon width="0.2" layer="43">
+<vertex x="1" y="28"/>
+<vertex x="3" y="28"/>
+<vertex x="3" y="24"/>
+<vertex x="1" y="24"/>
+</polygon>
+<polygon width="0.2" layer="43">
+<vertex x="5" y="28"/>
+<vertex x="7" y="28"/>
+<vertex x="7" y="24"/>
+<vertex x="5" y="24"/>
 </polygon>
 </plain>
 <libraries>
