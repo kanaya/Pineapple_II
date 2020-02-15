@@ -297,8 +297,10 @@ _Note that the plug for the type 2 can be TRS (tip-ring-sleave) if the sensor re
 
 ### Power Connector
 
-Pineapple II has 2-pin PH connector (pad) 
+Pineapple II has 2-pin PH connector pad at the back of the PCB.
 
 ### Qwiic-Compatible Connector
 
-Pineapple II has SparkFun's Qwiic-compatible connector pad at the back of the front port. This connector is connected to I2C bus via 3.3V-5V level shifting circuit.
+Pineapple II has SparkFun's Qwiic-compatible connector pad at the back of the PCB. This connector is connected to I2C bus via 3.3V-5V level shifting circuit.
+
+To operate the Qwiic connector with 5V signals, do _not_ install Q1, Q2, RC1, RC2, RC3, RC4, and install zero-ohm resistance (or simply bridge) RZ1 and RZ2. Note that by this set up the pin 2 (Vcc) of Qwiic connector still provides 3.3V.
