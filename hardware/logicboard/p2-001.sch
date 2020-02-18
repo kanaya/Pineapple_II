@@ -22869,6 +22869,12 @@ Wickmann</description>
 <wire x1="274.32" y1="160.02" x2="281.94" y2="160.02" width="0.1524" layer="91"/>
 <label x="274.32" y="160.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RN2" gate="1" pin="8"/>
+<wire x1="256.54" y1="213.36" x2="259.08" y2="215.9" width="0.1524" layer="91" curve="90"/>
+<wire x1="259.08" y1="215.9" x2="259.08" y2="236.22" width="0.1524" layer="91"/>
+<label x="259.08" y="215.9" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -23210,18 +23216,6 @@ Wickmann</description>
 </segment>
 </net>
 <net name="PDN" class="0">
-<segment>
-<pinref part="RN2" gate="1" pin="8"/>
-<wire x1="256.54" y1="213.36" x2="259.08" y2="215.9" width="0.1524" layer="91" curve="90"/>
-<wire x1="259.08" y1="215.9" x2="259.08" y2="236.22" width="0.1524" layer="91"/>
-<label x="259.08" y="215.9" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="187.96" x2="274.32" y2="185.42" width="0.1524" layer="91" curve="90"/>
-<wire x1="274.32" y1="185.42" x2="317.5" y2="185.42" width="0.1524" layer="91"/>
-<label x="274.32" y="185.42" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MC1" gate="G$1" pin="A4"/>
 <wire x1="193.04" y1="119.38" x2="190.5" y2="116.84" width="0.1524" layer="91" curve="90"/>
