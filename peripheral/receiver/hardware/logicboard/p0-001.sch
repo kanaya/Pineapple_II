@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -16585,7 +16585,7 @@ For more information on the pinout and electrical specifications of MIDI communi
 <text x="215.9" y="20.32" size="1.778" layer="94">Pineapple Zero 1.2.0</text>
 <text x="38.1" y="139.7" size="1.778" layer="97" rot="R90">GND</text>
 <text x="40.64" y="139.7" size="1.778" layer="97" rot="R90">External Vcc</text>
-<text x="35.56" y="139.7" size="1.778" layer="97" rot="R90">MIDI Receiver Selector</text>
+<text x="35.56" y="139.7" size="1.778" layer="97" rot="R90">NC</text>
 <text x="33.02" y="139.7" size="1.778" layer="97" rot="R90">MIDI OUT Send</text>
 <text x="30.48" y="139.7" size="1.778" layer="97" rot="R90">MIDI OUT Return</text>
 <text x="40.64" y="81.28" size="1.778" layer="97" rot="R90">RX+</text>
@@ -16780,19 +16780,9 @@ For more information on the pinout and electrical specifications of MIDI communi
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="38.1" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="116.84" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="134.62" x2="38.1" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="134.62" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 <junction x="38.1" y="116.84"/>
 <pinref part="JP1" gate="A" pin="2"/>
-<pinref part="MIDIOUT" gate="G$1" pin="3"/>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="38.1" y1="121.92" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="134.62" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="121.92" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="121.92" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="121.92" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
-<junction x="38.1" y="121.92"/>
-<junction x="35.56" y="121.92"/>
 </segment>
 <segment>
 <pinref part="MIDIRECV" gate="G$1" pin="2"/>
