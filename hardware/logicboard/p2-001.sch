@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -20177,14 +20177,14 @@ Wickmann</description>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RLYJMP"/>
+<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RLYJMP"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
 <part name="IC3" library="linear-technology" library_urn="urn:adsk.eagle:library:261" deviceset="LTC485" device="N" package3d_urn="urn:adsk.eagle:package:29519/2"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="120"/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="JST" package3d_urn="urn:adsk.eagle:package:38120/1" value="Display"/>
+<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="JST" package3d_urn="urn:adsk.eagle:package:38120/1" value="Display"/>
 <part name="SV1" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML26LE" device="" package3d_urn="urn:adsk.eagle:package:8686/1"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="160"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
@@ -20201,20 +20201,20 @@ Wickmann</description>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
-<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
+<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="0.1u"/>
 <part name="CC1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="10u"/>
 <part name="CC2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="47u"/>
 <part name="D2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE" device="-1N4148" package3d_urn="urn:adsk.eagle:package:38452/1" value=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1" value="PWR"/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1" value="PWR"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
-<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="SNSPUP"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="SNSPUP"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
 <part name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="TE5" device="" package3d_urn="urn:adsk.eagle:package:14069/1" value="1.8A"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="REGJMP"/>
@@ -20237,7 +20237,7 @@ Wickmann</description>
 <part name="JV1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2MM-SMT" package3d_urn="urn:adsk.eagle:package:38042/1" value="DC12V"/>
 <part name="RZ2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R2012" package3d_urn="urn:adsk.eagle:package:23543/2" value="Inf"/>
 <part name="RZ1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R2012" package3d_urn="urn:adsk.eagle:package:23543/2" value="Inf"/>
-<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RLYOUT"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RLYOUT"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1" value="LED"/>
 </parts>
 <sheets>
@@ -20490,7 +20490,7 @@ Wickmann</description>
 <instance part="SUPPLY11" gate="GND" x="68.58" y="7.62" smashed="yes"/>
 <instance part="SUPPLY27" gate="G$1" x="68.58" y="33.02" smashed="yes"/>
 <instance part="SUPPLY28" gate="GND" x="134.62" y="165.1" smashed="yes"/>
-<instance part="JP3" gate="G$1" x="71.12" y="228.6" smashed="yes" rot="MR0">
+<instance part="JP4" gate="G$1" x="71.12" y="228.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="73.66" y="238.76" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="73.66" y="236.22" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -20508,7 +20508,7 @@ Wickmann</description>
 <attribute name="VALUE" x="322.58" y="96.52" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY29" gate="GND" x="287.02" y="152.4" smashed="yes"/>
-<instance part="J2" gate="G$1" x="121.92" y="154.94" smashed="yes" rot="MR180">
+<instance part="J3" gate="G$1" x="121.92" y="154.94" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="121.92" y="144.78" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 <attribute name="NAME" x="121.92" y="162.56" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
@@ -20646,11 +20646,11 @@ Wickmann</description>
 <attribute name="NAME" x="76.2" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="76.2" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="99.06" y="22.86" smashed="yes">
+<instance part="C4" gate="G$1" x="99.06" y="22.86" smashed="yes">
 <attribute name="NAME" x="96.52" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="96.52" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="88.9" y="22.86" smashed="yes">
+<instance part="C5" gate="G$1" x="88.9" y="22.86" smashed="yes">
 <attribute name="NAME" x="86.36" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="86.36" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -20677,7 +20677,7 @@ Wickmann</description>
 <instance part="P+2" gate="1" x="162.56" y="243.84" smashed="yes">
 <attribute name="VALUE" x="162.56" y="246.38" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J3" gate="G$1" x="48.26" y="22.86" smashed="yes" rot="MR180">
+<instance part="J2" gate="G$1" x="48.26" y="22.86" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="48.26" y="27.686" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 <attribute name="NAME" x="48.26" y="30.48" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
 </instance>
@@ -20693,7 +20693,7 @@ Wickmann</description>
 <attribute name="NAME" x="335.28" y="195.58" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="340.36" y="195.58" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="JP4" gate="G$1" x="274.32" y="223.52" smashed="yes">
+<instance part="JP5" gate="G$1" x="274.32" y="223.52" smashed="yes">
 <attribute name="NAME" x="271.78" y="233.68" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="271.78" y="231.14" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
@@ -20769,7 +20769,7 @@ Wickmann</description>
 <attribute name="NAME" x="180.34" y="165.1" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="180.34" y="160.02" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="JP5" gate="G$1" x="88.9" y="154.94" smashed="yes" rot="MR0">
+<instance part="JP3" gate="G$1" x="88.9" y="154.94" smashed="yes" rot="MR0">
 <attribute name="NAME" x="91.44" y="165.1" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="91.44" y="162.56" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
 </instance>
@@ -20864,7 +20864,7 @@ Wickmann</description>
 <segment>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
 <wire x1="88.9" y1="17.78" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
@@ -20911,7 +20911,7 @@ Wickmann</description>
 <segment>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 <wire x1="99.06" y1="17.78" x2="99.06" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -20964,7 +20964,7 @@ Wickmann</description>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 <wire x1="58.42" y1="20.32" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
@@ -21056,7 +21056,7 @@ Wickmann</description>
 <segment>
 <pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
 <wire x1="88.9" y1="30.48" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="VCC"/>
@@ -21077,7 +21077,7 @@ Wickmann</description>
 <segment>
 <pinref part="SUPPLY32" gate="G$1" pin="VCC"/>
 <wire x1="99.06" y1="30.48" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
@@ -21098,7 +21098,7 @@ Wickmann</description>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <wire x1="58.42" y1="30.48" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -21145,7 +21145,7 @@ Wickmann</description>
 <pinref part="K1" gate="2" pin="O"/>
 <wire x1="83.82" y1="243.84" x2="83.82" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="231.14" x2="91.44" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="231.14" x2="73.66" y2="231.14" width="0.1524" layer="91"/>
 <junction x="83.82" y="231.14"/>
 <label x="83.82" y="233.68" size="1.778" layer="95" rot="R90"/>
@@ -21207,7 +21207,7 @@ Wickmann</description>
 </net>
 <net name="V12V" class="2">
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="228.6" x2="83.82" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="228.6" x2="83.82" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -21232,7 +21232,7 @@ Wickmann</description>
 <junction x="99.06" y="210.82"/>
 <wire x1="99.06" y1="210.82" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="K1" gate="2" pin="P"/>
 <wire x1="96.52" y1="223.52" x2="96.52" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="220.98" x2="99.06" y2="220.98" width="0.1524" layer="91"/>
@@ -21350,7 +21350,7 @@ Wickmann</description>
 <label x="167.64" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="154.94" x2="152.4" y2="157.48" width="0.1524" layer="91" curve="90"/>
 <wire x1="152.4" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
 <label x="144.78" y="157.48" size="1.778" layer="95"/>
@@ -21402,7 +21402,7 @@ Wickmann</description>
 <wire x1="261.62" y1="213.36" x2="264.16" y2="215.9" width="0.1524" layer="91" curve="90"/>
 <label x="264.16" y="215.9" size="1.778" layer="95" rot="R90"/>
 <wire x1="264.16" y1="215.9" x2="264.16" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="223.52" x2="271.78" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -21502,7 +21502,7 @@ Wickmann</description>
 <label x="167.64" y="86.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="157.48" x2="152.4" y2="160.02" width="0.1524" layer="91" curve="90"/>
 <wire x1="152.4" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
 <label x="144.78" y="160.02" size="1.778" layer="95"/>
@@ -21678,7 +21678,7 @@ Wickmann</description>
 <label x="190.5" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="154.94" y1="152.4" x2="152.4" y2="154.94" width="0.1524" layer="91" curve="90"/>
 <wire x1="152.4" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <label x="144.78" y="154.94" size="1.778" layer="95"/>
@@ -21692,7 +21692,7 @@ Wickmann</description>
 <label x="195.58" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="154.94" y1="149.86" x2="152.4" y2="152.4" width="0.1524" layer="91" curve="90"/>
 <wire x1="152.4" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
 <label x="144.78" y="152.4" size="1.778" layer="95"/>
@@ -21706,7 +21706,7 @@ Wickmann</description>
 <label x="198.12" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
+<pinref part="J3" gate="G$1" pin="5"/>
 <wire x1="154.94" y1="147.32" x2="152.4" y2="149.86" width="0.1524" layer="91" curve="90"/>
 <wire x1="152.4" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
 <label x="144.78" y="149.86" size="1.778" layer="95"/>
@@ -21828,7 +21828,7 @@ Wickmann</description>
 </net>
 <net name="THSPUP" class="0">
 <segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="226.06" x2="264.16" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="RN2" gate="1" pin="9"/>
 <wire x1="264.16" y1="226.06" x2="264.16" y2="236.22" width="0.1524" layer="91"/>
@@ -22014,7 +22014,7 @@ Wickmann</description>
 <wire x1="101.6" y1="231.14" x2="104.14" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="231.14" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="AUX" class="0">
