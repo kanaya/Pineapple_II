@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21350,10 +21350,10 @@ Wickmann</description>
 <label x="167.64" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="154.94" x2="152.4" y2="157.48" width="0.1524" layer="91" curve="90"/>
-<wire x1="152.4" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
-<label x="144.78" y="157.48" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="5"/>
+<wire x1="154.94" y1="147.32" x2="152.4" y2="149.86" width="0.1524" layer="91" curve="90"/>
+<wire x1="152.4" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
+<label x="144.78" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -21502,10 +21502,10 @@ Wickmann</description>
 <label x="167.64" y="86.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="157.48" x2="152.4" y2="160.02" width="0.1524" layer="91" curve="90"/>
-<wire x1="152.4" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
-<label x="144.78" y="160.02" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="154.94" y1="149.86" x2="152.4" y2="152.4" width="0.1524" layer="91" curve="90"/>
+<wire x1="152.4" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
+<label x="144.78" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SS" class="0">
@@ -21678,10 +21678,10 @@ Wickmann</description>
 <label x="190.5" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="154.94" y1="152.4" x2="152.4" y2="154.94" width="0.1524" layer="91" curve="90"/>
-<wire x1="152.4" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
-<label x="144.78" y="154.94" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="157.48" x2="152.4" y2="160.02" width="0.1524" layer="91" curve="90"/>
+<wire x1="152.4" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<label x="144.78" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISP2" class="0">
@@ -21692,10 +21692,10 @@ Wickmann</description>
 <label x="195.58" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="154.94" y1="149.86" x2="152.4" y2="152.4" width="0.1524" layer="91" curve="90"/>
-<wire x1="152.4" y1="152.4" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
-<label x="144.78" y="152.4" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="154.94" x2="152.4" y2="157.48" width="0.1524" layer="91" curve="90"/>
+<wire x1="152.4" y1="157.48" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
+<label x="144.78" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DISP3" class="0">
@@ -21706,10 +21706,10 @@ Wickmann</description>
 <label x="198.12" y="81.28" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="154.94" y1="147.32" x2="152.4" y2="149.86" width="0.1524" layer="91" curve="90"/>
-<wire x1="152.4" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
-<label x="144.78" y="149.86" size="1.778" layer="95"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="154.94" y1="152.4" x2="152.4" y2="154.94" width="0.1524" layer="91" curve="90"/>
+<wire x1="152.4" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
+<label x="144.78" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTCT1" class="0">

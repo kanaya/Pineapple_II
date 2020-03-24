@@ -297,7 +297,7 @@ The core of Pineapple II is an _Arduino Micro._
 | B06 | GND              | LEDK       |
 | B07 | Vcc              | m1         |
 | B08 | GND              | m2         |
-| B09 | Vcc+R            | m3         |
+| B09 | Aux              | m3         |
 | B10 | MIDI IN Send     | m4         |
 | B11 | MIDI IN Return   | m5         |
 | B12 | MIDI TX+         | M1         |
@@ -314,11 +314,11 @@ The core of Pineapple II is an _Arduino Micro._
 
 | Pin | Meaning |
 |-----|---------|
-| X1  | MOSI    |
-| X2  | SCLK    |
-| X3  | DISP1   |
-| X4  | DISP2   |
-| X5  | DISP3   |
+| X1  | DISP1   |
+| X2  | DISP2   |
+| X3  | DISP3   |
+| X4  | MOSI    |
+| X5  | SCLK    |
 
 #### Power Connector
 
@@ -329,11 +329,10 @@ The core of Pineapple II is an _Arduino Micro._
 
 #### LED Connector
 
-| Pin | Meaning          |
-|-----|------------------|
-| L1  | Green LED (LED0) |
-| L2  | GND              |
-| L3  | Red LED (LED1)   |
+| Pin | Meaning |
+|-----|---------|
+| L1  | LED0    |
+| L2  | GND     |
 
 ## Experimental Feature
 
