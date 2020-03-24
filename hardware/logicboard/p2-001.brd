@@ -4026,7 +4026,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="1" x="20" y="36" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="22" y="36" size="0.8128" layer="27" ratio="10" rot="R90" align="bottom-center"/>
 </element>
-<element name="RN3" library="resistor-net" library_urn="urn:adsk.eagle:library:343" package="RN-5" package3d_urn="urn:adsk.eagle:package:24976/1" value="100" x="24" y="42" smashed="yes" rot="R270">
+<element name="RN3" library="resistor-net" library_urn="urn:adsk.eagle:library:343" package="RN-5" package3d_urn="urn:adsk.eagle:package:24976/1" value="10k" x="24" y="42" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="24" y="42" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="24" y="42" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24" y="49" size="1.27" layer="25" ratio="10" align="bottom-center"/>
