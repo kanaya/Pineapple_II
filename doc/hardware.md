@@ -231,6 +231,7 @@ The core of Pineapple II is an _Arduino Micro._
 |               | ANLG3    | A2            | G3-4/g3-R1         |
 |               | ANLG4    | A3            | G4-4/g4-R1         |
 |               | PDN      | A4            | ---                |
+|               | Vout     | ---           | Gx-1/gx-T          |
 |               | GND      | GND           | Gx-2/gx-S          |
 | **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2         |
 |               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2         |
@@ -241,13 +242,12 @@ The core of Pineapple II is an _Arduino Micro._
 | **Power**     | Vin      | VIN           | P1                 |
 |               | GND      | GND           | P2                 |
 |               | Vin+R    | ---           | SWLED              |
-|               | Vout     | ---           | Gx-1/gx-T          |
 |               | Vcc      | VCC           | m1, m3             |
-| **Display**   | MOSI     | MOSI          | Display 1          |
-|               | SCLK     | SCLK          | Display 2          |
-|               | DISP1    | D5 (PWM)      | Display 3          |
-|               | DISP2    | D7            | Display 4          |
-|               | DISP3    | D8/A8         | Display 5          |
+| **Display**   | DISP1    | D5 (PWM)      | X1                 |
+|               | DISP2    | D7            | X2                 |
+|               | DISP3    | D8/A8         | X3                 |
+|               | DISP4    | MOSI          | X4                 |
+|               | DISP5    | SCLK          | X5                 |
 | **Internal**  | THS      | A5            | Thermal sensor     |
 |               | RLY      | D4/A6         | Thermal breaker    |
 
@@ -297,7 +297,7 @@ The core of Pineapple II is an _Arduino Micro._
 | B06 | GND              | LEDK       |
 | B07 | Vcc              | m1         |
 | B08 | GND              | m2         |
-| B09 | Vcc+R            | m3         |
+| B09 | Aux              | m3         |
 | B10 | MIDI IN Send     | m4         |
 | B11 | MIDI IN Return   | m5         |
 | B12 | MIDI TX+         | M1         |
@@ -314,11 +314,11 @@ The core of Pineapple II is an _Arduino Micro._
 
 | Pin | Meaning |
 |-----|---------|
-| X1  | MOSI    |
-| X2  | SCLK    |
-| X3  | DISP1   |
-| X4  | DISP2   |
-| X5  | DISP3   |
+| X1  | DISP1   |
+| X2  | DISP2   |
+| X3  | DISP3   |
+| X4  | MOSI    |
+| X5  | SCLK    |
 
 #### Power Connector
 
@@ -329,11 +329,10 @@ The core of Pineapple II is an _Arduino Micro._
 
 #### LED Connector
 
-| Pin | Meaning          |
-|-----|------------------|
-| L1  | Green LED (LED0) |
-| L2  | GND              |
-| L3  | Red LED (LED1)   |
+| Pin | Meaning |
+|-----|---------|
+| L1  | LED0    |
+| L2  | GND     |
 
 ## Experimental Feature
 
