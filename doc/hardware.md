@@ -231,6 +231,7 @@ The core of Pineapple II is an _Arduino Micro._
 |               | ANLG3    | A2            | G3-4/g3-R1         |
 |               | ANLG4    | A3            | G4-4/g4-R1         |
 |               | PDN      | A4            | ---                |
+|               | Vout     | ---           | Gx-1/gx-T          |
 |               | GND      | GND           | Gx-2/gx-S          |
 | **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2         |
 |               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2         |
@@ -241,13 +242,12 @@ The core of Pineapple II is an _Arduino Micro._
 | **Power**     | Vin      | VIN           | P1                 |
 |               | GND      | GND           | P2                 |
 |               | Vin+R    | ---           | SWLED              |
-|               | Vout     | ---           | Gx-1/gx-T          |
 |               | Vcc      | VCC           | m1, m3             |
-| **Display**   | MOSI     | MOSI          | Display 1          |
-|               | SCLK     | SCLK          | Display 2          |
-|               | DISP1    | D5 (PWM)      | Display 3          |
-|               | DISP2    | D7            | Display 4          |
-|               | DISP3    | D8/A8         | Display 5          |
+| **Display**   | DISP1    | D5 (PWM)      | X1                 |
+|               | DISP2    | D7            | X2                 |
+|               | DISP3    | D8/A8         | X3                 |
+|               | DISP4    | MOSI          | X4                 |
+|               | DISP5    | SCLK          | X5                 |
 | **Internal**  | THS      | A5            | Thermal sensor     |
 |               | RLY      | D4/A6         | Thermal breaker    |
 
