@@ -25762,7 +25762,7 @@ part number 2062-2P from STA</description>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+9V" device=""/>
 <part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+9V" device=""/>
 <part name="SUPPLY37" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+9V" device=""/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="PWRSEL"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -27493,7 +27493,7 @@ part number 2062-2P from STA</description>
 <label x="274.32" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+9V" class="0">
+<net name="+9V" class="2">
 <segment>
 <pinref part="SV2" gate="-1" pin="S"/>
 <wire x1="337.82" y1="233.68" x2="340.36" y2="233.68" width="0.1524" layer="91"/>
@@ -27556,7 +27556,7 @@ part number 2062-2P from STA</description>
 <label x="208.28" y="215.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="VDD" class="0">
+<net name="VDD" class="2">
 <segment>
 <pinref part="MC1" gate="G$1" pin="9V"/>
 <wire x1="175.26" y1="119.38" x2="172.72" y2="116.84" width="0.1524" layer="91" curve="90"/>
@@ -27593,19 +27593,18 @@ part number 2062-2P from STA</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,152.4,38.1,IC4D,O,,,,"/>
-<approved hash="101,1,152.4,25.4,IC4E,O,,,,"/>
-<approved hash="101,1,152.4,12.7,IC4F,O,,,,"/>
+<approved hash="101,1,152.4,38.1,IC3D,O,,,,"/>
+<approved hash="101,1,152.4,25.4,IC3E,O,,,,"/>
+<approved hash="101,1,152.4,12.7,IC3F,O,,,,"/>
 <approved hash="104,1,132.08,180.34,U1,VDD,VCC,,,"/>
-<approved hash="104,1,68.58,12.7,IC2P,VSS,GND,,,"/>
-<approved hash="104,1,68.58,27.94,IC2P,VDD,VCC,,,"/>
-<approved hash="104,1,200.66,170.18,JQ1,VCC,VDD,,,"/>
-<approved hash="106,1,203.2,111.76,AREF,,,,,"/>
+<approved hash="104,1,58.42,12.7,IC1P,VSS,GND,,,"/>
+<approved hash="104,1,58.42,27.94,IC1P,VDD,VCC,,,"/>
+<approved hash="104,1,200.66,170.18,JQ1,VCC,+3V3,,,"/>
 <approved hash="106,1,170.18,111.76,MISO,,,,,"/>
 <approved hash="106,1,170.18,86.36,SS,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
 <approved hash="113,1,344.572,233.68,SV2,,,,,"/>
-<approved hash="113,1,23.728,210.82,SV1,,,,,"/>
+<approved hash="113,1,23.728,76.2,SV1,,,,,"/>
 <approved hash="113,1,152.4,38.1,X1,,,,,"/>
 <approved hash="113,1,152.4,25.4,X2,,,,,"/>
 <approved hash="113,1,152.4,12.7,X3,,,,,"/>
