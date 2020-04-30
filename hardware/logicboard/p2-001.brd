@@ -420,7 +420,7 @@
 <text x="63" y="60" size="1" layer="21" rot="R90" align="center">DISP</text>
 <text x="9" y="15" size="1" layer="21" rot="R90" align="center">RLY</text>
 <text x="9" y="9" size="1" layer="21" rot="R90" align="center">LED</text>
-<text x="36" y="2" size="1.27" layer="21" align="bottom-center">Pineapple II</text>
+<text x="36" y="2.5" size="1.27" layer="21" align="bottom-center">Pineapple II</text>
 <text x="1" y="58" size="1" layer="26" rot="MR0" align="center-right">GND</text>
 <text x="1" y="56" size="1" layer="26" rot="MR0" align="center-right">Vcc</text>
 <text x="1" y="16" size="1" layer="26" rot="MR0" align="center-right">RLY</text>
