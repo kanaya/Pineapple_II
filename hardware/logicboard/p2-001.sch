@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -25296,8 +25296,8 @@ part number 2062-2P from STA</description>
 </plain>
 <instances>
 <instance part="MC1" gate="G$1" x="187.96" y="99.06" smashed="yes" rot="R180"/>
-<instance part="SUPPLY17" gate="G$1" x="109.22" y="33.02" smashed="yes"/>
-<instance part="SUPPLY18" gate="GND" x="109.22" y="7.62" smashed="yes"/>
+<instance part="SUPPLY17" gate="G$1" x="99.06" y="33.02" smashed="yes"/>
+<instance part="SUPPLY18" gate="GND" x="99.06" y="7.62" smashed="yes"/>
 <instance part="OK1" gate="A" x="251.46" y="160.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="251.46" y="167.64" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="251.46" y="152.4" size="1.778" layer="96" align="bottom-center"/>
@@ -25497,10 +25497,10 @@ part number 2062-2P from STA</description>
 <instance part="SUPPLY9" gate="G$1" x="177.8" y="241.3" smashed="yes">
 <attribute name="VALUE" x="177.8" y="246.38" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="119.38" y="33.02" smashed="yes"/>
-<instance part="SUPPLY20" gate="G$1" x="88.9" y="33.02" smashed="yes"/>
-<instance part="SUPPLY21" gate="GND" x="119.38" y="7.62" smashed="yes"/>
-<instance part="SUPPLY22" gate="GND" x="88.9" y="7.62" smashed="yes"/>
+<instance part="SUPPLY16" gate="G$1" x="109.22" y="33.02" smashed="yes"/>
+<instance part="SUPPLY20" gate="G$1" x="119.38" y="33.02" smashed="yes"/>
+<instance part="SUPPLY21" gate="GND" x="109.22" y="7.62" smashed="yes"/>
+<instance part="SUPPLY22" gate="GND" x="119.38" y="7.62" smashed="yes"/>
 <instance part="RN2" gate="1" x="185.42" y="20.32" smashed="yes">
 <attribute name="NAME" x="185.42" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="185.42" y="17.78" size="1.778" layer="96" align="top-center"/>
@@ -25521,8 +25521,8 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="208.28" y="53.34" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="208.28" y="50.8" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY25" gate="G$1" x="78.74" y="33.02" smashed="yes"/>
-<instance part="SUPPLY26" gate="GND" x="78.74" y="7.62" smashed="yes"/>
+<instance part="SUPPLY25" gate="G$1" x="68.58" y="33.02" smashed="yes"/>
+<instance part="SUPPLY26" gate="GND" x="68.58" y="7.62" smashed="yes"/>
 <instance part="IC1" gate="P" x="58.42" y="20.32" smashed="yes">
 <attribute name="NAME" x="58.42" y="20.32" size="1.778" layer="95" align="bottom-center"/>
 </instance>
@@ -25552,8 +25552,8 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="144.78" y="144.78" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="144.78" y="139.7" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY12" gate="GND" x="99.06" y="7.62" smashed="yes"/>
-<instance part="SUPPLY32" gate="G$1" x="99.06" y="33.02" smashed="yes"/>
+<instance part="SUPPLY12" gate="GND" x="78.74" y="7.62" smashed="yes"/>
+<instance part="SUPPLY32" gate="G$1" x="78.74" y="33.02" smashed="yes"/>
 <instance part="JP4" gate="G$1" x="48.26" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.26" y="25.4" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="48.26" y="22.86" size="1.778" layer="96" align="bottom-center"/>
@@ -25574,25 +25574,25 @@ part number 2062-2P from STA</description>
 <attribute name="NAME" x="60.96" y="205.74" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="60.96" y="200.66" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="78.74" y="22.86" smashed="yes">
+<instance part="C1" gate="G$1" x="68.58" y="22.86" smashed="yes">
+<attribute name="NAME" x="66.04" y="22.86" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="66.04" y="17.78" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C3" gate="G$1" x="78.74" y="22.86" smashed="yes">
 <attribute name="NAME" x="76.2" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="76.2" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C3" gate="G$1" x="99.06" y="22.86" smashed="yes">
+<instance part="C10" gate="G$1" x="119.38" y="22.86" smashed="yes">
+<attribute name="NAME" x="116.84" y="22.86" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="116.84" y="17.78" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C5" gate="G$1" x="99.06" y="22.86" smashed="yes">
 <attribute name="NAME" x="96.52" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="96.52" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C10" gate="G$1" x="88.9" y="22.86" smashed="yes">
-<attribute name="NAME" x="86.36" y="22.86" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="86.36" y="17.78" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="C5" gate="G$1" x="109.22" y="22.86" smashed="yes">
+<instance part="C6" gate="G$1" x="109.22" y="22.86" smashed="yes">
 <attribute name="NAME" x="106.68" y="22.86" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="106.68" y="17.78" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="C6" gate="G$1" x="119.38" y="22.86" smashed="yes">
-<attribute name="NAME" x="116.84" y="22.86" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="116.84" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="C7" gate="G$1" x="91.44" y="205.74" smashed="yes">
 <attribute name="NAME" x="88.9" y="205.74" size="1.778" layer="95" align="bottom-center"/>
@@ -25659,12 +25659,12 @@ part number 2062-2P from STA</description>
 <instance part="SUPPLY41" gate="G$1" x="132.08" y="91.44" smashed="yes">
 <attribute name="VALUE" x="132.08" y="96.52" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="68.58" y="22.86" smashed="yes">
-<attribute name="NAME" x="70.104" y="23.241" size="1.778" layer="95"/>
-<attribute name="VALUE" x="70.104" y="18.161" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="88.9" y="22.86" smashed="yes">
+<attribute name="NAME" x="86.36" y="22.86" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="86.36" y="17.78" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="68.58" y="33.02" smashed="yes"/>
-<instance part="SUPPLY42" gate="GND" x="68.58" y="7.62" smashed="yes"/>
+<instance part="SUPPLY14" gate="G$1" x="88.9" y="33.02" smashed="yes"/>
+<instance part="SUPPLY42" gate="GND" x="88.9" y="7.62" smashed="yes"/>
 <instance part="J2" gate="G$1" x="101.6" y="200.66" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="96.774" y="198.12" size="1.778" layer="96" font="vector" rot="MR90"/>
 <attribute name="NAME" x="107.188" y="198.12" size="1.778" layer="95" font="vector" rot="MR90"/>
@@ -25791,7 +25791,7 @@ part number 2062-2P from STA</description>
 <net name="GND" class="1">
 <segment>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="109.22" y1="17.78" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="17.78" x2="99.06" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -25846,17 +25846,17 @@ part number 2062-2P from STA</description>
 </segment>
 <segment>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="119.38" y1="17.78" x2="119.38" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="17.78" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="17.78" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="17.78" x2="119.38" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
-<wire x1="78.74" y1="17.78" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="17.78" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -25898,7 +25898,7 @@ part number 2062-2P from STA</description>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<wire x1="99.06" y1="17.78" x2="99.06" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="17.78" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -25960,7 +25960,7 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY42" gate="GND" pin="GND"/>
-<wire x1="68.58" y1="17.78" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="17.78" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -26003,7 +26003,7 @@ part number 2062-2P from STA</description>
 <net name="VCC" class="2">
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="VCC"/>
-<wire x1="109.22" y1="30.48" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -26060,17 +26060,17 @@ part number 2062-2P from STA</description>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
-<wire x1="119.38" y1="30.48" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="30.48" x2="109.22" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
-<wire x1="88.9" y1="30.48" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="30.48" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="VCC"/>
-<wire x1="78.74" y1="30.48" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="30.48" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -26086,7 +26086,7 @@ part number 2062-2P from STA</description>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="G$1" pin="VCC"/>
-<wire x1="99.06" y1="30.48" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="30.48" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -26139,7 +26139,7 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="SUPPLY14" gate="G$1" pin="VCC"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="30.48" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="30.48" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY43" gate="G$1" pin="VCC"/>
@@ -26968,6 +26968,8 @@ part number 2062-2P from STA</description>
 <approved hash="104,1,132.08,180.34,U1,VDD,VCC,,,"/>
 <approved hash="104,1,58.42,12.7,IC1P,VSS,GND,,,"/>
 <approved hash="104,1,58.42,27.94,IC1P,VDD,VCC,,,"/>
+<approved hash="106,1,205.74,111.76,+3V3,,,,,"/>
+<approved hash="106,1,170.18,241.3,+3V3,,,,,"/>
 <approved hash="106,1,170.18,111.76,MISO,,,,,"/>
 <approved hash="106,1,170.18,86.36,SS,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
