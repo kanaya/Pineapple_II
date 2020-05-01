@@ -231,6 +231,7 @@ The core of Pineapple II is an _Arduino Micro._
 |               | ANLG3    | A2            | G3-4/g3-R1         |
 |               | ANLG4    | A3            | G4-4/g4-R1         |
 |               | PDN      | A4            | ---                |
+|               | AREF     | AREF          | ---                |
 |               | Vout     | ---           | Gx-1/gx-T          |
 |               | GND      | GND           | Gx-2/gx-S          |
 | **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2         |
@@ -281,7 +282,7 @@ The core of Pineapple II is an _Arduino Micro._
 | F22 | SCL        | G3-6       |
 | F23 | SDA        | G4-5       |
 | F24 | SCL        | G4-6       |
-| F25 | LED0       | ---        |
+| F25 | AREF       | ---        |
 | F26 | GND        | ---        |
 
 
