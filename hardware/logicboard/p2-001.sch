@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -25233,7 +25233,7 @@ part number 2062-2P from STA</description>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="160"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN"/>
+<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN"/>
 <part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="X1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
@@ -25554,7 +25554,7 @@ part number 2062-2P from STA</description>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="78.74" y="7.62" smashed="yes"/>
 <instance part="SUPPLY32" gate="G$1" x="78.74" y="33.02" smashed="yes"/>
-<instance part="JP4" gate="G$1" x="48.26" y="20.32" smashed="yes" rot="R90">
+<instance part="JP3" gate="G$1" x="48.26" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.26" y="25.4" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="48.26" y="22.86" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -25902,7 +25902,7 @@ part number 2062-2P from STA</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <wire x1="48.26" y1="17.78" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 </segment>
