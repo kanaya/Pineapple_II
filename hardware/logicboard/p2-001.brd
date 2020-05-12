@@ -203,10 +203,10 @@
 <text x="71" y="62" size="1" layer="26" rot="MR0" align="center-left">GND</text>
 <text x="71" y="64" size="1" layer="26" rot="MR0" align="center-left">DC9V</text>
 <text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
-<wire x1="5" y1="46.95" x2="26" y2="46.95" width="0.15" layer="21" style="dashdot"/>
-<wire x1="26" y1="46.95" x2="26" y2="66" width="0.15" layer="21" style="dashdot"/>
-<wire x1="26" y1="66" x2="5" y2="66" width="0.15" layer="21" style="dashdot"/>
-<wire x1="5" y1="66" x2="5" y2="46.95" width="0.15" layer="21" style="dashdot"/>
+<wire x1="6" y1="46.95" x2="25.05" y2="46.95" width="0.15" layer="21" style="dashdot"/>
+<wire x1="25.05" y1="46.95" x2="25.05" y2="66" width="0.15" layer="21" style="dashdot"/>
+<wire x1="25.05" y1="66" x2="6" y2="66" width="0.15" layer="21" style="dashdot"/>
+<wire x1="6" y1="66" x2="6" y2="46.95" width="0.15" layer="21" style="dashdot"/>
 <hole x="44" y="69" drill="3.2"/>
 <hole x="44" y="3" drill="3.2"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="41"/>
