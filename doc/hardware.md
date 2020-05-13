@@ -274,23 +274,13 @@ The core of Pineapple II is an _Arduino Micro._
 | F14 | GND        | G4-2/g4-S  |
 | F15 | Detector 4 | G4-3/g4-R2 |
 | F16 | Analog 4   | G4-4/g4-R1 |
-| F17 | SDA        | G1-5       |
-| F18 | SCL        | G1-6       |
-| F19 | SDA        | G2-5       |
-| F20 | SCL        | G2-6       |
-| F21 | SDA        | G3-5       |
-| F22 | SCL        | G3-6       |
-| F23 | SDA        | G4-5       |
-| F24 | SCL        | G4-6       |
-| F25 | AREF       | ---        |
-| F26 | GND        | ---        |
 
 
 #### Back Connector (MIL 20p Connector)
 
 | Pin | Meaning          | Connect to |
 |-----|------------------|------------|
-| B01 | DC12V            | PWR1       |
+| B01 | DC9V             | PWR1       |
 | B02 | GND              | PWR2       |
 | B03 | Reset            | SW1        |
 | B04 | GND              | SW2        |
