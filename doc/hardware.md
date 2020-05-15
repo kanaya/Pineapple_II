@@ -221,7 +221,6 @@ The core of Pineapple II is an _Arduino Micro._
 | **MIDI**      | TX       | D1 (TX)       | M1, M3, M4, M5  | TX              |
 |               | GND      | GND           | M2              | GND             |
 |               | RX       | D0 (RX)       | m4, m5          | RX              |
-|               | AUX      | D11 (PWM)     | m3              | (snip)          |
 |               | Vcc      | VCC           | m1              | Vcc             |
 |               | GND      | GND           | m2              | GND             |
 | **I2C**       | SDA      | D2            | Gx-5            | Qwiic           |
@@ -239,6 +238,7 @@ The core of Pineapple II is an _Arduino Micro._
 |               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2      | D10/A10 (PWM)   |
 |               | DTCT4    | D12/A11       | G4-3/g4-R2      | D4/A6           |
 | **Indicator** | LED0     | D13 (PWM)     | Green LED       | D3 (PWM)        |
+|               | LED1     | D11 (PWM)     | Red LED         |                 |
 | **Reset**     | RST      | Reset         | SW              | RST             |
 | **Power**     | Vin      | VIN           | P1              | 5V              |
 |               | GND      | GND           | P2              | GND             |
