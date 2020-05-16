@@ -288,7 +288,7 @@ The core of Pineapple II is an _Arduino Micro._
 | B06 | GND              | LEDK       |
 | B07 | Vcc              | m1         |
 | B08 | GND              | m2         |
-| B09 | Aux              | m3         |
+| B09 | NC               | NC         |
 | B10 | MIDI IN Send     | m4         |
 | B11 | MIDI IN Return   | m5         |
 | B12 | MIDI TX+         | M1         |
