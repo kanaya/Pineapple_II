@@ -256,24 +256,24 @@ The core of Pineapple II is an _Arduino Micro._
 
 #### Front Connector (MIL 26p Connector)
 
-| Pin | Meaning    | Connect to |
-|-----|------------|------------|
-| F01 | Vout       | G1-1/g1-T  |
-| F02 | GND        | G1-2/g1-S  |
-| F03 | Detector 1 | G1-3/g1-R2 |
-| F04 | Analog 1   | G1-4/g1-R1 |
-| F05 | Vout       | G2-1/g2-T  |
-| F06 | GND        | G2-2/g2-S  |
-| F07 | Detector 2 | G2-3/g2-R2 |
-| F08 | Analog 2   | G2-4/g2-R1 |
-| F09 | Vout       | G3-1/g3-T  |
-| F10 | GND        | G3-2/g3-S  |
-| F11 | Detector 3 | G3-3/g3-R2 |
-| F12 | Analog 3   | G3-4/g3-R1 |
-| F13 | Vout       | G4-1/g4-T  |
-| F14 | GND        | G4-2/g4-S  |
-| F15 | Detector 4 | G4-3/g4-R2 |
-| F16 | Analog 4   | G4-4/g4-R1 |
+| Pin | Meaning    | Connect to | Connect to (Lite) |
+|-----|------------|------------|-------------------|
+| F01 | Vout       | G1-1       | g1-T              |
+| F02 | GND        | G1-2       | g1-S              |
+| F03 | Detector 1 | G1-3       | g1-R2             |
+| F04 | Analog 1   | G1-4       | g1-R1             |
+| F05 | Vout       | G2-1       | g2-T              |
+| F06 | GND        | G2-2/g2-S  | g2-S              |
+| F07 | Detector 2 | G2-3/g2-R2 | g2-R2             |
+| F08 | Analog 2   | G2-4/g2-R1 | g2-R1             |
+| F09 | Vout       | G3-1/g3-T  | g3-T              |
+| F10 | GND        | G3-2/g3-S  | g3-S              |
+| F11 | Detector 3 | G3-3/g3-R2 | g3-R2             |
+| F12 | Analog 3   | G3-4/g3-R1 | g3-R1             |
+| F13 | Vout       | G4-1/g4-T  | g4-T              |
+| F14 | GND        | G4-2/g4-S  | g4-S              |
+| F15 | Detector 4 | G4-3/g4-R2 | g4-R2             |
+| F16 | Analog 4   | G4-4/g4-R1 | g4-R1             |
 
 
 #### Back Connector (MIL 20p Connector)
@@ -286,20 +286,20 @@ The core of Pineapple II is an _Arduino Micro._
 | B04 | GND              | SW2        |
 | B05 | PWRLED           | LEDA       |
 | B06 | GND              | LEDK       |
-| B07 | Vcc              | m1         |
-| B08 | GND              | m2         |
-| B09 | NC               | NC         |
-| B10 | MIDI IN Send     | m4         |
-| B11 | MIDI IN Return   | m5         |
-| B12 | MIDI TX+         | M1         |
-| B13 | GND              | M2         |
-| B14 | MIDI TX-         | M3         |
-| B15 | MIDI OUT Send    | M4         |
-| B16 | MIDI OUT Return  | M5         |
-| B17 | MIDI OUT2 Send   | ---        |
-| B18 | MIDI OUT2 Return | ---        |
-| B19 | MIDI THRU Send   | ---        |
-| B20 | MIDI THRU Return | ---        |
+| B07 | MIDI IN Send     | m4         |
+| B08 | MIDI IN Return   | m5         |
+| B09 | MIDI RX+         | m6         |
+| B10 | MIDI RX Detect   | m7         |
+| B11 | MIDI RX-         | m8         |
+| B12 | GND              | M2         |
+| B13 | MIDI OUT Send    | M4         |
+| B14 | MIDI OUT Return  | M5         |
+| B15 | MIDI TX+         | M6         |
+| B16 | MIDI TX-         | M8         |
+| B17 | MIDI OUT2 Send   | (m4)       |
+| B18 | MIDI OUT2 Return | (m5)       |
+| B19 | MIDI THRU Send   | (M4)       |
+| B20 | MIDI THRU Return | (M5)       |
 
 #### Display Connector
 
@@ -323,7 +323,8 @@ The core of Pineapple II is an _Arduino Micro._
 | Pin | Meaning |
 |-----|---------|
 | L1  | LED0    |
-| L2  | GND     |
+| L2  | LED1    |
+| L3  | GND     |
 
 ## Experimental Feature
 
