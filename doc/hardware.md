@@ -245,17 +245,17 @@ The core of Pineapple II is an _Arduino Micro._
 
 | Pin | Meaning |
 |-----|---------|
-| X1  | Vcc     |
-| X2  | D7      |
+| X1  | GND     |
+| X2  | SDA     |
 | X3  | SCL     |
-| X4  | SDA     |
-| X5  | GND     |
+| X4  | D7      |
+| X5  | Vcc     |
 
 | Pin | Meaning |
 |-----|---------|
-| Y1  | DISP1   |
+| Y1  | GND     |
 | Y2  | DISP2   |
-| Y3  | GND     |
+| Y3  | DISP1   |
 
 #### Power Connector
 
