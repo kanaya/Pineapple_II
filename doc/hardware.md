@@ -59,11 +59,14 @@ Table. MIDI Out+ Pinout
 
 | Pin | Meaning |
 |-----|---------|
-| M1  | TX+     |
+| M1  | NC      |
 | M2  | GND     |
-| M3  | TX-     |
+| M3  | NC      |
 | M4  | Send    |
 | M5  | Return  |
+| M6  | TX+     |
+| M7  | NC      |
+| M8  | TX-     |
 
 Pineapple II has an alternative operating mode that _receives_ MIDI signal and drives up to 4 digital outputs. Pineapple II's MIDI In port has power supply (pin 1 and pin 2) so that it can drive a long-distance receiver without installing separate power supply.
 
@@ -71,13 +74,15 @@ Table. MIDI In+ Pinout
 
 | Pin | Meaning  |
 |-----|----------|
-| m1  | Vcc (5V) |
+| m1  | NC       |
 | m2  | GND      |
-| m3  | Aux      |
+| m3  | NC       |
 | m4  | Send     |
 | m5  | Return   |
+| m6  | RX+      |
+| m7  | Detect   |
+| m8  | RX-      |
 
-If the pin 3 of MIDI In+ is connected to GND at boot time, Pineapple II switches to _alternative_ mode.
 
 Table. Working mode of Pineapple II
 
@@ -103,9 +108,9 @@ Pineapple II also has SparkFun's _Qwiic_ compatible connector on logicboard. Qwi
 
 Table. Qwiic-compatible connector.
 
-| Pin | Meaning      |
-|-----|--------------|
-| Q1  | GND          |
+| Pin | Meaning    |
+|-----|------------|
+| Q1  | GND        |
 | Q2  | Vdd (3.3V) |
 | Q3  | SDA (3.3V) |
 | Q4  | SCL (3.3V) |
@@ -163,11 +168,14 @@ The MIDI Out+ connector is upper compatible to the regular MIDI Out connector, a
 
 | MIDI Pin | Meaning |
 |----------|---------|
-| M1       | TX+     |
+| M1       | NC      |
 | M2       | GND     |
-| M3       | TX-     |
+| M3       | NC      |
 | M4       | Send    |
 | M5       | Return  |
+| M6       | TX+     |
+| M7       | NC      |
+| M8       | TX-     |
 
 Some manufacturer uses non-standard 1/8-inch (3.5mm) MIDI jacks and allows regular audio cables to connect between MIDI systems. The audio-plug version of MIDI Out connector should be looked like as follows.
 
@@ -183,11 +191,15 @@ The MIDI In+ connector is upper compatible to the regular MIDI In connector, and
 
 | MIDI Pin | Meaning |
 |----------|---------|
-| m1       | Vcc     |
+| m1       | NC      |
 | m2       | GND     |
-| m3       | Aux     |
+| m3       | NC      |
 | m4       | Send    |
 | m5       | Return  |
+| m6       | RX+     |
+| m7       | Detect  |
+| m8       | RX-     |
+
 
 The audio-plug version of MIDI In should be looked like as follows.
 
@@ -301,15 +313,23 @@ The core of Pineapple II is an _Arduino Micro._
 | B19 | MIDI THRU Send   | (M4)       |
 | B20 | MIDI THRU Return | (M5)       |
 
-#### Display Connector
+* m2 must be connected to GND
+
+#### I2C/Display Connector
 
 | Pin | Meaning |
 |-----|---------|
-| X1  | DISP1   |
-| X2  | DISP2   |
-| X3  | DISP3   |
-| X4  | MOSI    |
-| X5  | SCLK    |
+| X1  | Vcc     |
+| X2  | D7      |
+| X3  | SCL     |
+| X4  | SDA     |
+| X5  | GND     |
+
+| Pin | Meaning |
+|-----|---------|
+| Y1  | DISP1   |
+| Y2  | DISP2   |
+| Y3  | GND     |
 
 #### Power Connector
 
