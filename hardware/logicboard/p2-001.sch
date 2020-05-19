@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -28322,7 +28322,7 @@ Part Number: HA-522</description>
 <attribute name="NAME" x="25.4" y="14.732" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
 <instance part="+3V2" gate="G$1" x="40.64" y="27.94" smashed="yes">
-<attribute name="VALUE" x="38.1" y="22.86" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="43.18" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="73.66" y="215.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="73.66" y="210.82" size="1.778" layer="95" rot="MR0" align="bottom-center"/>
@@ -28553,11 +28553,9 @@ Part Number: HA-522</description>
 </segment>
 <segment>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
-<wire x1="38.1" y1="17.78" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="J4" gate="J$1" pin="2"/>
-<wire x1="38.1" y1="15.24" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="3"/>
@@ -29680,6 +29678,7 @@ Part Number: HA-522</description>
 <wire x1="152.4" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="137.16" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
+<label x="144.78" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -29692,11 +29691,12 @@ Part Number: HA-522</description>
 <approved hash="104,1,144.78,180.34,U1,VDD,VCC,,,"/>
 <approved hash="104,1,58.42,12.7,IC2P,VSS,GND,,,"/>
 <approved hash="104,1,58.42,27.94,IC2P,VDD,VCC,,,"/>
-<approved hash="106,1,205.74,111.76,+3V3,,,,,"/>
 <approved hash="106,1,170.18,111.76,MISO,,,,,"/>
+<approved hash="106,1,167.64,86.36,MOSI,,,,,"/>
+<approved hash="106,1,167.64,111.76,SCLK,,,,,"/>
 <approved hash="106,1,170.18,86.36,SS,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
-<approved hash="113,1,364.892,231.14,SV2,,,,,"/>
+<approved hash="113,1,364.892,208.28,SV2,,,,,"/>
 <approved hash="113,1,152.4,38.1,X1,,,,,"/>
 <approved hash="113,1,152.4,25.4,X2,,,,,"/>
 <approved hash="113,1,152.4,12.7,X3,,,,,"/>

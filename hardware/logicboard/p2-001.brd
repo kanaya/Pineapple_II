@@ -172,7 +172,6 @@
 <vertex x="42" y="33"/>
 </polygon>
 <rectangle x1="38.75" y1="3" x2="39.25" y2="5" layer="21"/>
-<text x="9" y="10" size="1" layer="25" rot="R90" align="center">LED</text>
 <text x="36" y="70" size="1.27" layer="25" align="bottom-center">Pineapple II</text>
 <text x="5" y="56.5" size="1" layer="26" rot="MR0" align="center-right">GND</text>
 <text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LEDK</text>
@@ -241,7 +240,6 @@ Module (12708)</text>
 <circle x="40.5" y="27.905" radius="0.2" width="0.4" layer="22"/>
 <polygon width="0.2" layer="21">
 <vertex x="60" y="56"/>
-<vertex x="59.5" y="54"/>
 <vertex x="59.5" y="54"/>
 <vertex x="60.5" y="54"/>
 </polygon>
@@ -5623,6 +5621,18 @@ design rules under a new name.</description>
 <via x="39.0144" y="7.7724" extent="1-16" drill="0.3048"/>
 <via x="35.5092" y="19.7358" extent="1-16" drill="0.3048"/>
 <via x="35.2044" y="43.053" extent="1-16" drill="0.3048"/>
+<polygon width="0.2" layer="1">
+<vertex x="-1" y="-1"/>
+<vertex x="73" y="-1"/>
+<vertex x="73" y="73"/>
+<vertex x="-1" y="73"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
