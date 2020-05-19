@@ -18,8 +18,8 @@ Table. GeekPort II Pinout
 |-----|--------------|
 | G1  | Vcc (5V)     |
 | G2  | GND          |
-| G3  | Detector     |
-| G4  | Anaolg Input |
+| G3  | Anaolg Input |
+| G4  | Detector     |
 | G5  | I2C SDA (5V) |
 | G6  | I2C SCL (5V) |
 
@@ -28,17 +28,6 @@ The GeekPort II uses Hirose's HR-10A connector.
 If Detector is open (not connected to anything electrically), Pineapple II assumes that the sensor works in **resistance mode.** In this mode a _pull-down_ resistor attached to Analog Input is activated, and thus even if Analog Input is open, it means zero input.
 
 If Detector is connected to GND, Pineapple II assumes that the sensor works in **voltage mode.**
-
-If Detector is connected to GND via 4.7[kOhm] resistance, Pineapple II deactivate Analog In and activate I2C connection instead (**digital mode**). Resistance other than 4.7[kOhm] is reserved for future use. E.g. 1[kOhm] resistance is resereved for 3.3V I2C connection.
-
-Table. Sensor modes of Pineapple II
-
-| Detector (G3)       | Mode                              |
-|---------------------|-----------------------------------|
-| Open                | Current mode.                     |
-| GND                 | Voltage mode.                     |
-| 4.7[kOhm] pull-down | Digital mode.                     |
-| 1[kOhm] pull-down   | Reserved for 3.3V I2C connection. |
 
 Some implementation of Pineapple II has four GeekPort II _Lite_ instead of the original GeekPort II. The _Lite_ version has 4 pins as follows.
 
@@ -52,63 +41,6 @@ Table. GeekPort _Lite_ Pinout
 | g4  | GND       | Sleeve   |
 
 The GeekPort II _Lite_ uses 1/8-inch (3.5mm) phone jack.
-
-Pineapple II's MIDI Out port has long-distance connection capability. A specially designed twisted-pair cable (that uses pin 1 and pin 3 of MIDI Out) can carry MIDI signals more than 100m. Design of a long-distance receiver is available with the schematic of Pineapple II.
-
-Table. MIDI Out+ Pinout
-
-| Pin | Meaning |
-|-----|---------|
-| M1  | TX+     |
-| M2  | GND     |
-| M3  | TX-     |
-| M4  | Send    |
-| M5  | Return  |
-
-Pineapple II has an alternative operating mode that _receives_ MIDI signal and drives up to 4 digital outputs. Pineapple II's MIDI In port has power supply (pin 1 and pin 2) so that it can drive a long-distance receiver without installing separate power supply.
-
-Table. MIDI In+ Pinout
-
-| Pin | Meaning  |
-|-----|----------|
-| m1  | Vcc (5V) |
-| m2  | GND      |
-| m3  | Aux      |
-| m4  | Send     |
-| m5  | Return   |
-
-If the pin 3 of MIDI In+ is connected to GND at boot time, Pineapple II switches to _alternative_ mode.
-
-Table. Working mode of Pineapple II
-
-| Aux (m3) | Mode                                      |
-|----------|-------------------------------------------|
-| Open     | Default mode. Sensor to MIDI Out.         |
-| GND      | Alternative mode. MIDI In to digital out. |
-
-When Pineapple II operates in _alternative_ mode, GeekPort II works as follows.
-
-Table. GeekPort II in _alternative_ mode
-
-| Pin | Meaning        |
-|-----|----------------|
-| G1  | Vcc (5V)       |
-| G2  | GND            |
-| G3  | Digital out    |
-| G4  | N/A            |
-| G5  | I2C SDA (5V)   |
-| G6  | I2C SCL (5V)   |
-
-Pineapple II also has SparkFun's _Qwiic_ compatible connector on logicboard. Qwiic compatible sensors (3.3V) can be connected to the logicboard.
-
-Table. Qwiic-compatible connector.
-
-| Pin | Meaning      |
-|-----|--------------|
-| Q1  | GND          |
-| Q2  | Vdd (3.3V) |
-| Q3  | SDA (3.3V) |
-| Q4  | SCL (3.3V) |
 
 ## Design
 
@@ -159,15 +91,18 @@ The maintenance port is electronically compatible with USB 2.0.
 
 #### MIDI Out+ (DIN connector)
 
-The MIDI Out+ connector is upper compatible to the regular MIDI Out connector, and has extra TX+ and TX- pins at M1 and M3 respectively.
+The MIDI Out+ connector is upper compatible to the regular MIDI Out connector, and has extra TX+ and TX- pins at M6 and M8 respectively.
 
 | MIDI Pin | Meaning |
 |----------|---------|
-| M1       | TX+     |
+| M1       | NC      |
 | M2       | GND     |
-| M3       | TX-     |
+| M3       | NC      |
 | M4       | Send    |
 | M5       | Return  |
+| M6       | TX+     |
+| M7       | NC      |
+| M8       | TX-     |
 
 Some manufacturer uses non-standard 1/8-inch (3.5mm) MIDI jacks and allows regular audio cables to connect between MIDI systems. The audio-plug version of MIDI Out connector should be looked like as follows.
 
@@ -179,15 +114,19 @@ Some manufacturer uses non-standard 1/8-inch (3.5mm) MIDI jacks and allows regul
 
 #### MIDI In+ (DIN connector)
 
-The MIDI In+ connector is upper compatible to the regular MIDI In connector, and has extra Vcc, GND, and Aux pins at M1, M2, and M3 respectively.
+The MIDI In+ connector is upper compatible to the regular MIDI In connector, and has extra RX+, Detect, RX- pins at m6, m7, m8 respectively. The m2 pin is connected to GND. If m7 pin is connected to m2 pin, Pineapple II switches MIDI In from m4/m5 pair to m6/m8 pair.
 
 | MIDI Pin | Meaning |
 |----------|---------|
-| m1       | Vcc     |
+| m1       | NC      |
 | m2       | GND     |
-| m3       | Aux     |
+| m3       | NC      |
 | m4       | Send    |
 | m5       | Return  |
+| m6       | RX+     |
+| m7       | Detect  |
+| m8       | RX-     |
+
 
 The audio-plug version of MIDI In should be looked like as follows.
 
@@ -205,52 +144,53 @@ The DC jack can be either EIAJ-4 power jack or standard 5.5mm/2.1mm power jack.
 | PWR1    | DC +12V |
 | PWR2    | GND     |
 
-#### Reset SW/LED
+#### Reset SW
 
-| SW/LED | Meaning                          |
-|--------|----------------------------------|
-| LED    | Status                           |
-| SW     | Reset (double-push to boot-load) |
+| SW | Meaning                          |
+|----|----------------------------------|
+| SW | Reset (double-push to boot-load) |
 
 ### MPU Pinout
 
 The core of Pineapple II is an _Arduino Micro._
 
-| Pin Group     | Pin      | Arduino Micro | Connect to      | Qwiic Pro Micro |
-|---------------|----------|---------------|-----------------|-----------------|
-| **MIDI**      | TX       | D1 (TX)       | M1, M3, M4, M5  | TX              |
-|               | GND      | GND           | M2              | GND             |
-|               | RX       | D0 (RX)       | m4, m5          | RX              |
-|               | Vcc      | VCC           | m1              | Vcc             |
-|               | GND      | GND           | m2              | GND             |
-| **I2C**       | SDA      | D2            | Gx-5            | Qwiic           |
-|               | SCL      | D3 (PWM)      | Gx-6            | Qwiic           |
-| **Analog**    | ANLG1    | A0            | G1-4/g1-R1      | A0              |
-|               | ANLG2    | A1            | G2-4/g2-R1      | A1              |
-|               | ANLG3    | A2            | G3-4/g3-R1      | A2              |
-|               | ANLG4    | A3            | G4-4/g4-R1      | A3              |
-|               | PDN      | A4            | ---             | (snip)          |
-|               | AREF     | AREF          | ---             | (snip)          |
-|               | Vout     | ---           | Gx-1/gx-T       | ---             |
-|               | GND      | GND           | Gx-2/gx-S       | GND             |
-| **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2      | D6/A7 (PWM)     |
-|               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2      | D9/A9 (PWM)     |
-|               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2      | D10/A10 (PWM)   |
-|               | DTCT4    | D12/A11       | G4-3/g4-R2      | D4/A6           |
-| **Indicator** | LED0     | D13 (PWM)     | Green LED       | D3 (PWM)        |
-|               | LED1     | D11 (PWM)     | Red LED         |                 |
-| **Reset**     | RST      | Reset         | SW              | RST             |
-| **Power**     | Vin      | VIN           | P1              | 5V              |
-|               | GND      | GND           | P2              | GND             |
-|               | Vin+R    | ---           | SWLED           | ---             |
-|               | Vcc      | VCC           | m1, m3          | Vcc             |
-| **Display**   | DISP1    | D5 (PWM)      | X1              | D5 (PWM)        |
-|               | DISP2    | D7            | X2              | D7              |
-|               | DISP3    | D8/A8         | X3              | D8/A8           |
-|               | DISP4    | MOSI          | X4              | D16             |
-|               | DISP5    | SCLK          | X5              | D15             |
-| **Internal**  | THS      | A5            | Thermal sensor  | D2              |
-|               | RLY      | D4/A6         | Thermal breaker | (snip)          |
+| Pin Group     | Pin      | Arduino Micro | Connect to      |
+|---------------|----------|---------------|-----------------|
+| **MIDI**      | TX       | D1 (TX)       | M4, M5          |
+|               | RX       | D0 (RX)       | m4, m5          |
+|               | GND      | GND           | M2, m2          |
+| **MIDI DX**   | TX       | D1 (TX)       | M6, M8          |
+|               | RX       | D0 (RX)       | m6, m8          |
+|               | GND      | GND           | GND             |
+| **I2C**       | SDA      | D2            | Gx-5, RTC, X    |
+|               | SCL      | D3 (PWM)      | Gx-6, RTC, X    |
+| **Analog**    | ANLG1    | A0            | G1-4/g1-R1      |
+|               | ANLG2    | A1            | G2-4/g2-R1      |
+|               | ANLG3    | A2            | G3-4/g3-R1      |
+|               | ANLG4    | A3            | G4-4/g4-R1      |
+|               | PDN      | A4            | ---             |
+|               | AREF     | AREF          | ---             |
+|               | Vout     | ---           | Gx-1/gx-T       |
+|               | GND      | GND           | Gx-2/gx-S       |
+| **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2      |
+|               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2      |
+|               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2      |
+|               | DTCT4    | D12/A11       | G4-3/g4-R2      |
+| **Indicator** | LED0     | D13 (PWM)     | Green LED       |
+|               | LED1     | D11 (PWM)     | Red LED         |
+| **Reset**     | RST      | Reset         | SW              |
+| **Power**     | Vin      | VIN           | P1              |
+|               | GND      | GND           | P2              |
+| **X**         | Vcc      | Vcc           | X1              |
+|               | D7       | D7            | X2              |
+|               | SCL      | D3            | X3              |
+|               | SDA      | D2            | X4              |
+|               | GND      | GND           | X5              |
+| **Y**         | DISP1    | D5 (PWM)      | Y1              |
+|               | DISP2    | D8/A8         | Y2              |
+|               | GND      | GND           | Y3              |
+| **Internal**  | THS      | A5            | Thermal sensor  |
+|               | RLY      | D4/A6         | Thermal breaker |
 
 ### Board Connectors
 
@@ -284,8 +224,8 @@ The core of Pineapple II is an _Arduino Micro._
 | B02 | GND              | PWR2       |
 | B03 | Reset            | SW1        |
 | B04 | GND              | SW2        |
-| B05 | PWRLED           | LEDA       |
-| B06 | GND              | LEDK       |
+| B05 | NC               | NC         |
+| B06 | GND              | m2         |
 | B07 | MIDI IN Send     | m4         |
 | B08 | MIDI IN Return   | m5         |
 | B09 | MIDI RX+         | m6         |
@@ -301,15 +241,21 @@ The core of Pineapple II is an _Arduino Micro._
 | B19 | MIDI THRU Send   | (M4)       |
 | B20 | MIDI THRU Return | (M5)       |
 
-#### Display Connector
+#### I2C/Display Connector
 
 | Pin | Meaning |
 |-----|---------|
-| X1  | DISP1   |
-| X2  | DISP2   |
-| X3  | DISP3   |
-| X4  | MOSI    |
-| X5  | SCLK    |
+| X1  | GND     |
+| X2  | SDA     |
+| X3  | SCL     |
+| X4  | D7      |
+| X5  | Vcc     |
+
+| Pin | Meaning |
+|-----|---------|
+| Y1  | GND     |
+| Y2  | DISP2   |
+| Y3  | DISP1   |
 
 #### Power Connector
 
