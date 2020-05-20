@@ -27912,14 +27912,14 @@ Part Number: HA-522</description>
 <attribute name="VALUE" x="63.5" y="233.68" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY24" gate="GND" x="152.4" y="7.62" smashed="yes"/>
-<instance part="IC12" gate="G$1" x="165.1" y="127" smashed="yes">
-<attribute name="NAME" x="165.1" y="132.08" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="165.1" y="116.84" size="1.778" layer="96" align="bottom-center"/>
+<instance part="IC12" gate="G$1" x="165.1" y="96.52" smashed="yes">
+<attribute name="NAME" x="165.1" y="101.6" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="165.1" y="86.36" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY30" gate="GND" x="177.8" y="116.84" smashed="yes"/>
-<instance part="R12" gate="G$1" x="187.96" y="129.54" smashed="yes">
-<attribute name="NAME" x="187.96" y="132.08" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="187.96" y="127" size="1.778" layer="96" align="top-center"/>
+<instance part="SUPPLY30" gate="GND" x="177.8" y="86.36" smashed="yes"/>
+<instance part="R12" gate="G$1" x="187.96" y="99.06" smashed="yes">
+<attribute name="NAME" x="187.96" y="101.6" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="187.96" y="96.52" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY29" gate="GND" x="193.04" y="162.56" smashed="yes"/>
 <instance part="J2" gate="G$1" x="38.1" y="63.5" smashed="yes">
@@ -28101,7 +28101,7 @@ Part Number: HA-522</description>
 <attribute name="NAME" x="228.6" y="200.66" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="228.6" y="195.58" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="X7" gate="G$1" x="154.94" y="129.54" smashed="yes"/>
+<instance part="X7" gate="G$1" x="154.94" y="99.06" smashed="yes"/>
 <instance part="SUPPLY2" gate="GND" x="180.34" y="147.32" smashed="yes"/>
 <instance part="R11" gate="G$1" x="185.42" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="182.88" y="170.18" size="1.778" layer="95" rot="R90" align="bottom-center"/>
@@ -28228,9 +28228,9 @@ Part Number: HA-522</description>
 </segment>
 <segment>
 <pinref part="IC12" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
-<wire x1="177.8" y1="121.92" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="91.44" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OK1" gate="A" pin="GND"/>
@@ -28603,19 +28603,19 @@ Part Number: HA-522</description>
 </segment>
 <segment>
 <pinref part="IC12" gate="G$1" pin="!RE"/>
-<wire x1="149.86" y1="134.62" x2="149.86" y2="127" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="104.14" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC12" gate="G$1" pin="DE"/>
-<wire x1="154.94" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="124.46" x2="149.86" y2="127" width="0.1524" layer="91"/>
-<junction x="149.86" y="127"/>
+<wire x1="154.94" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="93.98" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<junction x="149.86" y="96.52"/>
 <pinref part="IC12" gate="G$1" pin="VCC"/>
-<wire x1="175.26" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="129.54" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="134.62" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
-<junction x="149.86" y="134.62"/>
-<label x="149.86" y="137.16" size="0.8128" layer="95" rot="R90" xref="yes"/>
+<wire x1="175.26" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="99.06" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="104.14" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<junction x="149.86" y="104.14"/>
+<label x="149.86" y="106.68" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -28656,13 +28656,13 @@ Part Number: HA-522</description>
 <net name="MTX+" class="0">
 <segment>
 <pinref part="IC12" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="96.52" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="129.54" x2="180.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="127" x2="200.66" y2="127" width="0.1524" layer="91"/>
-<junction x="180.34" y="127"/>
-<label x="200.66" y="127" size="0.8128" layer="95" xref="yes"/>
+<wire x1="182.88" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="99.06" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
+<junction x="180.34" y="96.52"/>
+<label x="200.66" y="96.52" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="-15" pin="S"/>
@@ -28674,12 +28674,12 @@ Part Number: HA-522</description>
 <segment>
 <pinref part="IC12" gate="G$1" pin="B"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="124.46" x2="175.26" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="129.54" x2="195.58" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
-<junction x="195.58" y="124.46"/>
-<label x="200.66" y="124.46" size="0.8128" layer="95" xref="yes"/>
+<wire x1="195.58" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="99.06" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
+<junction x="195.58" y="93.98"/>
+<label x="200.66" y="93.98" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="-16" pin="S"/>
@@ -28876,8 +28876,8 @@ Part Number: HA-522</description>
 </segment>
 <segment>
 <pinref part="IC12" gate="G$1" pin="DI"/>
-<wire x1="147.32" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
-<label x="147.32" y="121.92" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<wire x1="147.32" y1="91.44" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
+<label x="147.32" y="91.44" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
