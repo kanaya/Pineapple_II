@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -27688,6 +27688,7 @@ Part Number: HA-522</description>
 <part name="X13" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="X14" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
+<part name="X15" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28147,6 +28148,7 @@ Part Number: HA-522</description>
 <attribute name="VALUE" x="157.48" y="35.56" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="X14" gate="G$1" x="22.86" y="114.3" smashed="yes"/>
+<instance part="X15" gate="G$1" x="106.68" y="114.3" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -28429,6 +28431,11 @@ Part Number: HA-522</description>
 <pinref part="SV1" gate="-14" pin="S"/>
 <label x="22.86" y="149.86" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J13" gate="J1" pin="GND"/>
+<wire x1="22.86" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+<label x="25.4" y="53.34" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="2">
 <segment>
@@ -28691,7 +28698,7 @@ Part Number: HA-522</description>
 <label x="358.14" y="121.92" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="MTH" class="0">
+<net name="MT" class="0">
 <segment>
 <pinref part="RN2" gate="E" pin="1"/>
 <pinref part="IC1" gate="A" pin="O"/>
@@ -29253,7 +29260,7 @@ Part Number: HA-522</description>
 <label x="22.86" y="190.5" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="V5VRAW" class="0">
 <segment>
 <pinref part="K1" gate="2" pin="O"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -29341,13 +29348,6 @@ Part Number: HA-522</description>
 <label x="314.96" y="182.88" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$10" class="1">
-<segment>
-<pinref part="J13" gate="J1" pin="GND"/>
-<wire x1="22.86" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
-<label x="25.4" y="53.34" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="MTRETN" class="0">
 <segment>
 <pinref part="RN2" gate="E" pin="2"/>
@@ -29424,30 +29424,30 @@ Part Number: HA-522</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,360.68,193.04,SV2-5,S,,,,"/>
-<approved hash="101,1,152.4,38.1,IC1D,O,,,,"/>
-<approved hash="101,1,152.4,25.4,IC1E,O,,,,"/>
-<approved hash="101,1,152.4,12.7,IC1F,O,,,,"/>
-<approved hash="104,1,104.14,187.96,U1,VDD,VCC,,,"/>
-<approved hash="104,1,58.42,12.7,IC2P,VSS,GND,,,"/>
-<approved hash="104,1,58.42,27.94,IC2P,VDD,VCC,,,"/>
+<approved hash="101,1,360.68,160.02,SV2-5,S,,,,"/>
+<approved hash="101,1,284.48,38.1,IC1D,O,,,,"/>
+<approved hash="101,1,284.48,25.4,IC1E,O,,,,"/>
+<approved hash="101,1,284.48,12.7,IC1F,O,,,,"/>
+<approved hash="104,1,165.1,187.96,U1,VDD,VCC,,,"/>
+<approved hash="104,1,167.64,12.7,IC2P,VSS,GND,,,"/>
+<approved hash="104,1,167.64,27.94,IC2P,VDD,VCC,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
-<approved hash="113,1,364.892,208.28,SV2,,,,,"/>
-<approved hash="113,1,152.4,38.1,X1,,,,,"/>
-<approved hash="113,1,152.4,25.4,X2,,,,,"/>
-<approved hash="113,1,152.4,12.7,X3,,,,,"/>
-<approved hash="113,1,40.64,210.82,X4,,,,,"/>
-<approved hash="113,1,40.64,208.28,X5,,,,,"/>
-<approved hash="113,1,16.108,86.36,SV1,,,,,"/>
-<approved hash="113,1,152.4,180.34,X6,,,,,"/>
-<approved hash="113,1,154.94,129.54,X7,,,,,"/>
-<approved hash="113,1,360.68,193.04,X8,,,,,"/>
-<approved hash="113,1,15.24,226.06,X9,,,,,"/>
-<approved hash="113,1,15.24,223.52,X10,,,,,"/>
-<approved hash="113,1,15.24,213.36,X11,,,,,"/>
-<approved hash="113,1,15.24,210.82,X12,,,,,"/>
-<approved hash="113,1,15.24,208.28,X13,,,,,"/>
-<approved hash="113,1,68.58,63.5,X14,,,,,"/>
+<approved hash="113,1,364.892,175.26,SV2,,,,,"/>
+<approved hash="113,1,284.48,38.1,X1,,,,,"/>
+<approved hash="113,1,284.48,25.4,X2,,,,,"/>
+<approved hash="113,1,284.48,12.7,X3,,,,,"/>
+<approved hash="113,1,134.62,162.56,X4,,,,,"/>
+<approved hash="113,1,134.62,160.02,X5,,,,,"/>
+<approved hash="113,1,16.108,190.5,SV1,,,,,"/>
+<approved hash="113,1,226.06,195.58,X6,,,,,"/>
+<approved hash="113,1,228.6,139.7,X7,,,,,"/>
+<approved hash="113,1,360.68,160.02,X8,,,,,"/>
+<approved hash="113,1,109.22,177.8,X9,,,,,"/>
+<approved hash="113,1,109.22,175.26,X10,,,,,"/>
+<approved hash="113,1,109.22,165.1,X11,,,,,"/>
+<approved hash="113,1,109.22,162.56,X12,,,,,"/>
+<approved hash="113,1,109.22,160.02,X13,,,,,"/>
+<approved hash="113,1,22.86,114.3,X14,,,,,"/>
 </errors>
 </schematic>
 </drawing>
