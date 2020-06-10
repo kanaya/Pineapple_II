@@ -252,10 +252,10 @@ Module (12708)</text>
 <wire x1="42" y1="38.5" x2="42" y2="51.5" width="0.15" layer="22" style="dashdot"/>
 <wire x1="42" y1="51.5" x2="30" y2="51.5" width="0.15" layer="22" style="dashdot"/>
 <wire x1="30" y1="51.5" x2="30" y2="38.5" width="0.15" layer="22" style="dashdot"/>
-<wire x1="30" y1="33" x2="42" y2="33" width="0.15" layer="22" style="dashdot"/>
-<wire x1="42" y1="33" x2="42" y2="5.5" width="0.15" layer="22" style="dashdot"/>
+<wire x1="30" y1="32.5" x2="42" y2="32.5" width="0.15" layer="22" style="dashdot"/>
+<wire x1="42" y1="32.5" x2="42" y2="5.5" width="0.15" layer="22" style="dashdot"/>
 <wire x1="42" y1="5.5" x2="30" y2="5.5" width="0.15" layer="22" style="dashdot"/>
-<wire x1="30" y1="5.5" x2="30" y2="33" width="0.15" layer="22" style="dashdot"/>
+<wire x1="30" y1="5.5" x2="30" y2="32.5" width="0.15" layer="22" style="dashdot"/>
 <text x="41.5" y="6" size="1.27" layer="26" rot="MR90" align="top-left">RX</text>
 <text x="41.5" y="39" size="1.27" layer="26" rot="MR90" align="top-left">TX</text>
 <text x="40.5" y="14" size="1" layer="26" rot="MR90" align="bottom-center">Open JP1</text>
