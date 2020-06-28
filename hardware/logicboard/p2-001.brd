@@ -14,7 +14,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -147,9 +147,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="72" y2="0" width="0" layer="20"/>
-<wire x1="72" y1="72" x2="0" y2="72" width="0" layer="20"/>
-<wire x1="0" y1="72" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="3" y1="0" x2="69" y2="0" width="0" layer="20"/>
+<wire x1="69" y1="72" x2="3" y2="72" width="0" layer="20"/>
 <hole x="3" y="3" drill="3.2"/>
 <hole x="69" y="3" drill="3.2"/>
 <hole x="69" y="69" drill="3.2"/>
@@ -177,6 +176,7 @@
 <text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LEDK</text>
 <text x="1" y="10" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
 <text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
+<wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="6" y1="46.95" x2="25.05" y2="46.95" width="0.15" layer="21" style="dashdot"/>
 <wire x1="25.05" y1="46.95" x2="25.05" y2="66" width="0.15" layer="21" style="dashdot"/>
 <wire x1="25.05" y1="66" x2="6" y2="66" width="0.15" layer="21" style="dashdot"/>
@@ -200,7 +200,7 @@
 <text x="71" y="59" size="1" layer="26" rot="MR0" align="center-left">SCL</text>
 <text x="65" y="71" size="1" layer="25" align="center">GND</text>
 <text x="1" y="8" size="1" layer="26" rot="MR0" align="center-right">LED0</text>
-<wire x1="72" y1="0" x2="72" y2="72" width="0" layer="20"/>
+<wire x1="72" y1="3" x2="72" y2="69" width="0" layer="20"/>
 <wire x1="34" y1="51" x2="38" y2="51" width="0.2" layer="22"/>
 <wire x1="38" y1="51" x2="38" y2="49" width="0.2" layer="22"/>
 <wire x1="38" y1="49" x2="34" y2="49" width="0.2" layer="22"/>
@@ -312,6 +312,10 @@ Module (12708)</text>
 <wire x1="38" y1="28.5" x2="38" y2="23.5" width="0.15" layer="22"/>
 <wire x1="38" y1="23.5" x2="34" y2="23.5" width="0.15" layer="22"/>
 <wire x1="34" y1="23.5" x2="34" y2="28.5" width="0.15" layer="22"/>
+<wire x1="72" y1="69" x2="69" y2="72" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="72" x2="0" y2="69" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="72" y1="3" x2="69" y2="0" width="0" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
