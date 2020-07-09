@@ -29988,9 +29988,9 @@ Part Number: HA-522</description>
 <label x="236.22" y="177.8" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="5"/>
-<wire x1="127" y1="154.94" x2="127" y2="147.32" width="0.1524" layer="91"/>
-<label x="127" y="147.32" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP3" gate="A" pin="3"/>
+<wire x1="124.46" y1="154.94" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<label x="124.46" y="147.32" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -30607,9 +30607,9 @@ Part Number: HA-522</description>
 <label x="27.94" y="154.94" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
-<wire x1="124.46" y1="154.94" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
-<label x="124.46" y="147.32" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<pinref part="JP3" gate="A" pin="5"/>
+<wire x1="127" y1="154.94" x2="127" y2="147.32" width="0.1524" layer="91"/>
+<label x="127" y="147.32" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="LED0A" class="0">
