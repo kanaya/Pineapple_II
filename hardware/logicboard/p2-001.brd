@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -364,7 +364,7 @@ Module (12708)</text>
 <text x="15.5" y="57" size="1" layer="26" rot="MR90" align="center-left">Vout</text>
 <text x="15.5" y="51" size="1" layer="26" rot="MR90" align="center-right">Vcc/2</text>
 <text x="12.96" y="57" size="1" layer="26" rot="MR90" align="center-left">Vin</text>
-<text x="18.04" y="57" size="1" layer="26" rot="MR90" align="center-left">NC</text>
+<text x="18.04" y="57" size="1" layer="26" rot="MR90" align="center-left">Vout</text>
 <text x="18.04" y="51" size="1" layer="26" rot="MR90" align="center-right">Vcc</text>
 <text x="12.96" y="51" size="1" layer="26" rot="MR90" align="center-right">V+</text>
 <wire x1="11.5" y1="56.5" x2="19.5" y2="56.5" width="0.15" layer="22"/>
@@ -5834,6 +5834,19 @@ design rules under a new name.</description>
 <via x="9.6774" y="15.3924" extent="1-16" drill="0.3048"/>
 <via x="38.481" y="8.763" extent="1-16" drill="0.3048"/>
 <via x="31.3944" y="14.9352" extent="1-16" drill="0.3048"/>
+<polygon width="0.2" layer="1">
+<vertex x="-0.5" y="-0.5"/>
+<vertex x="72.5" y="-0.5"/>
+<vertex x="72.5" y="72.5"/>
+<vertex x="0" y="72.5"/>
+<vertex x="-0.5" y="72.5"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-1" y="-1"/>
+<vertex x="73" y="-1"/>
+<vertex x="73" y="73"/>
+<vertex x="-1" y="73"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
