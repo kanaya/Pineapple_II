@@ -29073,7 +29073,6 @@ Part Number: HA-522</description>
 <part name="X14" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1" value="RLY"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2" value="PWRSEL"/>
-<part name="X11" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29539,7 +29538,6 @@ Part Number: HA-522</description>
 <attribute name="NAME" x="118.745" y="151.13" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.08" y="151.13" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X11" gate="G$1" x="127" y="170.18" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -30785,6 +30783,11 @@ Part Number: HA-522</description>
 <wire x1="124.46" y1="162.56" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
 <label x="124.46" y="170.18" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="A" pin="6"/>
+<wire x1="127" y1="162.56" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<label x="127" y="170.18" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="VOUTRAW" class="2">
 <segment>
@@ -30862,12 +30865,6 @@ Part Number: HA-522</description>
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="121.92" y1="154.94" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
 <label x="121.92" y="147.32" size="0.8128" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="JP3" gate="A" pin="6"/>
-<wire x1="127" y1="162.56" x2="127" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
