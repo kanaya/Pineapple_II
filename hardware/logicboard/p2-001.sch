@@ -30761,7 +30761,7 @@ Part Number: HA-522</description>
 <label x="358.14" y="116.84" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="VOUTRAW2" class="2">
 <segment>
 <pinref part="F1" gate="1" pin="1"/>
 <wire x1="129.54" y1="116.84" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
