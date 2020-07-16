@@ -283,3 +283,61 @@ Pineapple II has 2-pin PH connector pad at the back of the PCB.
 Pineapple II has SparkFun's Qwiic-compatible connector pad at the back of the PCB. This connector is connected to I2C bus via 3.3V-5V level shifting circuit.
 
 To operate the Qwiic connector with 5V signals, do _not_ install Q1, Q2, RC1, RC2, RC3, RC4, and install zero-ohm resistance (or simply bridge) RZ1 and RZ2. Note that by this set up the pin 2 (Vcc) of Qwiic connector still provides 3.3V.
+
+| Kind             | Symbol | Specification      |
+|------------------|--------|--------------------|
+| Capacitor        | C1     | 22u                |
+|                  | C2     | 470u               |
+|                  | C3     | 1u                 |
+|                  | C4     | 0.1u               |
+|                  | C5     | 0.1u               |
+|                  | C6     | 0.01u              |
+|                  | C7     | 0.01u              |
+|                  | C8     | 0.01u              |
+|                  | C9     | 0.01u              |
+|                  | C10    | 0.1u               |
+|                  | C11    | 0.01u (2012)       |
+|                  | C12    | 0.01u (2012)       |
+|                  | C13    | 0.01u (2012)       |
+| Diode            | D1     | 1S3                |
+|                  | D2     | 1S3                |
+|                  | D3     | 1S3                |
+| Fuse             | F1     |                    |
+| IC               | IC1    | 74LS07N            |
+|                  | IC2    | 4066N              |
+|                  | IC11   | 74LS153D           |
+|                  | IC12   | LTC485             |
+|                  | IC13   | LTC485             |
+| Connector        | J1     | JST PH 5p          |
+|                  | J2     | JST PH 3p Vertical |
+|                  | J3     | JST PH 3p          |
+|                  | J4     | JST PH 4p          |
+|                  | J5     | JST PH 2p          |
+|                  | J11    | JST SH 4p          |
+|                  | J12    | JST SH 4p          |
+|                  | J13    | JST SH 4p          |
+|                  | J14    | JST SH 4p          |
+| Jumper           | JP1    | Pinheader 1x2      |
+|                  | JP2    | Pinheader 1x2      |
+|                  | JP3    | Pinheader 2x3      |
+|                  | JP4    | Pinheader 1x2      |
+|                  | JP5    | Pinheader 1x5      |
+| Relay            | K1     | G5V-1              |
+| Micro Controller | MC1    | Arduino Micro      |
+| Optocoupler      | OK1    | TLP552             |
+| Resistor         | R1     | 47k                |
+|                  | R2     | 1k                 |
+|                  | R3     | 1k                 |
+|                  | R4     | 120                |
+|                  | R5     | 120                |
+|                  | R11    | 10k (2012)         |
+|                  | R12    | 120 (2012)         |
+|                  | R13    | 120 (2012)         |
+| Resistor Net     | RN1    | 4.7k 4-elements    |
+|                  | RN2    | 10k 4-elements     |
+|                  | RN3    | 220 8-elements DIL |
+| Connector ML     | SV1    | 16p                |
+|                  | SV2    | 20p                |
+| Transistor       | T1     | 2SC1815Y           |
+| Thermal Sensor   | U1     | DS18B20            |
+| V. Regulator     | V1     | L7805              |
