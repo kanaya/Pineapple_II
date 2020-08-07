@@ -6,20 +6,20 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -173,8 +173,8 @@
 <rectangle x1="51.75" y1="12" x2="52.25" y2="14" layer="21"/>
 <text x="15" y="70" size="1.27" layer="25" align="bottom-right">Pineapple II</text>
 <text x="33.5" y="70.5" size="1" layer="26" rot="MR0" align="center">G</text>
-<text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LEDK</text>
-<text x="1" y="10" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
+<text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
+<text x="1" y="10" size="1" layer="26" rot="MR0" align="center-right">LED0</text>
 <text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
 <wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="6" y1="46.95" x2="25.05" y2="46.95" width="0.15" layer="21" style="dashdot"/>
@@ -187,7 +187,7 @@
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="42"/>
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="42"/>
-<text x="15.5" y="70" size="1" layer="25">2.0.4-RC</text>
+<text x="15.5" y="70" size="1" layer="25">2.0.5-R</text>
 <text x="26" y="63.46" size="1" layer="25" rot="R90" align="center">SD</text>
 <text x="26" y="60.92" size="1" layer="25" rot="R90" align="center">SC</text>
 <text x="26" y="53.3" size="1" layer="25" rot="R90" align="center">5V</text>
@@ -198,7 +198,7 @@
 <text x="71" y="61" size="1" layer="26" rot="MR0" align="center-left">SDA</text>
 <text x="71" y="59" size="1" layer="26" rot="MR0" align="center-left">SCL</text>
 <text x="65" y="71" size="1" layer="25" align="center">GND</text>
-<text x="1" y="8" size="1" layer="26" rot="MR0" align="center-right">LED0</text>
+<text x="1" y="8" size="1" layer="26" rot="MR0" align="center-right">LEDK</text>
 <wire x1="72" y1="3" x2="72" y2="69" width="0" layer="20"/>
 <wire x1="34" y1="51" x2="38" y2="51" width="0.2" layer="22"/>
 <wire x1="38" y1="51" x2="38" y2="49" width="0.2" layer="22"/>
@@ -322,22 +322,22 @@ Module (12708)</text>
 <wire x1="11.5" y1="54" x2="11.5" y2="59" width="0.15" layer="22"/>
 <text x="15.5" y="64.5" size="1" layer="25" align="bottom-center">RTC1</text>
 <text x="20" y="56.5" size="1" layer="26" rot="MR90" align="bottom-center">JP3</text>
-<text x="68" y="44.75" size="1" layer="26" rot="MR0" align="bottom-center">JP3</text>
+<text x="68" y="46" size="1" layer="26" rot="MR0" align="bottom-center">JP3</text>
 <polygon width="0.15" layer="22">
-<vertex x="66.75" y="42"/>
-<vertex x="67.25" y="42"/>
-<vertex x="67.25" y="40.5"/>
-<vertex x="66.75" y="40.5"/>
+<vertex x="66.75" y="43"/>
+<vertex x="67.25" y="43"/>
+<vertex x="67.25" y="41.5"/>
+<vertex x="66.75" y="41.5"/>
 </polygon>
-<wire x1="67.75" y1="42" x2="68.25" y2="42" width="0.15" layer="22"/>
-<wire x1="68.25" y1="42" x2="68.25" y2="40.5" width="0.15" layer="22"/>
-<wire x1="68.25" y1="40.5" x2="67.75" y2="40.5" width="0.15" layer="22"/>
-<wire x1="67.75" y1="40.5" x2="67.75" y2="42" width="0.15" layer="22"/>
+<wire x1="67.75" y1="43" x2="68.25" y2="43" width="0.15" layer="22"/>
+<wire x1="68.25" y1="43" x2="68.25" y2="41.5" width="0.15" layer="22"/>
+<wire x1="68.25" y1="41.5" x2="67.75" y2="41.5" width="0.15" layer="22"/>
+<wire x1="67.75" y1="41.5" x2="67.75" y2="43" width="0.15" layer="22"/>
 <polygon width="0.15" layer="22">
-<vertex x="68.75" y="42"/>
-<vertex x="68.75" y="40.5"/>
-<vertex x="69.25" y="40.5"/>
-<vertex x="69.25" y="42"/>
+<vertex x="68.75" y="43"/>
+<vertex x="68.75" y="41.5"/>
+<vertex x="69.25" y="41.5"/>
+<vertex x="69.25" y="43"/>
 </polygon>
 <polygon width="0.15" layer="22">
 <vertex x="67.75" y="38"/>
@@ -356,35 +356,35 @@ Module (12708)</text>
 <wire x1="67.25" y1="36.5" x2="67.25" y2="38" width="0.15" layer="22"/>
 <wire x1="67.25" y1="38" x2="66.75" y2="38" width="0.15" layer="22"/>
 <polygon width="0.15" layer="22">
-<vertex x="66.75" y="34"/>
-<vertex x="66.75" y="32.5"/>
-<vertex x="67.25" y="32.5"/>
-<vertex x="67.25" y="34"/>
+<vertex x="66.75" y="33"/>
+<vertex x="66.75" y="31.5"/>
+<vertex x="67.25" y="31.5"/>
+<vertex x="67.25" y="33"/>
 </polygon>
 <polygon width="0.15" layer="22">
-<vertex x="67.75" y="33"/>
-<vertex x="67.75" y="32.5"/>
-<vertex x="69.25" y="32.5"/>
-<vertex x="69.25" y="33"/>
+<vertex x="67.75" y="32"/>
+<vertex x="67.75" y="31.5"/>
+<vertex x="69.25" y="31.5"/>
+<vertex x="69.25" y="32"/>
 </polygon>
-<wire x1="67.75" y1="34" x2="67.75" y2="33.5" width="0.15" layer="22"/>
-<wire x1="67.75" y1="33.5" x2="69.25" y2="33.5" width="0.15" layer="22"/>
-<wire x1="69.25" y1="33.5" x2="69.25" y2="34" width="0.15" layer="22"/>
-<wire x1="69.25" y1="34" x2="67.75" y2="34" width="0.15" layer="22"/>
-<wire x1="66.75" y1="30" x2="69.25" y2="30" width="0.15" layer="22"/>
-<wire x1="69.25" y1="30" x2="69.25" y2="29.5" width="0.15" layer="22"/>
-<wire x1="69.25" y1="29.5" x2="66.75" y2="29.5" width="0.15" layer="22"/>
-<wire x1="66.75" y1="29.5" x2="66.75" y2="30" width="0.15" layer="22"/>
+<wire x1="67.75" y1="33" x2="67.75" y2="32.5" width="0.15" layer="22"/>
+<wire x1="67.75" y1="32.5" x2="69.25" y2="32.5" width="0.15" layer="22"/>
+<wire x1="69.25" y1="32.5" x2="69.25" y2="33" width="0.15" layer="22"/>
+<wire x1="69.25" y1="33" x2="67.75" y2="33" width="0.15" layer="22"/>
+<wire x1="66.75" y1="28" x2="69.25" y2="28" width="0.15" layer="22"/>
+<wire x1="69.25" y1="28" x2="69.25" y2="27.5" width="0.15" layer="22"/>
+<wire x1="69.25" y1="27.5" x2="66.75" y2="27.5" width="0.15" layer="22"/>
+<wire x1="66.75" y1="27.5" x2="66.75" y2="28" width="0.15" layer="22"/>
 <polygon width="0.15" layer="22">
-<vertex x="66.75" y="29"/>
-<vertex x="66.75" y="28.5"/>
-<vertex x="69.25" y="28.5"/>
-<vertex x="69.25" y="29"/>
+<vertex x="66.75" y="27"/>
+<vertex x="66.75" y="26.5"/>
+<vertex x="69.25" y="26.5"/>
+<vertex x="69.25" y="27"/>
 </polygon>
-<text x="68" y="42.75" size="1" layer="26" rot="MR0" align="bottom-center">Dual</text>
-<text x="68" y="38.75" size="1" layer="26" rot="MR0" align="bottom-center">Single</text>
-<text x="68" y="34.75" size="1" layer="26" rot="MR0" align="bottom-center">Arduino</text>
-<text x="68" y="30.75" size="1" layer="26" rot="MR0" align="bottom-center">Direct 5V</text>
+<text x="68" y="44" size="1" layer="26" rot="MR0" align="bottom-center">Dual</text>
+<text x="68" y="39" size="1" layer="26" rot="MR0" align="bottom-center">Regulator</text>
+<text x="68" y="34" size="1" layer="26" rot="MR0" align="bottom-center">Arduino</text>
+<text x="68" y="29" size="1" layer="26" rot="MR0" align="bottom-center">Direct 5V</text>
 <rectangle x1="21.5" y1="54.84" x2="22" y2="56.84" layer="21"/>
 <rectangle x1="7" y1="7" x2="7.5" y2="9" layer="21"/>
 <rectangle x1="12.75" y1="3.5" x2="13.25" y2="5.5" layer="21"/>
@@ -397,6 +397,24 @@ Module (12708)</text>
 <rectangle x1="4.75" y1="54.23" x2="5.25" y2="56.23" layer="21"/>
 <text x="5" y="57.77" size="1" layer="26" rot="MR0" align="center-right">Vcc</text>
 <text x="31.5" y="70.5" size="1" layer="26" rot="MR0" align="center">5V</text>
+<wire x1="66.5" y1="28.5" x2="66.5" y2="26" width="0.15" layer="22"/>
+<wire x1="66.5" y1="26" x2="69.5" y2="26" width="0.15" layer="22"/>
+<wire x1="69.5" y1="26" x2="69.5" y2="28.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="28.5" x2="66.5" y2="28.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="33.5" x2="66.5" y2="31" width="0.15" layer="22"/>
+<wire x1="66.5" y1="31" x2="69.5" y2="31" width="0.15" layer="22"/>
+<wire x1="69.5" y1="31" x2="69.5" y2="33.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="33.5" x2="66.5" y2="33.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="38.5" x2="66.5" y2="36" width="0.15" layer="22"/>
+<wire x1="66.5" y1="36" x2="69.5" y2="36" width="0.15" layer="22"/>
+<wire x1="69.5" y1="36" x2="69.5" y2="38.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="38.5" x2="66.5" y2="38.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="43.5" x2="66.5" y2="41" width="0.15" layer="22"/>
+<wire x1="66.5" y1="41" x2="69.5" y2="41" width="0.15" layer="22"/>
+<wire x1="69.5" y1="41" x2="69.5" y2="43.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="43.5" x2="66.5" y2="43.5" width="0.15" layer="22"/>
+<text x="68" y="25" size="1" layer="26" rot="MR0" align="top-center">Bottom
+View</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
