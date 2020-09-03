@@ -14,12 +14,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -173,8 +173,8 @@
 <rectangle x1="51.75" y1="12" x2="52.25" y2="14" layer="21"/>
 <text x="15" y="70" size="1.27" layer="25" align="bottom-right">Pineapple II</text>
 <text x="33.5" y="70.5" size="1" layer="26" rot="MR0" align="center">G</text>
-<text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LED2</text>
-<text x="1" y="10" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
+<text x="1" y="12" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
+<text x="1" y="10" size="1" layer="26" rot="MR0" align="center-right">LED0</text>
 <text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
 <wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="6" y1="46.95" x2="25.05" y2="46.95" width="0.15" layer="21" style="dashdot"/>

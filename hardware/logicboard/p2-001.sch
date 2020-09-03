@@ -28250,7 +28250,7 @@ Part Number: HA-522</description>
 </instance>
 <instance part="R4" gate="G$1" x="33.02" y="215.9" smashed="yes">
 <attribute name="NAME" x="33.02" y="218.44" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="38.1" y="220.98" size="1.778" layer="96" align="top-center"/>
+<attribute name="VALUE" x="38.1" y="218.44" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="187.96" y="7.62" smashed="yes"/>
 <instance part="JP0" gate="G$1" x="40.64" y="20.32" smashed="yes" rot="R90">
@@ -28406,7 +28406,7 @@ Part Number: HA-522</description>
 </instance>
 <instance part="R5" gate="G$1" x="33.02" y="213.36" smashed="yes">
 <attribute name="NAME" x="33.02" y="208.28" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="40.64" y="208.28" size="1.778" layer="96" align="top-center"/>
+<attribute name="VALUE" x="38.1" y="208.28" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="X6" gate="G$1" x="233.68" y="195.58" smashed="yes"/>
 <instance part="IC11" gate="A" x="246.38" y="185.42" smashed="yes" rot="MR0">

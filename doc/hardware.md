@@ -268,8 +268,8 @@ The core of Pineapple II is an _Arduino Micro._
 | Pin | Meaning |
 |-----|---------|
 | L1  | GND     |
-| L2  | LED1    |
-| L3  | LED2    |
+| L2  | LED0    |
+| L3  | LED1    |
 
 ## Experimental Feature
 
