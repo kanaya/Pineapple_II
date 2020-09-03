@@ -151,45 +151,49 @@ The DC jack can be either EIAJ-4 power jack or standard 5.5mm/2.1mm power jack.
 
 ### MPU Pinout
 
-The core of Pineapple II is an _Arduino Micro._
+The core of Pineapple II is an _Arduino Micro._ (Nano and Portena version are planned in future.)
 
-| Pin Group     | Pin      | Arduino Micro | Connect to      |
-|---------------|----------|---------------|-----------------|
-| **MIDI**      | TX       | D1 (TX)       | M4, M5          |
-|               | RX       | D0 (RX)       | m4, m5          |
-|               | GND      | GND           | M2, m2          |
-| **MIDI DX**   | TX       | D1 (TX)       | M6, M8          |
-|               | RX       | D0 (RX)       | m6, m8          |
-|               | GND      | GND           | GND             |
-| **I2C**       | SDA      | D2            | Gx-5, RTC-5     |
-|               | SCL      | D3 (PWM)      | Gx-6, RTC-4     |
-| **Analog**    | ANLG1    | A0            | G1-4/g1-R1      |
-|               | ANLG2    | A1            | G2-4/g2-R1      |
-|               | ANLG3    | A2            | G3-4/g3-R1      |
-|               | ANLG4    | A3            | G4-4/g4-R1      |
-|               | PDN      | A4            | ---             |
-|               | AREF     | AREF          | ---             |
-|               | Vout     | ---           | Gx-1/gx-T       |
-|               | GND      | GND           | Gx-2/gx-S       |
-| **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2      |
-|               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2      |
-|               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2      |
-|               | DTCT4    | D12/A11       | G4-3/g4-R2      |
-| **Indicator** | LED0     | D13 (PWM)     | Green LED       |
-|               | LED1     | D11 (PWM)     | Red LED         |
-| **Reset**     | RST      | Reset         | SW              |
-| **Power**     | Vin      | VIN           | P1              |
-|               | GND      | GND           | P2              |
-| **X**         | Vcc      | Vcc           | X1              |
-|               | D7       | D7            | X2              |
-|               | SCL      | D3            | X3              |
-|               | SDA      | D2            | X4              |
-|               | GND      | GND           | X5              |
-| **Y**         | GPIO1    | D5 (PWM)      | Y1              |
-|               | GPIO2    | D8/A8         | Y2              |
-|               | GND      | GND           | Y3              |
-| **Internal**  | THS      | A5            | Thermal sensor  |
-|               | RLY      | D4/A6         | Thermal breaker |
+| Pin Group     | Pin      | Arduino Micro | Connect to      | Nano* | Portena* |
+|---------------|----------|---------------|-----------------|-------|----------|
+| **MIDI**      | TX       | D1 (TX)       | M4, M5          | TX    | D14      |
+|               | RX       | D0 (RX)       | m4, m5          | RX    | D13      |
+|               | GND      | GND           | M2, m2          |       |          |
+| **MIDI DX**   | TX       | D1 (TX)       | M6, M8          | TX    | D14      |
+|               | RX       | D0 (RX)       | m6, m8          | RX    | D13      |
+|               | GND      | GND           | GND             |       |          |
+| **I2C**       | SDA      | D2            | Gx-5, RTC-5     | A4    | D11      |
+|               | SCL      | D3 (PWM)      | Gx-6, RTC-4     | A5    | D12      |
+| **Analog**    | ANLG1    | A0            | G1-4/g1-R1      | A0    | A0       |
+|               | ANLG2    | A1            | G2-4/g2-R1      | A1    | A1       |
+|               | ANLG3    | A2            | G3-4/g3-R1      | A2    | A2       |
+|               | ANLG4    | A3            | G4-4/g4-R1      | A3    | A3       |
+|               | PDN      | A4            | ---             | A6    | A4       |
+|               | AREF     | AREF          | ---             | AREF  | AREF     |
+|               | Vout     | ---           | Gx-1/gx-T       |       |          |
+|               | GND      | GND           | Gx-2/gx-S       |       |          |
+| **Detector**  | DTCT1    | D6/A7 (PMW)   | G1-3/g1-R2      | D6~   | D0~      |
+|               | DTCT2    | D9/A9 (PWM)   | G2-3/g2-R2      | D9~   | D1~      |
+|               | DTCT3    | D10/A10 (PMW) | G3-3/g3-R2      | D10~  | D2~      |
+|               | DTCT4    | D12/A11       | G4-3/g4-R2      | D12~  | D3~      |
+| **Indicator** | LED0     | D13 (PWM)     | Green LED       | D13~  | D4~      |
+|               | LED1     | D11 (PWM)     | Red LED         | D11~  | D5~      |
+| **Reset**     | RST      | Reset         | SW              |       |          |
+| **Power**     | Vin      | VIN           | P1              |       |          |
+|               | GND      | GND           | P2              |       |          |
+| **X**         | Vcc      | Vcc           | X1              |       |          |
+|               | D7       | D7            | X2              | D7~   | D7       |
+|               | SCL      | D3            | X3              | SCL   | D12      |
+|               | SDA      | D2            | X4              | SDA   | D11      |
+|               | GND      | GND           | X5              |       |          |
+| **Y**         | GPIO1    | D5 (PWM)      | Y1              | D5~   | D6~      |
+|               | GPIO2    | D8/A8         | Y2              | D8~   | D8       |
+|               | GND      | GND           | Y3              |       |          |
+| **Internal**  | THS      | A5            | Thermal sensor  | A7    | A5       |
+|               | RLY      | D4/A6         | Thermal breaker | D4~   | A6       |
+| **Reserved**  |          |               |                 | D2~   | D9       |
+|               |          |               |                 | D3~   | D10      |
+
+*Future releases.
 
 ### Board Connectors
 
@@ -298,45 +302,45 @@ Pineapple II has SparkFun's Qwiic-compatible connector pad at the back of the PC
 |                  | C11    | 10n (103)          | 2012   |
 |                  | C12    | 10n (103)          | 2012   |
 |                  | C13    | 10n (103)          | 2012   |
-| Diode            | D1     | 1S3                |
-|                  | D2     | 1S3                |
-|                  | D3     | 1S3                |
-| Fuse             | F1     |                    |
-| IC               | IC1    | 74LS07N            |
-|                  | IC2    | 4066N              |
-|                  | IC11   | 74LS153D           |
-|                  | IC12   | LTC485             |
-|                  | IC13   | LTC485             |
-| Connector        | J1     | JST PH 5p          |
-|                  | J2     | JST PH 3p Vertical |
-|                  | J3     | JST PH 4p Vertical |
-|                  | J4     | JST PH 2p Vertical |
-|                  | J5     | JST PH 3p          |
-|                  | J11    | JST SH 4p          |
-|                  | J12    | JST SH 4p          |
-|                  | J13    | JST SH 4p          |
-|                  | J14    | JST SH 4p          |
-| Jumper           | JP1    | Pinheader 1x2      |
-|                  | JP2    | Pinheader 1x2      |
-|                  | JP3    | Pinheader 2x3      |
-|                  | JP4    | Pinheader 1x2      |
-|                  | JP5    | Pinheader 1x5      |
-| Relay            | K1     | G5V-1              |
-| Micro Controller | MC1    | Arduino Micro      |
-| Optocoupler      | OK1    | TLP552             |
-| Resistor         | R1     | 47k (473)          |
-|                  | R2     | 1k (102)           |
-|                  | R3     | 1k (102)           |
-|                  | R4     | 120 (121)          |
-|                  | R5     | 120 (121)          |
-|                  | R11    | 10k (103)          | 2012  |
-|                  | R12    | 120 (121)          | 2012  |
-|                  | R13    | 120 (121)           | 2012  |
-| Resistor Net     | RN1    | 4.7k 4-elements    |
-|                  | RN2    | 10k 4-elements     |
-|                  | RN3    | 220 8-elements DIL |
-| Connector ML     | SV1    | 16p                |
-|                  | SV2    | 20p                |
-| Transistor       | T1     | 2SC1815Y           |
-| Thermal Sensor   | U1     | DS18B20            |
-| V. Regulator     | V1     | L7805              |
+| Diode            | D1     | 1S3                |        |
+|                  | D2     | 1S3                |        |
+|                  | D3     | 1S3                |        |
+| Fuse             | F1     |                    |        |
+| IC               | IC1    | 74LS07N            |        |
+|                  | IC2    | 4066N              |        |
+|                  | IC11   | 74LS153D           |        |
+|                  | IC12   | LTC485             |        |
+|                  | IC13   | LTC485             |        |
+| Connector        | J1     | JST PH 5p          |        |
+|                  | J2     | JST PH 3p Vertical |        |
+|                  | J3     | JST PH 4p Vertical |        |
+|                  | J4     | JST PH 2p Vertical |        |
+|                  | J5     | JST PH 3p          |        |
+|                  | J11    | JST SH 4p          |        |
+|                  | J12    | JST SH 4p          |        |
+|                  | J13    | JST SH 4p          |        |
+|                  | J14    | JST SH 4p          |        |
+| Jumper           | JP1    | Pinheader 1x2      |        |
+|                  | JP2    | Pinheader 1x2      |        |
+|                  | JP3    | Pinheader 2x3      |        |
+|                  | JP4    | Pinheader 1x2      |        |
+|                  | JP5    | Pinheader 1x5      |        |
+| Relay            | K1     | G5V-1              |        |
+| Micro Controller | MC1    | Arduino Micro      |        |
+| Optocoupler      | OK1    | TLP552             |        |
+| Resistor         | R1     | 47k (473)          |        |
+|                  | R2     | 1k (102)           |        |
+|                  | R3     | 1k (102)           |        |
+|                  | R4     | 120 (121)          |        |
+|                  | R5     | 120 (121)          |        |
+|                  | R11    | 10k (103)          | 2012   |
+|                  | R12    | 120 (121)          | 2012   |
+|                  | R13    | 120 (121)          | 2012   |
+| Resistor Net     | RN1    | 4.7k 4-elements    |        |
+|                  | RN2    | 10k 4-elements     |        |
+|                  | RN3    | 220 8-elements DIL |        |
+| Connector ML     | SV1    | 16p                |        |
+|                  | SV2    | 20p                |        |
+| Transistor       | T1     | 2SC1815Y           |        |
+| Thermal Sensor   | U1     | DS18B20            |        |
+| V. Regulator     | V1     | L7805              |        |
