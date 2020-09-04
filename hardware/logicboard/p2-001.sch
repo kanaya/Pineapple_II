@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -29912,29 +29912,31 @@ Part Number: HA-522</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,360.68,160.02,SV2-5,S,,,,"/>
-<approved hash="101,1,284.48,38.1,IC1D,O,,,,"/>
-<approved hash="101,1,284.48,25.4,IC1E,O,,,,"/>
-<approved hash="101,1,284.48,12.7,IC1F,O,,,,"/>
-<approved hash="104,1,119.38,228.6,U1,VDD,VCC,,,"/>
-<approved hash="104,1,167.64,12.7,IC2P,VSS,GND,,,"/>
-<approved hash="104,1,167.64,27.94,IC2P,VDD,VCC,,,"/>
+<approved hash="101,1,312.42,144.78,SV2-5,S,,,,"/>
+<approved hash="101,1,274.32,116.84,IC1D,O,,,,"/>
+<approved hash="101,1,274.32,104.14,IC1E,O,,,,"/>
+<approved hash="101,1,274.32,91.44,IC1F,O,,,,"/>
+<approved hash="104,1,91.44,172.72,U1,VDD,VCC,,,"/>
+<approved hash="104,1,241.3,203.2,IC2P,VSS,GND,,,"/>
+<approved hash="104,1,241.3,218.44,IC2P,VDD,VCC,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
-<approved hash="113,1,364.892,175.26,SV2,,,,,"/>
-<approved hash="113,1,284.48,38.1,X1,,,,,"/>
-<approved hash="113,1,284.48,25.4,X2,,,,,"/>
-<approved hash="113,1,284.48,12.7,X3,,,,,"/>
-<approved hash="113,1,88.9,203.2,X4,,,,,"/>
-<approved hash="113,1,88.9,200.66,X5,,,,,"/>
-<approved hash="113,1,21.188,154.94,SV1,,,,,"/>
-<approved hash="113,1,238.76,226.06,X6,,,,,"/>
-<approved hash="113,1,241.3,170.18,X7,,,,,"/>
-<approved hash="113,1,360.68,160.02,X8,,,,,"/>
-<approved hash="113,1,63.5,218.44,X9,,,,,"/>
-<approved hash="113,1,63.5,215.9,X10,,,,,"/>
-<approved hash="113,1,63.5,203.2,X12,,,,,"/>
-<approved hash="113,1,63.5,200.66,X13,,,,,"/>
-<approved hash="113,1,25.4,91.44,X14,,,,,"/>
+<approved hash="113,1,316.632,160.02,SV2,,,,,"/>
+<approved hash="113,1,274.32,116.84,X1,,,,,"/>
+<approved hash="113,1,274.32,104.14,X2,,,,,"/>
+<approved hash="113,1,274.32,91.44,X3,,,,,"/>
+<approved hash="113,1,96.52,195.58,X4,,,,,"/>
+<approved hash="113,1,96.52,193.04,X5,,,,,"/>
+<approved hash="113,1,36.428,124.46,SV1,,,,,"/>
+<approved hash="113,1,124.46,129.54,X6,,,,,"/>
+<approved hash="113,1,127,58.42,X7,,,,,"/>
+<approved hash="113,1,312.42,144.78,X8,,,,,"/>
+<approved hash="113,1,71.12,210.82,X9,,,,,"/>
+<approved hash="113,1,71.12,208.28,X10,,,,,"/>
+<approved hash="113,1,71.12,195.58,X12,,,,,"/>
+<approved hash="113,1,71.12,193.04,X13,,,,,"/>
+<approved hash="113,1,40.64,142.24,X14,,,,,"/>
+<approved hash="113,1,131.801,151.127,RX,,,,,"/>
+<approved hash="113,1,131.801,146.047,IN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
