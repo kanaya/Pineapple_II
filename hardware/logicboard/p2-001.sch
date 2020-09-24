@@ -29569,11 +29569,6 @@ Part Number: HA-522</description>
 <wire x1="99.06" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 <label x="101.6" y="38.1" size="0.8128" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="SV2" gate="-5" pin="S"/>
-<wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="309.88" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="PDN" class="0">
 <segment>
@@ -29792,6 +29787,7 @@ Part Number: HA-522</description>
 <junction x="76.2" y="43.18"/>
 <pinref part="JP5" gate="A" pin="3"/>
 <wire x1="76.2" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
+<label x="81.28" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -30050,13 +30046,18 @@ Part Number: HA-522</description>
 <wire x1="81.28" y1="22.86" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <junction x="81.28" y="38.1"/>
 <pinref part="JP5" gate="A" pin="1"/>
+<label x="81.28" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-5" pin="S"/>
+<wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="309.88" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,312.42,144.78,SV2-5,S,,,,"/>
 <approved hash="101,1,274.32,116.84,IC1D,O,,,,"/>
 <approved hash="101,1,274.32,104.14,IC1E,O,,,,"/>
 <approved hash="101,1,274.32,91.44,IC1F,O,,,,"/>
@@ -30073,7 +30074,6 @@ Part Number: HA-522</description>
 <approved hash="113,1,36.428,124.46,SV1,,,,,"/>
 <approved hash="113,1,124.46,129.54,X6,,,,,"/>
 <approved hash="113,1,127,58.42,X7,,,,,"/>
-<approved hash="113,1,312.42,144.78,X8,,,,,"/>
 <approved hash="113,1,71.12,210.82,X9,,,,,"/>
 <approved hash="113,1,71.12,208.28,X10,,,,,"/>
 <approved hash="113,1,71.12,195.58,X12,,,,,"/>
