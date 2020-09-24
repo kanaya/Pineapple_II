@@ -28113,7 +28113,6 @@ Part Number: HA-522</description>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="MPXJMP"/>
 <part name="D1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE" device="-1N4148" package3d_urn="urn:adsk.eagle:package:38452/1" value=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="JST-PTH-VERT" value="GPIO"/>
-<part name="X8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="X9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="X10" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
@@ -28644,7 +28643,6 @@ Part Number: HA-522</description>
 <attribute name="VALUE" x="60.96" y="53.34" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 <attribute name="NAME" x="58.42" y="53.34" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="X8" gate="G$1" x="312.42" y="144.78" smashed="yes"/>
 <instance part="SUPPLY4" gate="GND" x="231.14" y="198.12" smashed="yes"/>
 <instance part="X9" gate="G$1" x="71.12" y="210.82" smashed="yes"/>
 <instance part="X10" gate="G$1" x="71.12" y="208.28" smashed="yes"/>
@@ -29570,6 +29568,11 @@ Part Number: HA-522</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 <label x="101.6" y="38.1" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-5" pin="S"/>
+<wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="309.88" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PDN" class="0">
