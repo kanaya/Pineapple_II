@@ -227,7 +227,7 @@ The core of Pineapple II is an _Arduino Micro._ (Nano and Portena version are pl
 | B02 | GND              | PWR2       |
 | B03 | Reset            | SW1        |
 | B04 | GND              | SW2        |
-| B05 | NC               | NC         |
+| B05 | LED0             | NC         |
 | B06 | GND              | m2         |
 | B07 | MIDI IN Send     | m4         |
 | B08 | MIDI IN Return   | m5         |
