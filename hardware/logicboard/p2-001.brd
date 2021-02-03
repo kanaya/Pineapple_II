@@ -185,7 +185,7 @@
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="42"/>
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="42"/>
-<text x="15.5" y="67" size="1" layer="25" align="bottom-center">2.0.5-RC</text>
+<text x="15.5" y="67" size="1" layer="25" align="bottom-center">2.0.6-RC</text>
 <text x="26" y="63.46" size="1" layer="25" rot="R90" align="center">SD</text>
 <text x="26" y="60.92" size="1" layer="25" rot="R90" align="center">SC</text>
 <text x="26" y="53.3" size="1" layer="25" rot="R90" align="center">5V</text>
@@ -440,6 +440,10 @@ Here</text>
 <wire x1="26" y1="71" x2="26" y2="67" width="0.2" layer="22" style="shortdash"/>
 <wire x1="26" y1="67" x2="21" y2="67" width="0.2" layer="22" style="shortdash"/>
 <wire x1="21" y1="67" x2="21" y2="71" width="0.2" layer="22" style="shortdash"/>
+<wire x1="45.39" y1="61.5" x2="46.39" y2="60.5" width="0.1524" layer="21"/>
+<wire x1="46.39" y1="61.5" x2="45.39" y2="60.5" width="0.1524" layer="21"/>
+<wire x1="45.89" y1="63" x2="45.89" y2="61.5" width="0.1524" layer="21"/>
+<wire x1="45.89" y1="60.5" x2="45.89" y2="59" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
