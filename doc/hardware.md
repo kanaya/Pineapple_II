@@ -185,9 +185,9 @@ The core of Pineapple II is an _Arduino Micro._ (Nano and Portena version are pl
 |               | SCL      | D3            | X3              | SCL   | D12      |
 |               | SDA      | D2            | X4              | SDA   | D11      |
 |               | GND      | GND           | X5              |       |          |
-| **Y**         | GPIO1    | D5 (PWM)      | Y1              | D5~   | D6~      |
-|               | GPIO2    | D8/A8         | Y2              | D8~   | D8       |
-|               | GND      | GND           | Y3              |       |          |
+| **Y**         | GPIO1    | D5 (PWM)      | Y2              | D5~   | D6~      |
+|               | GPIO2    | D8/A8         | Y3              | D8~   | D8       |
+|               | GND      | GND           | Y1              |       |          |
 | **Internal**  | THS      | A5            | Thermal sensor  | A7    | A5       |
 |               | RLY      | D4/A6         | Thermal breaker | D4~   | A6       |
 | **Reserved**  |          |               |                 | D2~   | D9       |
