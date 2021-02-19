@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -318,67 +318,67 @@ Module (12708)</text>
 <text x="20" y="56.5" size="1" layer="26" rot="MR90" align="bottom-center">PWRSEL</text>
 <text x="68" y="48" size="1" layer="26" rot="MR0" align="bottom-center">PWRSEL</text>
 <polygon width="0.15" layer="22">
-<vertex x="66.75" y="43"/>
-<vertex x="67.25" y="43"/>
-<vertex x="67.25" y="41.5"/>
-<vertex x="66.75" y="41.5"/>
+<vertex x="66.75" y="44"/>
+<vertex x="67.25" y="44"/>
+<vertex x="67.25" y="42.5"/>
+<vertex x="66.75" y="42.5"/>
 </polygon>
-<wire x1="67.75" y1="43" x2="68.25" y2="43" width="0.15" layer="22"/>
-<wire x1="68.25" y1="43" x2="68.25" y2="41.5" width="0.15" layer="22"/>
-<wire x1="68.25" y1="41.5" x2="67.75" y2="41.5" width="0.15" layer="22"/>
-<wire x1="67.75" y1="41.5" x2="67.75" y2="43" width="0.15" layer="22"/>
+<wire x1="67.75" y1="44" x2="68.25" y2="44" width="0.15" layer="22"/>
+<wire x1="68.25" y1="44" x2="68.25" y2="42.5" width="0.15" layer="22"/>
+<wire x1="68.25" y1="42.5" x2="67.75" y2="42.5" width="0.15" layer="22"/>
+<wire x1="67.75" y1="42.5" x2="67.75" y2="44" width="0.15" layer="22"/>
 <polygon width="0.15" layer="22">
-<vertex x="68.75" y="43"/>
-<vertex x="68.75" y="41.5"/>
-<vertex x="69.25" y="41.5"/>
-<vertex x="69.25" y="43"/>
-</polygon>
-<polygon width="0.15" layer="22">
-<vertex x="67.75" y="38"/>
-<vertex x="67.75" y="36.5"/>
-<vertex x="68.25" y="36.5"/>
-<vertex x="68.25" y="38"/>
+<vertex x="68.75" y="44"/>
+<vertex x="68.75" y="42.5"/>
+<vertex x="69.25" y="42.5"/>
+<vertex x="69.25" y="44"/>
 </polygon>
 <polygon width="0.15" layer="22">
-<vertex x="68.75" y="38"/>
-<vertex x="68.75" y="36.5"/>
-<vertex x="69.25" y="36.5"/>
-<vertex x="69.25" y="38"/>
-</polygon>
-<wire x1="66.75" y1="38" x2="66.75" y2="36.5" width="0.15" layer="22"/>
-<wire x1="66.75" y1="36.5" x2="67.25" y2="36.5" width="0.15" layer="22"/>
-<wire x1="67.25" y1="36.5" x2="67.25" y2="38" width="0.15" layer="22"/>
-<wire x1="67.25" y1="38" x2="66.75" y2="38" width="0.15" layer="22"/>
-<polygon width="0.15" layer="22">
-<vertex x="66.75" y="33"/>
-<vertex x="66.75" y="31.5"/>
-<vertex x="67.25" y="31.5"/>
-<vertex x="67.25" y="33"/>
+<vertex x="67.75" y="39"/>
+<vertex x="67.75" y="37.5"/>
+<vertex x="68.25" y="37.5"/>
+<vertex x="68.25" y="39"/>
 </polygon>
 <polygon width="0.15" layer="22">
-<vertex x="67.75" y="32"/>
-<vertex x="67.75" y="31.5"/>
-<vertex x="69.25" y="31.5"/>
-<vertex x="69.25" y="32"/>
+<vertex x="68.75" y="39"/>
+<vertex x="68.75" y="37.5"/>
+<vertex x="69.25" y="37.5"/>
+<vertex x="69.25" y="39"/>
 </polygon>
-<wire x1="67.75" y1="33" x2="67.75" y2="32.5" width="0.15" layer="22"/>
-<wire x1="67.75" y1="32.5" x2="69.25" y2="32.5" width="0.15" layer="22"/>
-<wire x1="69.25" y1="32.5" x2="69.25" y2="33" width="0.15" layer="22"/>
-<wire x1="69.25" y1="33" x2="67.75" y2="33" width="0.15" layer="22"/>
-<wire x1="66.75" y1="28" x2="69.25" y2="28" width="0.15" layer="22"/>
-<wire x1="69.25" y1="28" x2="69.25" y2="27.5" width="0.15" layer="22"/>
-<wire x1="69.25" y1="27.5" x2="66.75" y2="27.5" width="0.15" layer="22"/>
-<wire x1="66.75" y1="27.5" x2="66.75" y2="28" width="0.15" layer="22"/>
+<wire x1="66.75" y1="39" x2="66.75" y2="37.5" width="0.15" layer="22"/>
+<wire x1="66.75" y1="37.5" x2="67.25" y2="37.5" width="0.15" layer="22"/>
+<wire x1="67.25" y1="37.5" x2="67.25" y2="39" width="0.15" layer="22"/>
+<wire x1="67.25" y1="39" x2="66.75" y2="39" width="0.15" layer="22"/>
 <polygon width="0.15" layer="22">
-<vertex x="66.75" y="27"/>
-<vertex x="66.75" y="26.5"/>
-<vertex x="69.25" y="26.5"/>
-<vertex x="69.25" y="27"/>
+<vertex x="66.75" y="34"/>
+<vertex x="66.75" y="32.5"/>
+<vertex x="67.25" y="32.5"/>
+<vertex x="67.25" y="34"/>
 </polygon>
-<text x="68" y="44" size="1" layer="26" rot="MR0" align="bottom-center">Dual</text>
-<text x="68" y="39" size="1" layer="26" rot="MR0" align="bottom-center">Regulator</text>
-<text x="68" y="34" size="1" layer="26" rot="MR0" align="bottom-center">Arduino</text>
-<text x="68" y="29" size="1" layer="26" rot="MR0" align="bottom-center">Direct 5V</text>
+<polygon width="0.15" layer="22">
+<vertex x="67.75" y="33"/>
+<vertex x="67.75" y="32.5"/>
+<vertex x="69.25" y="32.5"/>
+<vertex x="69.25" y="33"/>
+</polygon>
+<wire x1="67.75" y1="34" x2="67.75" y2="33.5" width="0.15" layer="22"/>
+<wire x1="67.75" y1="33.5" x2="69.25" y2="33.5" width="0.15" layer="22"/>
+<wire x1="69.25" y1="33.5" x2="69.25" y2="34" width="0.15" layer="22"/>
+<wire x1="69.25" y1="34" x2="67.75" y2="34" width="0.15" layer="22"/>
+<wire x1="66.75" y1="29" x2="69.25" y2="29" width="0.15" layer="22"/>
+<wire x1="69.25" y1="29" x2="69.25" y2="28.5" width="0.15" layer="22"/>
+<wire x1="69.25" y1="28.5" x2="66.75" y2="28.5" width="0.15" layer="22"/>
+<wire x1="66.75" y1="28.5" x2="66.75" y2="29" width="0.15" layer="22"/>
+<polygon width="0.15" layer="22">
+<vertex x="66.75" y="28"/>
+<vertex x="66.75" y="27.5"/>
+<vertex x="69.25" y="27.5"/>
+<vertex x="69.25" y="28"/>
+</polygon>
+<text x="68" y="45" size="1" layer="26" rot="MR0" align="bottom-center">Dual</text>
+<text x="68" y="40" size="1" layer="26" rot="MR0" align="bottom-center">Regulator</text>
+<text x="68" y="35" size="1" layer="26" rot="MR0" align="bottom-center">Arduino</text>
+<text x="68" y="30" size="1" layer="26" rot="MR0" align="bottom-center">Direct 5V</text>
 <rectangle x1="21.5" y1="54.84" x2="22" y2="56.84" layer="21"/>
 <rectangle x1="7.25" y1="9" x2="7.75" y2="11" layer="21"/>
 <rectangle x1="12.75" y1="3.5" x2="13.25" y2="5.5" layer="21"/>
@@ -387,26 +387,26 @@ Module (12708)</text>
 <rectangle x1="64" y1="67.25" x2="66" y2="67.75" layer="22"/>
 <rectangle x1="12.75" y1="3.5" x2="13.25" y2="5.5" layer="22"/>
 <rectangle x1="22" y1="54.84" x2="22.5" y2="56.84" layer="22"/>
-<wire x1="66.5" y1="28.5" x2="66.5" y2="26.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="26.5" x2="67" y2="26" width="0.15" layer="22"/>
-<wire x1="67" y1="26" x2="69.5" y2="26" width="0.15" layer="22"/>
-<wire x1="69.5" y1="26" x2="69.5" y2="28.5" width="0.15" layer="22"/>
-<wire x1="69.5" y1="28.5" x2="66.5" y2="28.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="33.5" x2="66.5" y2="31.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="31.5" x2="67" y2="31" width="0.15" layer="22"/>
-<wire x1="67" y1="31" x2="69.5" y2="31" width="0.15" layer="22"/>
-<wire x1="69.5" y1="31" x2="69.5" y2="33.5" width="0.15" layer="22"/>
-<wire x1="69.5" y1="33.5" x2="66.5" y2="33.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="38.5" x2="66.5" y2="36.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="36.5" x2="67" y2="36" width="0.15" layer="22"/>
-<wire x1="67" y1="36" x2="69.5" y2="36" width="0.15" layer="22"/>
-<wire x1="69.5" y1="36" x2="69.5" y2="38.5" width="0.15" layer="22"/>
-<wire x1="69.5" y1="38.5" x2="66.5" y2="38.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="43.5" x2="66.5" y2="41.5" width="0.15" layer="22"/>
-<wire x1="66.5" y1="41.5" x2="67" y2="41" width="0.15" layer="22"/>
-<wire x1="67" y1="41" x2="69.5" y2="41" width="0.15" layer="22"/>
-<wire x1="69.5" y1="41" x2="69.5" y2="43.5" width="0.15" layer="22"/>
-<wire x1="69.5" y1="43.5" x2="66.5" y2="43.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="29.5" x2="66.5" y2="27.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="27.5" x2="67" y2="27" width="0.15" layer="22"/>
+<wire x1="67" y1="27" x2="69.5" y2="27" width="0.15" layer="22"/>
+<wire x1="69.5" y1="27" x2="69.5" y2="29.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="29.5" x2="66.5" y2="29.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="34.5" x2="66.5" y2="32.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="32.5" x2="67" y2="32" width="0.15" layer="22"/>
+<wire x1="67" y1="32" x2="69.5" y2="32" width="0.15" layer="22"/>
+<wire x1="69.5" y1="32" x2="69.5" y2="34.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="34.5" x2="66.5" y2="34.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="39.5" x2="66.5" y2="37.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="37.5" x2="67" y2="37" width="0.15" layer="22"/>
+<wire x1="67" y1="37" x2="69.5" y2="37" width="0.15" layer="22"/>
+<wire x1="69.5" y1="37" x2="69.5" y2="39.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="39.5" x2="66.5" y2="39.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="44.5" x2="66.5" y2="42.5" width="0.15" layer="22"/>
+<wire x1="66.5" y1="42.5" x2="67" y2="42" width="0.15" layer="22"/>
+<wire x1="67" y1="42" x2="69.5" y2="42" width="0.15" layer="22"/>
+<wire x1="69.5" y1="42" x2="69.5" y2="44.5" width="0.15" layer="22"/>
+<wire x1="69.5" y1="44.5" x2="66.5" y2="44.5" width="0.15" layer="22"/>
 <text x="68" y="25" size="1" layer="26" rot="MR0" align="top-center">Bottom
 View</text>
 <text x="41" y="54" size="1" layer="25" align="center">121</text>
