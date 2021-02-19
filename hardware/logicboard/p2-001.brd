@@ -316,7 +316,7 @@ Module (12708)</text>
 <wire x1="11.5" y1="54.5" x2="11.5" y2="59" width="0.15" layer="22"/>
 <text x="15.5" y="64.5" size="1" layer="25" align="bottom-center">RTC1</text>
 <text x="20" y="56.5" size="1" layer="26" rot="MR90" align="bottom-center">PWRSEL</text>
-<text x="68" y="46" size="1" layer="26" rot="MR0" align="bottom-center">PWRSEL</text>
+<text x="68" y="48" size="1" layer="26" rot="MR0" align="bottom-center">PWRSEL</text>
 <polygon width="0.15" layer="22">
 <vertex x="66.75" y="43"/>
 <vertex x="67.25" y="43"/>
@@ -460,6 +460,14 @@ Here</text>
 <wire x1="1.5" y1="60" x2="1.5" y2="59" width="0.15" layer="22"/>
 <wire x1="1" y1="64" x2="1" y2="63" width="0.15" layer="21"/>
 <wire x1="1" y1="60" x2="1" y2="59" width="0.15" layer="21"/>
+<wire x1="42" y1="36" x2="64" y2="36" width="0.15" layer="22" style="shortdash"/>
+<wire x1="30" y1="36" x2="15.5" y2="36" width="0.15" layer="22" style="shortdash"/>
+<wire x1="15.5" y1="36" x2="15.5" y2="49.5" width="0.15" layer="22" style="shortdash"/>
+<wire x1="65" y1="50" x2="64" y2="50" width="0.15" layer="22" style="shortdash"/>
+<wire x1="64" y1="50" x2="64" y2="22" width="0.15" layer="22" style="shortdash"/>
+<wire x1="64" y1="22" x2="65" y2="22" width="0.15" layer="22" style="shortdash"/>
+<wire x1="17" y1="48" x2="15.5" y2="49.5" width="0.15" layer="22"/>
+<wire x1="15.5" y1="49.5" x2="14" y2="48" width="0.15" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
