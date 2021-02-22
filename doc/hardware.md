@@ -16,8 +16,8 @@ Table. GeekPort II Pinout
 
 | Pin | Meaning      |
 |-----|--------------|
-| G1  | Vcc (5V)     |
-| G2  | GND          |
+| G1  | GND          |
+| G2  | Vcc (5V)     |
 | G3  | Anaolg Input |
 | G4  | Detector     |
 | G5  | I2C SDA (5V) |
@@ -56,8 +56,8 @@ GeekPort II can be configured as Regular or Lite.
 
 | HR-10A Pin Num. | Meaning   |
 |-----------------|-----------|
-| 1               | Power     |
-| 2               | GND       |
+| 1               | GND       |
+| 2               | Power     |
 | 3               | Detector  |
 | 4               | Analog In |
 | 5               | I2C SDA   |
@@ -138,10 +138,10 @@ The audio-plug version of MIDI In should be looked like as follows.
 
 The DC jack can be either EIAJ-4 power jack or standard 5.5mm/2.1mm power jack.
 
-| DC Jack | Meaning |
-|---------|---------|
-| PWR1    | DC +12V |
-| PWR2    | GND     |
+| DC Jack    | Meaning |
+|------------|---------|
+| PWR-Center | DC +9V  |
+| PWR-Sleeve | GND     |
 
 #### Reset SW
 
@@ -178,8 +178,8 @@ The core of Pineapple II is an _Arduino Micro._ (Nano and Portena version are pl
 | **Indicator** | LED0     | D13 (PWM)     | Green LED       | D13~  | D4~      |
 |               | LED1     | D11 (PWM)     | Red LED         | D11~  | D5~      |
 | **Reset**     | RST      | Reset         | SW              |       |          |
-| **Power**     | Vin      | VIN           | P1              |       |          |
-|               | GND      | GND           | P2              |       |          |
+| **Power**     | Vin      | VIN           | P-Center        |       |          |
+|               | GND      | GND           | P-Sleeve        |       |          |
 | **X**         | Vcc      | Vcc           | X1              |       |          |
 |               | D7       | D7            | X2              | D7~   | D7       |
 |               | SCL      | D3            | X3              | SCL   | D12      |
@@ -201,30 +201,30 @@ The core of Pineapple II is an _Arduino Micro._ (Nano and Portena version are pl
 
 | Pin | Meaning    | Connect to | Connect to (Lite) |
 |-----|------------|------------|-------------------|
-| F01 | Vout       | G1-1       | g1-T              |
-| F02 | GND        | G1-2       | g1-S              |
+| F01 | GND        | G1-1       | g1-S              |
+| F02 | Vout       | G1-2       | g1-T              |
 | F03 | Detector 1 | G1-3       | g1-R2             |
 | F04 | Analog 1   | G1-4       | g1-R1             |
-| F05 | Vout       | G2-1       | g2-T              |
-| F06 | GND        | G2-2/g2-S  | g2-S              |
-| F07 | Detector 2 | G2-3/g2-R2 | g2-R2             |
-| F08 | Analog 2   | G2-4/g2-R1 | g2-R1             |
-| F09 | Vout       | G3-1/g3-T  | g3-T              |
-| F10 | GND        | G3-2/g3-S  | g3-S              |
-| F11 | Detector 3 | G3-3/g3-R2 | g3-R2             |
-| F12 | Analog 3   | G3-4/g3-R1 | g3-R1             |
-| F13 | Vout       | G4-1/g4-T  | g4-T              |
-| F14 | GND        | G4-2/g4-S  | g4-S              |
-| F15 | Detector 4 | G4-3/g4-R2 | g4-R2             |
-| F16 | Analog 4   | G4-4/g4-R1 | g4-R1             |
+| F05 | GND        | G2-1       | g2-S              |
+| F06 | Vout       | G2-2       | g2-T              |
+| F07 | Detector 2 | G2-3       | g2-R2             |
+| F08 | Analog 2   | G2-4       | g2-R1             |
+| F09 | GND        | G3-1       | g3-S              |
+| F10 | Vout       | G3-2       | g3-T              |
+| F11 | Detector 3 | G3-3       | g3-R2             |
+| F12 | Analog 3   | G3-4       | g3-R1             |
+| F13 | GND        | G4-1       | g4-S              |
+| F14 | Vout       | G4-2       | g4-T              |
+| F15 | Detector 4 | G4-3       | g4-R2             |
+| F16 | Analog 4   | G4-4       | g4-R1             |
 
 
 #### Back Connector (MIL 20p Connector)
 
 | Pin | Meaning          | Connect to |
 |-----|------------------|------------|
-| B01 | DC9V             | PWR1       |
-| B02 | GND              | PWR2       |
+| B01 | GND              | PWR-Sleeve |
+| B02 | DC9V             | PWR-Center |
 | B03 | Reset            | SW1        |
 | B04 | GND              | SW2        |
 | B05 | LED0             | NC         |
