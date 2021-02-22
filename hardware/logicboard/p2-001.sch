@@ -31308,11 +31308,6 @@ Part Number: HA-522</description>
 <label x="231.14" y="203.2" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-2" pin="S"/>
-<wire x1="312.42" y1="157.48" x2="309.88" y2="157.48" width="0.1524" layer="91"/>
-<label x="309.88" y="157.48" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SV2" gate="-4" pin="S"/>
 <wire x1="312.42" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
 <label x="309.88" y="149.86" size="0.8128" layer="95" rot="MR0" xref="yes"/>
@@ -31358,26 +31353,6 @@ Part Number: HA-522</description>
 <label x="43.18" y="139.7" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-2" pin="S"/>
-<label x="43.18" y="121.92" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-6" pin="S"/>
-<label x="43.18" y="109.22" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-10" pin="S"/>
-<label x="43.18" y="96.52" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-14" pin="S"/>
-<label x="43.18" y="83.82" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J13" gate="J1" pin="GND"/>
 <wire x1="40.64" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 <label x="43.18" y="27.94" size="0.8128" layer="95" xref="yes"/>
@@ -31404,14 +31379,39 @@ Part Number: HA-522</description>
 <pinref part="J3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
-<label x="99.06" y="15.24" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP5" gate="A" pin="2"/>
 <wire x1="35.56" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
 <label x="43.18" y="165.1" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="43.18" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-1" pin="S"/>
+<label x="43.18" y="124.46" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-5" pin="S"/>
+<label x="43.18" y="111.76" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-9" pin="S"/>
+<label x="43.18" y="99.06" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-13" pin="S"/>
+<label x="43.18" y="86.36" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-1" pin="S"/>
+<wire x1="309.88" y1="160.02" x2="312.42" y2="160.02" width="0.1524" layer="91"/>
+<label x="309.88" y="160.02" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="12.7" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
+<label x="99.06" y="12.7" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -31582,14 +31582,14 @@ Part Number: HA-522</description>
 <label x="35.56" y="182.88" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="12.7" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
-<label x="99.06" y="12.7" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP5" gate="A" pin="1"/>
 <wire x1="35.56" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
 <label x="43.18" y="162.56" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
+<label x="99.06" y="15.24" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -32196,29 +32196,29 @@ Part Number: HA-522</description>
 <label x="271.78" y="162.56" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-9" pin="S"/>
-<label x="43.18" y="99.06" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-13" pin="S"/>
-<label x="43.18" y="86.36" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-5" pin="S"/>
-<label x="43.18" y="111.76" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-1" pin="S"/>
-<label x="43.18" y="124.46" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="38.1" y1="190.5" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <label x="38.1" y="182.88" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-2" pin="S"/>
+<label x="43.18" y="121.92" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="109.22" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-6" pin="S"/>
+<label x="43.18" y="109.22" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="96.52" x2="43.18" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-10" pin="S"/>
+<label x="43.18" y="96.52" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-14" pin="S"/>
+<label x="43.18" y="83.82" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED1A" class="0">
@@ -32436,11 +32436,6 @@ Part Number: HA-522</description>
 <label x="119.38" y="233.68" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-1" pin="S"/>
-<wire x1="309.88" y1="160.02" x2="312.42" y2="160.02" width="0.1524" layer="91"/>
-<label x="309.88" y="160.02" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="33.02" y1="190.5" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
 <label x="33.02" y="182.88" size="0.8128" layer="95" rot="R270" xref="yes"/>
@@ -32449,6 +32444,11 @@ Part Number: HA-522</description>
 <pinref part="JP5" gate="A" pin="3"/>
 <wire x1="35.56" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
 <label x="43.18" y="167.64" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-2" pin="S"/>
+<wire x1="312.42" y1="157.48" x2="309.88" y2="157.48" width="0.1524" layer="91"/>
+<label x="309.88" y="157.48" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="LED0A" class="0">
@@ -32524,9 +32524,9 @@ Part Number: HA-522</description>
 <label x="68.58" y="195.58" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="4"/>
-<wire x1="96.52" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
-<label x="99.06" y="20.32" size="0.8128" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="5"/>
+<wire x1="96.52" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
+<label x="99.06" y="22.86" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -32536,9 +32536,9 @@ Part Number: HA-522</description>
 <label x="68.58" y="193.04" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="5"/>
-<wire x1="96.52" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
-<label x="99.06" y="22.86" size="0.8128" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="3"/>
+<wire x1="96.52" y1="17.78" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
+<label x="99.06" y="17.78" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -32548,9 +32548,9 @@ Part Number: HA-522</description>
 <label x="99.06" y="193.04" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="3"/>
-<wire x1="96.52" y1="17.78" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
-<label x="99.06" y="17.78" size="0.8128" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="4"/>
+<wire x1="96.52" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<label x="99.06" y="20.32" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
