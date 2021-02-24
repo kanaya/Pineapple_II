@@ -30629,6 +30629,7 @@ Part Number: HA-522</description>
 <wire x1="226.06" y1="124.46" x2="226.06" y2="81.28" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="226.06" y1="81.28" x2="294.64" y2="81.28" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="294.64" y1="81.28" x2="294.64" y2="124.46" width="0.1524" layer="94" style="shortdash"/>
+<text x="190.5" y="101.6" size="1.778" layer="91">Vcc</text>
 </plain>
 <instances>
 <instance part="MC1" gate="G$1" x="83.82" y="213.36" smashed="yes" rot="R270"/>
@@ -30647,25 +30648,25 @@ Part Number: HA-522</description>
 <attribute name="VALUE" x="205.74" y="124.46" size="1.778" layer="96" align="top-center"/>
 <attribute name="NAME" x="200.66" y="127" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="RN3" gate="B" x="203.2" y="93.98" smashed="yes">
-<attribute name="VALUE" x="208.28" y="93.98" size="1.778" layer="96" align="top-center"/>
-<attribute name="NAME" x="203.2" y="96.52" size="1.778" layer="95" align="bottom-center"/>
-</instance>
-<instance part="RN3" gate="C" x="200.66" y="43.18" smashed="yes">
+<instance part="RN3" gate="B" x="200.66" y="43.18" smashed="yes">
 <attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" align="top-center"/>
 <attribute name="NAME" x="200.66" y="45.72" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="RN3" gate="D" x="200.66" y="30.48" smashed="yes">
-<attribute name="VALUE" x="205.74" y="30.48" size="1.778" layer="96" align="top-center"/>
-<attribute name="NAME" x="200.66" y="33.02" size="1.778" layer="95" align="bottom-center"/>
+<instance part="RN3" gate="C" x="152.4" y="38.1" smashed="yes">
+<attribute name="VALUE" x="157.48" y="38.1" size="1.778" layer="96" align="top-center"/>
+<attribute name="NAME" x="152.4" y="40.64" size="1.778" layer="95" align="bottom-center"/>
+</instance>
+<instance part="RN3" gate="D" x="203.2" y="93.98" smashed="yes">
+<attribute name="VALUE" x="208.28" y="93.98" size="1.778" layer="96" align="top-center"/>
+<attribute name="NAME" x="203.2" y="96.52" size="1.778" layer="95" align="bottom-center"/>
 </instance>
 <instance part="RN3" gate="E" x="154.94" y="88.9" smashed="yes">
 <attribute name="VALUE" x="160.02" y="88.9" size="1.778" layer="96" align="top-center"/>
 <attribute name="NAME" x="154.94" y="91.44" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="RN3" gate="F" x="152.4" y="38.1" smashed="yes">
-<attribute name="VALUE" x="157.48" y="38.1" size="1.778" layer="96" align="top-center"/>
-<attribute name="NAME" x="152.4" y="40.64" size="1.778" layer="95" align="bottom-center"/>
+<instance part="RN3" gate="F" x="200.66" y="30.48" smashed="yes">
+<attribute name="VALUE" x="205.74" y="30.48" size="1.778" layer="96" align="top-center"/>
+<attribute name="NAME" x="200.66" y="33.02" size="1.778" layer="95" align="bottom-center"/>
 </instance>
 <instance part="RN3" gate="G" x="152.4" y="25.4" smashed="yes">
 <attribute name="VALUE" x="157.48" y="25.4" size="1.778" layer="96" align="top-center"/>
@@ -31413,6 +31414,11 @@ Part Number: HA-522</description>
 <wire x1="96.52" y1="12.7" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
 <label x="99.06" y="12.7" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="-20" pin="S"/>
+<wire x1="312.42" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="309.88" y="91.44" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="2">
 <segment>
@@ -31543,22 +31549,22 @@ Part Number: HA-522</description>
 <label x="157.48" y="127" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="RN3" gate="B" pin="1"/>
-<wire x1="198.12" y1="93.98" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="93.98" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <label x="195.58" y="96.52" size="0.8128" layer="95" rot="MR90" xref="yes"/>
+<pinref part="RN3" gate="D" pin="1"/>
+<wire x1="198.12" y1="93.98" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RN3" gate="C" pin="1"/>
-<wire x1="195.58" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="43.18" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
 <label x="193.04" y="45.72" size="0.8128" layer="95" rot="MR90" xref="yes"/>
+<pinref part="RN3" gate="B" pin="1"/>
+<wire x1="195.58" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RN3" gate="D" pin="1"/>
-<wire x1="195.58" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="30.48" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
 <label x="193.04" y="33.02" size="0.8128" layer="95" rot="MR90" xref="yes"/>
+<pinref part="RN3" gate="F" pin="1"/>
+<wire x1="195.58" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC13" gate="G$1" pin="!RE"/>
@@ -31590,6 +31596,11 @@ Part Number: HA-522</description>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
 <label x="99.06" y="15.24" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-19" pin="S"/>
+<wire x1="312.42" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -31666,13 +31677,6 @@ Part Number: HA-522</description>
 <pinref part="RN3" gate="E" pin="1"/>
 <pinref part="IC1" gate="A" pin="O"/>
 <wire x1="149.86" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MO1" class="0">
-<segment>
-<pinref part="RN3" gate="F" pin="1"/>
-<pinref part="IC1" gate="B" pin="O"/>
-<wire x1="147.32" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MO2" class="0">
@@ -32234,7 +32238,7 @@ Part Number: HA-522</description>
 <label x="81.28" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MISEND" class="0">
+<net name="MISND" class="0">
 <segment>
 <pinref part="RN3" gate="A" pin="2"/>
 <wire x1="205.74" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
@@ -32246,7 +32250,7 @@ Part Number: HA-522</description>
 <label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="MIRETN" class="0">
+<net name="MIRTN" class="0">
 <segment>
 <pinref part="SV2" gate="-8" pin="S"/>
 <wire x1="312.42" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
@@ -32263,76 +32267,35 @@ Part Number: HA-522</description>
 <label x="213.36" y="116.84" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MTRETN" class="0">
-<segment>
-<pinref part="RN3" gate="E" pin="2"/>
-<wire x1="160.02" y1="88.9" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
-<label x="213.36" y="88.9" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-20" pin="S"/>
-<wire x1="312.42" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="309.88" y="91.44" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="MTSEND" class="0">
-<segment>
-<pinref part="RN3" gate="B" pin="2"/>
-<wire x1="208.28" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
-<label x="213.36" y="93.98" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-19" pin="S"/>
-<wire x1="312.42" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="MO1RETN" class="0">
-<segment>
-<pinref part="RN3" gate="F" pin="2"/>
-<wire x1="157.48" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
-<label x="210.82" y="38.1" size="0.8128" layer="95" xref="yes"/>
-</segment>
+<net name="MORTN" class="0">
 <segment>
 <pinref part="SV2" gate="-14" pin="S"/>
 <wire x1="312.42" y1="114.3" x2="309.88" y2="114.3" width="0.1524" layer="91"/>
 <label x="309.88" y="114.3" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
-</net>
-<net name="MO1SEND" class="0">
 <segment>
 <pinref part="RN3" gate="C" pin="2"/>
-<wire x1="205.74" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
-<label x="210.82" y="43.18" size="0.8128" layer="95" xref="yes"/>
+<wire x1="157.48" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="210.82" y="38.1" size="0.8128" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="MOSND" class="0">
 <segment>
 <pinref part="SV2" gate="-13" pin="S"/>
 <wire x1="312.42" y1="116.84" x2="309.88" y2="116.84" width="0.1524" layer="91"/>
 <label x="309.88" y="116.84" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="RN3" gate="B" pin="2"/>
+<wire x1="205.74" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+<label x="210.82" y="43.18" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
-<net name="MO2RETN" class="0">
+<net name="MO2RTN" class="0">
 <segment>
 <pinref part="RN3" gate="G" pin="2"/>
 <wire x1="157.48" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
 <label x="210.82" y="25.4" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-18" pin="S"/>
-<wire x1="312.42" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="309.88" y="99.06" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="MO2SEND" class="0">
-<segment>
-<pinref part="RN3" gate="D" pin="2"/>
-<wire x1="205.74" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
-<label x="210.82" y="30.48" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-17" pin="S"/>
-<wire x1="312.42" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="309.88" y="101.6" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="VOUTRAW2" class="2">
@@ -32551,6 +32514,44 @@ Part Number: HA-522</description>
 <pinref part="J5" gate="G$1" pin="4"/>
 <wire x1="96.52" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
 <label x="99.06" y="20.32" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MTSND" class="0">
+<segment>
+<pinref part="SV2" gate="-17" pin="S"/>
+<wire x1="312.42" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="309.88" y="101.6" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="RN3" gate="D" pin="2"/>
+<wire x1="208.28" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<label x="213.36" y="93.98" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MTRTN" class="0">
+<segment>
+<pinref part="SV2" gate="-18" pin="S"/>
+<wire x1="312.42" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="309.88" y="99.06" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="RN3" gate="E" pin="2"/>
+<wire x1="160.02" y1="88.9" x2="213.36" y2="88.9" width="0.1524" layer="91"/>
+<label x="213.36" y="88.9" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MO2SND" class="0">
+<segment>
+<pinref part="RN3" gate="F" pin="2"/>
+<wire x1="205.74" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
+<label x="210.82" y="30.48" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MO" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="O"/>
+<pinref part="RN3" gate="C" pin="1"/>
+<wire x1="144.78" y1="38.1" x2="147.32" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
