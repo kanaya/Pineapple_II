@@ -8341,21 +8341,21 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <attribute name="VALUE" x="35.56" y="236.22" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY33" gate="GND" x="35.56" y="220.98" smashed="yes"/>
-<instance part="J1" gate="G$1" x="35.56" y="190.5" smashed="yes">
-<attribute name="NAME" x="35.56" y="184.912" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="35.56" y="182.626" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="J1" gate="G$1" x="76.2" y="228.6" smashed="yes">
+<attribute name="NAME" x="76.2" y="223.012" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="76.2" y="220.726" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J2" gate="G$1" x="35.56" y="165.1" smashed="yes">
-<attribute name="NAME" x="35.56" y="159.512" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="35.56" y="157.226" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="J2" gate="G$1" x="124.46" y="228.6" smashed="yes">
+<attribute name="NAME" x="124.46" y="223.012" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="124.46" y="220.726" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J3" gate="G$1" x="35.56" y="142.24" smashed="yes">
-<attribute name="NAME" x="35.56" y="136.652" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="35.56" y="134.366" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="J3" gate="G$1" x="172.72" y="228.6" smashed="yes">
+<attribute name="NAME" x="172.72" y="223.012" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="172.72" y="220.726" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J0" gate="G$1" x="38.1" y="116.84" smashed="yes">
-<attribute name="NAME" x="30.48" y="121.92" size="1.778" layer="95"/>
-<attribute name="VALUE" x="30.48" y="111.76" size="1.778" layer="96"/>
+<instance part="J0" gate="G$1" x="312.42" y="231.14" smashed="yes">
+<attribute name="NAME" x="304.8" y="236.22" size="1.778" layer="95"/>
+<attribute name="VALUE" x="304.8" y="226.06" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8386,6 +8386,28 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <pinref part="SV2" gate="-1" pin="S"/>
 <wire x1="309.88" y1="160.02" x2="312.42" y2="160.02" width="0.1524" layer="91"/>
 <label x="309.88" y="160.02" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="238.76" x2="124.46" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="241.3" x2="137.16" y2="241.3" width="0.1524" layer="91"/>
+<label x="137.16" y="241.3" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="238.76" x2="172.72" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="241.3" x2="185.42" y2="241.3" width="0.1524" layer="91"/>
+<label x="185.42" y="241.3" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J0" gate="G$1" pin="2"/>
+<wire x1="317.5" y1="231.14" x2="320.04" y2="231.14" width="0.1524" layer="91"/>
+<label x="320.04" y="231.14" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J0" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="228.6" x2="320.04" y2="228.6" width="0.1524" layer="91"/>
+<label x="320.04" y="228.6" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MTX+" class="0">
@@ -8436,12 +8458,22 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="312.42" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
 <label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="233.68" x2="88.9" y2="233.68" width="0.1524" layer="91"/>
+<label x="88.9" y="233.68" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="MIRETN" class="0">
 <segment>
 <pinref part="SV2" gate="-8" pin="S"/>
 <wire x1="312.42" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
 <label x="309.88" y="134.62" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="68.58" y1="233.68" x2="63.5" y2="233.68" width="0.1524" layer="91"/>
+<label x="63.5" y="233.68" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MTRETN" class="0">
@@ -8450,12 +8482,22 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="312.42" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="309.88" y="91.44" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="5"/>
+<wire x1="165.1" y1="233.68" x2="160.02" y2="233.68" width="0.1524" layer="91"/>
+<label x="160.02" y="233.68" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MTSEND" class="0">
 <segment>
 <pinref part="SV2" gate="-19" pin="S"/>
 <wire x1="312.42" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
 <label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="180.34" y1="233.68" x2="185.42" y2="233.68" width="0.1524" layer="91"/>
+<label x="185.42" y="233.68" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MO1RETN" class="0">
@@ -8464,12 +8506,22 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="312.42" y1="114.3" x2="309.88" y2="114.3" width="0.1524" layer="91"/>
 <label x="309.88" y="114.3" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="116.84" y1="233.68" x2="111.76" y2="233.68" width="0.1524" layer="91"/>
+<label x="111.76" y="233.68" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MO1SEND" class="0">
 <segment>
 <pinref part="SV2" gate="-13" pin="S"/>
 <wire x1="312.42" y1="116.84" x2="309.88" y2="116.84" width="0.1524" layer="91"/>
 <label x="309.88" y="116.84" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="132.08" y1="233.68" x2="137.16" y2="233.68" width="0.1524" layer="91"/>
+<label x="137.16" y="233.68" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MO2RETN" class="0">
@@ -8491,6 +8543,11 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <pinref part="SV2" gate="-2" pin="S"/>
 <wire x1="312.42" y1="157.48" x2="309.88" y2="157.48" width="0.1524" layer="91"/>
 <label x="309.88" y="157.48" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J0" gate="G$1" pin="3"/>
+<wire x1="317.5" y1="233.68" x2="320.04" y2="233.68" width="0.1524" layer="91"/>
+<label x="320.04" y="233.68" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LED0A" class="0">
