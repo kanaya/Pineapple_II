@@ -14,12 +14,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -161,108 +161,33 @@
 <circle x="69" y="69" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="3" y="3" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="69" y="3" radius="2.236065625" width="0.2" layer="41"/>
-<text x="36" y="54" size="1" layer="25" align="bottom-center">USB</text>
 <polygon width="0.2" layer="43">
 <vertex x="42" y="38"/>
 <vertex x="30" y="38"/>
 <vertex x="30" y="33"/>
 <vertex x="42" y="33"/>
 </polygon>
-<rectangle x1="51.75" y1="12" x2="52.25" y2="14" layer="21"/>
 <text x="6" y="69" size="1.27" layer="25" align="center-left">Pineapple II</text>
-<text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
 <wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
-<wire x1="6" y1="46.95" x2="25.05" y2="46.95" width="0.15" layer="21" style="dashdot"/>
-<wire x1="25.05" y1="46.95" x2="25.05" y2="66" width="0.15" layer="21" style="dashdot"/>
-<wire x1="25.05" y1="66" x2="6" y2="66" width="0.15" layer="21" style="dashdot"/>
-<wire x1="6" y1="66" x2="6" y2="46.95" width="0.15" layer="21" style="dashdot"/>
 <hole x="44" y="69" drill="3.2"/>
 <hole x="44" y="3" drill="3.2"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="42"/>
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="42"/>
-<text x="6" y="67" size="1" layer="25" align="center-left">2.0.6-RC</text>
-<text x="26" y="63.46" size="1" layer="25" rot="R90" align="center">SD</text>
-<text x="26" y="60.92" size="1" layer="25" rot="R90" align="center">SC</text>
-<text x="26" y="53.3" size="1" layer="25" rot="R90" align="center">5V</text>
-<text x="26" y="55.84" size="1" layer="25" rot="R90" align="center">G</text>
-<text x="26" y="58.38" size="1" layer="25" rot="R90" align="center">NC</text>
+<text x="6" y="67" size="1" layer="25" align="center-left">MIDI Port Replicator 1.0.0-Alpha</text>
 <wire x1="72" y1="3" x2="72" y2="69" width="0" layer="20"/>
-<text x="60" y="53.5" size="1" layer="25" rot="R90" align="center-right">Close
-Here</text>
-<text x="7" y="49.5" size="1" layer="25" align="center-left">SparkFun
-Real Time Clock
-Module (12708)</text>
-<polygon width="0.2" layer="21">
-<vertex x="60" y="56"/>
-<vertex x="59.5" y="54"/>
-<vertex x="60.5" y="54"/>
-</polygon>
-<text x="36" y="9" size="1" layer="25" align="bottom-center">Arduino Micro</text>
-<text x="52" y="30" size="1" layer="25" rot="R90" align="center">74LS07</text>
-<text x="20" y="37" size="1" layer="25" rot="R90" align="center">4066B</text>
-<text x="52" y="48" size="1" layer="25" rot="R90" align="center">TLP552</text>
-<wire x1="15" y1="15.54" x2="15" y2="10.46" width="0.254" layer="21" style="shortdash"/>
-<text x="28" y="69" size="1" layer="25" rot="R90" align="top-center">PWR</text>
-<text x="58" y="71" size="1" layer="25" align="top-center">GPIO</text>
-<text x="6" y="4" size="1" layer="25" rot="R90" align="center">LED</text>
-<text x="1" y="43" size="1" layer="25" align="center-left">Sensor</text>
-<text x="71" y="59" size="1" layer="25" rot="R90" align="bottom-center">MKR</text>
 <text x="58.5" y="30" size="1" layer="25" rot="R90" align="bottom-center">Back Panel</text>
 <rectangle x1="64" y1="66.75" x2="66" y2="67.25" layer="21"/>
-<text x="52.5" y="8" size="1" layer="25" align="center-left">1u</text>
-<text x="52.5" y="18" size="1" layer="25" align="center-left">470n</text>
-<text x="56.5" y="20" size="1" layer="25" align="center-right">100n</text>
-<text x="37" y="61" size="1" layer="25" rot="R90" align="center">221</text>
-<text x="23" y="7" size="1" layer="25" align="center">1k</text>
-<text x="26" y="4" size="1" layer="25" align="center">47k</text>
-<text x="52" y="60" size="1" layer="25" rot="R90" align="center">1k</text>
-<text x="49" y="57.5" size="1" layer="25" align="top-center">100n</text>
-<text x="12" y="39.5" size="1" layer="25" align="top-center">100n</text>
-<text x="15" y="18" size="1" layer="25" align="top-center">4.7k</text>
-<text x="15" y="23" size="1" layer="25" align="top-center">10k</text>
-<text x="15" y="7" size="1" layer="25" align="center-right">C1815</text>
-<text x="59" y="6" size="1" layer="25" align="center-right">DS18B20+</text>
 <wire x1="72" y1="69" x2="69" y2="72" width="0" layer="20" curve="90"/>
 <wire x1="3" y1="72" x2="0" y2="69" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="72" y1="3" x2="69" y2="0" width="0" layer="20" curve="-90"/>
-<text x="26.5" y="15.76" size="1" layer="25" rot="R90" align="bottom-center">Vin</text>
-<text x="15.5" y="64.5" size="1" layer="25" align="bottom-center">RTC1</text>
-<rectangle x1="21.5" y1="54.84" x2="22" y2="56.84" layer="21"/>
-<rectangle x1="7.25" y1="9" x2="7.75" y2="11" layer="21"/>
-<rectangle x1="12.75" y1="3.5" x2="13.25" y2="5.5" layer="21"/>
 <rectangle x1="64" y1="67.25" x2="66" y2="67.75" layer="22"/>
-<text x="41" y="54" size="1" layer="25" align="center">121</text>
-<text x="31" y="54" size="1" layer="25" align="center">121</text>
-<text x="7" y="56.5" size="1" layer="25" rot="R90" align="top-center">Relay</text>
-<text x="61" y="9.5" size="1" layer="25" align="top-center">Vout</text>
-<text x="51" y="71" size="1" layer="25" align="top-center">Vout</text>
-<rectangle x1="23" y1="66.75" x2="25" y2="67.25" layer="21"/>
-<rectangle x1="49" y1="64.25" x2="51" y2="64.75" layer="21"/>
-<rectangle x1="55" y1="64.25" x2="57" y2="64.75" layer="21"/>
-<polygon width="0.2" layer="21">
-<vertex x="29.5" y="69"/>
-<vertex x="31" y="69.5"/>
-<vertex x="31" y="68.5"/>
-</polygon>
-<text x="31.5" y="69" size="1" layer="25" align="center-left">Insulating Tape
-Here</text>
-<wire x1="45.39" y1="61.5" x2="46.39" y2="60.5" width="0.1524" layer="21"/>
-<wire x1="46.39" y1="61.5" x2="45.39" y2="60.5" width="0.1524" layer="21"/>
-<wire x1="45.89" y1="63" x2="45.89" y2="61.5" width="0.1524" layer="21"/>
-<wire x1="45.89" y1="60.5" x2="45.89" y2="59" width="0.1524" layer="21"/>
-<text x="1" y="61.5" size="1" layer="25" rot="R90" align="center">SPI</text>
-<wire x1="1" y1="64" x2="1" y2="63" width="0.15" layer="21"/>
-<wire x1="1" y1="60" x2="1" y2="59" width="0.15" layer="21"/>
 <rectangle x1="0" y1="71" x2="72" y2="72" layer="41"/>
 <rectangle x1="0" y1="0" x2="72" y2="1" layer="41"/>
 <rectangle x1="0" y1="71" x2="72" y2="72" layer="42"/>
 <rectangle x1="0" y1="0" x2="72" y2="1" layer="42"/>
-<text x="58.5" y="47.5" size="1" layer="25" rot="R90" align="bottom-center">+</text>
-<text x="26.5" y="66.5" size="1" layer="25" align="bottom-center">+</text>
-<text x="52" y="16" size="1" layer="25" rot="R90" align="bottom-center">+</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1389,6 +1314,163 @@ Low profile connectors, straight&lt;p&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="DIN5-RA-PTH" urn="urn:adsk.eagle:footprint:37974/1" library_version="1">
+<description>&lt;h3&gt;DIN5/180 Connector - Right Angle Female&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 5&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Connectors/MIDI-RA.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;DIN5&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-10.5" y1="0" x2="9" y2="0" width="0.2032" layer="21"/>
+<wire x1="10.5" y1="1" x2="10.5" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="10.5" y1="2.1" x2="9" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="9" y1="2.1" x2="9" y2="19" width="0.2032" layer="21"/>
+<wire x1="9" y1="19" x2="5.5" y2="19" width="0.2032" layer="21"/>
+<wire x1="2" y1="19" x2="-2" y2="19" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="19" x2="-9" y2="19" width="0.2032" layer="21"/>
+<wire x1="-9" y1="19" x2="-9" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="-10.5" y1="1" x2="-10.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-9" y1="2.1" x2="9" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="9" y1="0" x2="9" y2="1" width="0.2032" layer="21"/>
+<wire x1="9" y1="1" x2="10.5" y2="1" width="0.2032" layer="21"/>
+<wire x1="-9" y1="2" x2="-9" y2="1" width="0.2032" layer="21"/>
+<wire x1="-9" y1="1" x2="-10.5" y2="1" width="0.2032" layer="21"/>
+<wire x1="5.5" y1="16.5" x2="2" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="-2" y1="16.5" x2="-5.5" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="-5.5" y1="19" x2="-5.5" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="5.5" y1="19" x2="5.5" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="2" y1="19" x2="2" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="-2" y1="19" x2="-2" y2="16.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="0" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="0" x2="4" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="-4" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-2" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="1" y1="-2" x2="0" y2="0" width="0.2032" layer="51"/>
+<pad name="1" x="7.3" y="12.5" drill="1.4" diameter="2.286"/>
+<pad name="2" x="0" y="12.5" drill="1.4" diameter="2.286"/>
+<pad name="3" x="-7.3" y="12.5" drill="1.4" diameter="2.286"/>
+<pad name="4" x="5" y="15" drill="1.4" diameter="2.286"/>
+<pad name="5" x="-5" y="15" drill="1.4" diameter="2.286"/>
+<pad name="6" x="-5" y="2.8" drill="1.4" diameter="2.286"/>
+<pad name="7" x="5" y="2.8" drill="1.4" diameter="2.286"/>
+<text x="-2.67" y="6.44" size="1.6764" layer="21" font="vector" ratio="15">DIN-5</text>
+<text x="0" y="-4.318" size="0.8128" layer="51" font="vector" align="top-center">BOARD EDGE</text>
+<text x="-1.27" y="5.334" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIN5-RA-PTH" urn="urn:adsk.eagle:package:38294/1" type="box" library_version="1">
+<description>DIN5/180 Connector - Right Angle Female
+Specifications:
+Pin count: 5
+
+Datasheet referenced for footprint
+Example device(s):
+DIN5
+</description>
+<packageinstances>
+<packageinstance name="DIN5-RA-PTH"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="con-jack" urn="urn:adsk.eagle:library:154">
+<description>&lt;b&gt;Jacks&lt;/b&gt;&lt;p&gt;
+Power Connectors&lt;br&gt;
+Phone Connectors&lt;br&gt;
+Cinch Connectors&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SPC4077" urn="urn:adsk.eagle:footprint:7488/1" library_version="2">
+<description>&lt;b&gt;DC POWER JACK 2mm&lt;/b&gt;&lt;br&gt; Right Angle, Through Hole, Rated 5A at 16VDC, PC Terminals&lt;p&gt;
+Source: www.spctechnology.com .. 84N1161.pdf&lt;br&gt;
+Distributor: &lt;b&gt;Farnell (www.Farnell.de)&lt;/b&gt;&lt;br&gt;
+Created by Robert Siegler</description>
+<wire x1="-10.75" y1="-4.5" x2="-10.75" y2="-3.2" width="0.1" layer="21"/>
+<wire x1="-10.75" y1="-3.2" x2="-10.75" y2="3.2" width="0.1" layer="21"/>
+<wire x1="-10.75" y1="3.2" x2="-10.75" y2="4.5" width="0.1" layer="21"/>
+<wire x1="-7.25" y1="-4.5" x2="-7.25" y2="4" width="0.1" layer="21"/>
+<wire x1="-7.25" y1="4" x2="-7.25" y2="4.5" width="0.1" layer="21"/>
+<wire x1="-7.25" y1="-4" x2="1.25" y2="-4" width="0.1" layer="51"/>
+<wire x1="-7.25" y1="4" x2="1.25" y2="4" width="0.1" layer="21"/>
+<wire x1="1.25" y1="-4" x2="1.25" y2="4" width="0.1" layer="51"/>
+<wire x1="1.25" y1="-4.5" x2="1.25" y2="-4" width="0.1" layer="51"/>
+<wire x1="1.25" y1="4" x2="1.25" y2="4.5" width="0.1" layer="21"/>
+<wire x1="-10.75" y1="4.5" x2="1.25" y2="4.5" width="0.1" layer="21"/>
+<wire x1="-10.75" y1="-4.5" x2="1.25" y2="-4.5" width="0.1" layer="51"/>
+<wire x1="1.25" y1="-4" x2="2.75" y2="-4" width="0.1" layer="51"/>
+<wire x1="2.75" y1="-4" x2="3.25" y2="-4" width="0.1" layer="51"/>
+<wire x1="1.25" y1="4" x2="2.75" y2="4" width="0.1" layer="21"/>
+<wire x1="2.75" y1="4" x2="3.25" y2="4" width="0.1" layer="21"/>
+<wire x1="3.25" y1="-4" x2="3.25" y2="4" width="0.1" layer="51"/>
+<wire x1="2.75" y1="-4" x2="2.75" y2="4" width="0.1" layer="51"/>
+<wire x1="-10.75" y1="3.2" x2="-1.75" y2="3.2" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-10.75" y1="-3.2" x2="-1.75" y2="-3.2" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-1.75" y1="-3.2" x2="-1.75" y2="-1" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-1.75" y1="-1" x2="-1.75" y2="1" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-1.75" y1="1" x2="-1.75" y2="3.2" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-8.75" y1="-1" x2="-1.75" y2="-1" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-8.75" y1="1" x2="-1.75" y2="1" width="0.1" layer="51" style="shortdash"/>
+<wire x1="-8.75" y1="-1" x2="-8.75" y2="1" width="0.1" layer="21" curve="-180"/>
+<wire x1="2.5" y1="1.75" x2="3.5" y2="1.75" width="0" layer="46"/>
+<wire x1="3.5" y1="1.75" x2="3.5" y2="-1.75" width="0" layer="46"/>
+<wire x1="3.5" y1="-1.75" x2="2.5" y2="-1.75" width="0" layer="46"/>
+<wire x1="2.5" y1="-1.75" x2="2.5" y2="1.75" width="0" layer="46"/>
+<wire x1="-3.4" y1="1.5" x2="-2.6" y2="1.5" width="0" layer="46"/>
+<wire x1="-2.6" y1="1.5" x2="-2.6" y2="-1.5" width="0" layer="46"/>
+<wire x1="-2.6" y1="-1.5" x2="-3.4" y2="-1.5" width="0" layer="46"/>
+<wire x1="-3.4" y1="-1.5" x2="-3.4" y2="1.5" width="0" layer="46"/>
+<wire x1="-1.5" y1="-4.4" x2="1.5" y2="-4.4" width="0" layer="46"/>
+<wire x1="1.5" y1="-4.4" x2="1.5" y2="-5.2" width="0" layer="46"/>
+<wire x1="1.5" y1="-5.2" x2="-1.5" y2="-5.2" width="0" layer="46"/>
+<wire x1="-1.5" y1="-5.2" x2="-1.5" y2="-4.4" width="0" layer="46"/>
+<wire x1="-10.75" y1="-4.5" x2="-2.56" y2="-4.5" width="0.1" layer="21"/>
+<wire x1="2.75" y1="-4" x2="3.25" y2="-4" width="0.1" layer="21"/>
+<wire x1="3.25" y1="-4" x2="3.25" y2="-2.35" width="0.1" layer="21"/>
+<wire x1="3.25" y1="2.35" x2="3.25" y2="4" width="0.1" layer="21"/>
+<wire x1="1.25" y1="-2.73" x2="1.25" y2="4" width="0.1" layer="21"/>
+<wire x1="2.75" y1="2.35" x2="2.75" y2="4" width="0.1" layer="21"/>
+<wire x1="2.75" y1="-4" x2="2.75" y2="-2.35" width="0.1" layer="21"/>
+<pad name="2" x="0" y="-4.8" drill="0.8" diameter="2.1844" shape="long"/>
+<pad name="1" x="-3" y="0" drill="0.8" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="3" x="3" y="0" drill="1" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-10.16" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10.16" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.25" y1="-5.05" x2="1.25" y2="-4.55" layer="51"/>
+<rectangle x1="2.75" y1="-1.5" x2="3.25" y2="1.5" layer="51"/>
+<rectangle x1="-3.1" y1="-1.25" x2="-2.9" y2="1.25" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SPC4077" urn="urn:adsk.eagle:package:7492/1" type="box" library_version="2">
+<description>DC POWER JACK 2mm Right Angle, Through Hole, Rated 5A at 16VDC, PC Terminals
+Source: www.spctechnology.com .. 84N1161.pdf
+Distributor: Farnell (www.Farnell.de)
+Created by Robert Siegler</description>
+<packageinstances>
+<packageinstance name="SPC4077"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1610,6 +1692,30 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="64" x="65" y="69" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="63" y="69" size="0.8128" layer="27" rot="R90" align="bottom-center"/>
 </element>
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="DIN5-RA-PTH" package3d_urn="urn:adsk.eagle:package:38294/1" value="DIN5" x="0" y="55.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.334" y="56.77" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09481" x="0" y="55.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="3.937" y="56.77" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="DIN5-RA-PTH" package3d_urn="urn:adsk.eagle:package:38294/1" value="DIN5" x="0" y="36" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.334" y="37.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09481" x="0" y="36" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="3.937" y="37.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="DIN5-RA-PTH" package3d_urn="urn:adsk.eagle:package:38294/1" value="DIN5" x="0" y="16.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.334" y="17.77" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09481" x="0" y="16.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="3.937" y="17.77" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" package="SPC4077" package3d_urn="urn:adsk.eagle:package:7492/1" value="" x="61" y="59.5" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="61" y="59.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="61" y="59.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="71.16" y="54.42" size="1.27" layer="25" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="61" y="59.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="61" y="59.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POPULARITY" value="0" x="61" y="59.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="71.16" y="65.85" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -1682,10 +1788,6 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
