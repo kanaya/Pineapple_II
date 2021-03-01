@@ -503,7 +503,6 @@ Close</text>
 <vertex x="18" y="68.5"/>
 </polygon>
 <wire x1="50" y1="53" x2="50" y2="43" width="0.15" layer="21"/>
-<rectangle x1="54.81" y1="42.75" x2="56.81" y2="43.25" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
