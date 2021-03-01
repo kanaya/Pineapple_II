@@ -19653,7 +19653,7 @@ Source: www.kingbright.com</description>
 <part name="J11" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
 <part name="J12" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
 <part name="J13" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
-<part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1"/>
+<part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1" value="DC9V"/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AUDIO_JACK_3.5MM" device="_PTH" package3d_urn="urn:adsk.eagle:package:37997/1"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AUDIO_JACK_3.5MM" device="_PTH" package3d_urn="urn:adsk.eagle:package:37997/1"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AUDIO_JACK_3.5MM" device="_PTH" package3d_urn="urn:adsk.eagle:package:37997/1"/>
@@ -19662,10 +19662,11 @@ Source: www.kingbright.com</description>
 <part name="IC1" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*07" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PWR"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="IN"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="OUT"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19925,6 +19926,10 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="255.27" y="141.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="136.398" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="P" x="241.3" y="213.36" smashed="yes">
+<attribute name="NAME" x="240.665" y="212.725" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY1" gate="GND" x="241.3" y="195.58" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -20063,6 +20068,11 @@ Source: www.kingbright.com</description>
 <wire x1="43.18" y1="160.02" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 <label x="43.18" y="157.48" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="P" pin="GND"/>
+<wire x1="241.3" y1="203.2" x2="241.3" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="2">
 <segment>
@@ -20084,6 +20094,11 @@ Source: www.kingbright.com</description>
 <wire x1="276.86" y1="139.7" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
 <junction x="276.86" y="157.48"/>
 <label x="279.4" y="157.48" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="P" pin="VCC"/>
+<wire x1="241.3" y1="223.52" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
+<label x="241.3" y="226.06" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="MTX+" class="0">
@@ -20342,6 +20357,11 @@ Source: www.kingbright.com</description>
 <wire x1="40.64" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
 <label x="43.18" y="78.74" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="RING"/>
+<wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<label x="99.06" y="55.88" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="MTSND" class="0">
 <segment>
@@ -20365,13 +20385,6 @@ Source: www.kingbright.com</description>
 <pinref part="J12" gate="G$1" pin="5"/>
 <wire x1="83.82" y1="210.82" x2="81.28" y2="210.82" width="0.1524" layer="91"/>
 <label x="81.28" y="210.82" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="ANGL4R" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="RING"/>
-<wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
-<label x="99.06" y="55.88" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -20413,29 +20426,17 @@ Source: www.kingbright.com</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,274.32,116.84,IC1D,O,,,,"/>
-<approved hash="101,1,274.32,104.14,IC1E,O,,,,"/>
-<approved hash="101,1,274.32,91.44,IC1F,O,,,,"/>
-<approved hash="104,1,91.44,172.72,U1,VDD,VCC,,,"/>
-<approved hash="104,1,241.3,203.2,IC2P,VSS,GND,,,"/>
-<approved hash="104,1,241.3,218.44,IC2P,VDD,VCC,,,"/>
+<approved hash="106,1,312.42,144.78,LED0A,,,,,"/>
+<approved hash="106,1,312.42,129.54,MRX+,,,,,"/>
+<approved hash="106,1,312.42,124.46,MRX-,,,,,"/>
+<approved hash="106,1,312.42,127,MRXDTCT,,,,,"/>
+<approved hash="106,1,312.42,109.22,MTX+,,,,,"/>
+<approved hash="106,1,312.42,106.68,MTX-,,,,,"/>
+<approved hash="106,1,312.42,152.4,RST,,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
 <approved hash="113,1,316.632,160.02,SV2,,,,,"/>
-<approved hash="113,1,274.32,116.84,X1,,,,,"/>
-<approved hash="113,1,274.32,104.14,X2,,,,,"/>
-<approved hash="113,1,274.32,91.44,X3,,,,,"/>
-<approved hash="113,1,96.52,195.58,X4,,,,,"/>
-<approved hash="113,1,96.52,193.04,X5,,,,,"/>
 <approved hash="113,1,36.428,124.46,SV1,,,,,"/>
-<approved hash="113,1,124.46,129.54,X6,,,,,"/>
-<approved hash="113,1,127,58.42,X7,,,,,"/>
-<approved hash="113,1,71.12,210.82,X9,,,,,"/>
-<approved hash="113,1,71.12,208.28,X10,,,,,"/>
-<approved hash="113,1,71.12,195.58,X12,,,,,"/>
-<approved hash="113,1,71.12,193.04,X13,,,,,"/>
-<approved hash="113,1,40.64,142.24,X14,,,,,"/>
-<approved hash="113,1,131.801,151.127,RX,,,,,"/>
-<approved hash="113,1,131.801,146.047,IN,,,,,"/>
+<approved hash="113,1,95.2077,23.0861,JP1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
