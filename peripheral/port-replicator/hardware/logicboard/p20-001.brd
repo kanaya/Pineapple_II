@@ -171,7 +171,7 @@
 <wire x1="0" y1="69" x2="0" y2="3" width="0" layer="20"/>
 <circle x="44" y="69" radius="2.236065625" width="0.2" layer="41"/>
 <circle x="44" y="3" radius="2.236065625" width="0.2" layer="41"/>
-<text x="36" y="31" size="1" layer="25" align="bottom-center">Port Replicator 1.0.0-Alpha</text>
+<text x="36" y="31" size="1" layer="25" align="bottom-center">Port Replicator 1.0.0-A</text>
 <wire x1="72" y1="3" x2="72" y2="69" width="0" layer="20"/>
 <wire x1="72" y1="69" x2="69" y2="72" width="0" layer="20" curve="90"/>
 <wire x1="3" y1="72" x2="0" y2="69" width="0" layer="20" curve="90"/>
