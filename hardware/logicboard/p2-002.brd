@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -191,7 +191,7 @@
 <wire x1="3" y1="72" x2="0" y2="69" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="72" y1="3" x2="69" y2="0" width="0" layer="20" curve="-90"/>
-<text x="27" y="15.76" size="1" layer="26" rot="MR270" align="bottom-center">Vin</text>
+<text x="26.5" y="15.76" size="1" layer="26" rot="MR270" align="center">Vin</text>
 <rectangle x1="58.46" y1="2.75" x2="60.46" y2="3.25" layer="22"/>
 <rectangle x1="64" y1="67.25" x2="66" y2="67.75" layer="22"/>
 <text x="20.96" y="66" size="1" layer="26" rot="MR90" align="center-right">Vcc</text>
@@ -211,13 +211,10 @@
 <text x="26.5" y="48.78" size="1" layer="26" rot="MR90" align="center">3V3</text>
 <rectangle x1="44.75" y1="22.38" x2="45.25" y2="24.38" layer="22"/>
 <rectangle x1="26.75" y1="17.3" x2="27.25" y2="19.3" layer="22"/>
-<text x="27" y="23.38" size="1" layer="26" rot="MR270" align="bottom-center">Vcc</text>
+<text x="26.5" y="23.38" size="1" layer="26" rot="MR270" align="center">Vcc</text>
 <rectangle x1="26.75" y1="17.3" x2="27.25" y2="19.3" layer="21" rot="R180"/>
 <rectangle x1="44.75" y1="22.38" x2="45.25" y2="24.38" layer="21" rot="R180"/>
-<wire x1="28.5" y1="23.38" x2="26.5" y2="23.38" width="0.15" layer="21"/>
-<wire x1="26.5" y1="23.38" x2="25.5" y2="22.38" width="0.15" layer="21"/>
-<wire x1="25.5" y1="22.38" x2="25" y2="22.38" width="0.15" layer="21"/>
-<text x="25" y="22.5" size="1" layer="25" align="center-right">Vcc</text>
+<text x="26" y="23.38" size="1" layer="25" rot="R90" align="center">Vcc</text>
 <text x="65" y="66" size="1" layer="25" align="center">GND</text>
 <text x="65" y="66" size="1" layer="26" rot="MR0" align="center">GND</text>
 <rectangle x1="0" y1="0" x2="1" y2="72" layer="41"/>
@@ -234,10 +231,9 @@
 <text x="14" y="4" size="1" layer="25" align="center">(Optional)</text>
 <text x="55" y="4" size="1" layer="25" align="center">(Optional)</text>
 <text x="64" y="59" size="1" layer="25" rot="R90" align="center">(Optional)</text>
-<text x="24.5" y="17.5" size="1" layer="25" align="center-right">Vin</text>
+<text x="24.5" y="17.5" size="1" layer="25" rot="R90" align="center">Vin</text>
 <wire x1="28.5" y1="15.76" x2="26.5" y2="15.76" width="0.15" layer="21"/>
 <wire x1="26.5" y1="15.76" x2="25" y2="17.26" width="0.15" layer="21"/>
-<wire x1="25" y1="17.26" x2="24.5" y2="17.26" width="0.15" layer="21"/>
 <text x="21.5" y="45.75" size="1" layer="25" rot="R90" align="center">MIDI IN</text>
 <text x="21.5" y="26.25" size="1" layer="25" rot="R90" align="center">MIDI THRU</text>
 <wire x1="28.11" y1="58" x2="28.11" y2="64" width="0.15" layer="21" style="shortdash"/>
