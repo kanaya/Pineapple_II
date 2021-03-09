@@ -417,7 +417,6 @@ View</text>
 <wire x1="8" y1="36.5" x2="8" y2="29.5" width="0.15" layer="22"/>
 <wire x1="8" y1="26.5" x2="8" y2="19.5" width="0.15" layer="22"/>
 <text x="7" y="56.5" size="1" layer="25" rot="R90" align="top-center">Relay</text>
-<text x="61" y="9.5" size="1" layer="25" align="top-center">Vout</text>
 <text x="51" y="71" size="1" layer="25" align="top-center">Vout</text>
 <text x="56" y="71" size="1" layer="26" rot="MR0" align="top-center">G</text>
 <rectangle x1="55" y1="64.25" x2="57" y2="64.75" layer="22"/>
