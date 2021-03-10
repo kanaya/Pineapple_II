@@ -31192,7 +31192,11 @@ Part Number: HA-522</description>
 <segment>
 <pinref part="JP0" gate="G$1" pin="1"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
-<wire x1="35.56" y1="231.14" x2="35.56" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="231.14" x2="35.56" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="226.06" x2="35.56" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="226.06" x2="40.64" y2="226.06" width="0.1524" layer="91"/>
+<junction x="35.56" y="226.06"/>
+<label x="40.64" y="226.06" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
