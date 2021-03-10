@@ -240,7 +240,6 @@
 <text x="59" y="63.54" size="1" layer="25" rot="R90" align="center">3</text>
 <text x="59" y="58.54" size="1" layer="25" rot="R90" align="center">1</text>
 <text x="53" y="67" size="1" layer="25" align="center">Connected pin #</text>
-<text x="62.5" y="69" size="1" layer="25" rot="R90" align="center">(Optional)</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
