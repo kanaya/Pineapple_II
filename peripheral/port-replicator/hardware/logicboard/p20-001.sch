@@ -20174,15 +20174,15 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="IC1" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*07" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PWR"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="IN"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="OUT"/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PWR"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="IN"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="OUT"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="X0" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="DUOLED-RG-C" device="" package3d_urn="urn:adsk.eagle:package:15851/1"/>
+<part name="LED0/1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="DUOLED-RG-C" device="" package3d_urn="urn:adsk.eagle:package:15851/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -20426,15 +20426,15 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <attribute name="NAME" x="255.27" y="158.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="154.178" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="35.56" y="167.64" smashed="yes">
+<instance part="LED4" gate="G$1" x="35.56" y="167.64" smashed="yes">
 <attribute name="NAME" x="39.116" y="163.068" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="41.275" y="163.068" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED3" gate="G$1" x="271.78" y="157.48" smashed="yes" rot="R270">
+<instance part="LED2" gate="G$1" x="271.78" y="157.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="267.208" y="153.924" size="1.778" layer="95"/>
 <attribute name="VALUE" x="267.208" y="151.765" size="1.778" layer="96"/>
 </instance>
-<instance part="LED2" gate="G$1" x="271.78" y="139.7" smashed="yes" rot="R270">
+<instance part="LED3" gate="G$1" x="271.78" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="267.208" y="136.144" size="1.778" layer="95"/>
 <attribute name="VALUE" x="267.208" y="133.985" size="1.778" layer="96"/>
 </instance>
@@ -20462,7 +20462,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <attribute name="NAME" x="39.37" y="59.055" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="39.37" y="45.72" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="LED4" gate="G$1" x="58.42" y="170.18" smashed="yes">
+<instance part="LED0/1" gate="G$1" x="58.42" y="170.18" smashed="yes">
 <attribute name="NAME" x="64.77" y="165.1" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="67.31" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -20582,7 +20582,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="226.06" y="119.38" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="35.56" y1="162.56" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
 <label x="35.56" y="160.02" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
@@ -20627,7 +20627,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="167.64" y="200.66" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED0/1" gate="G$1" pin="C"/>
 <wire x1="55.88" y1="170.18" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
 <label x="53.34" y="170.18" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20649,9 +20649,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="279.4" y1="157.48" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="279.4" y1="157.48" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="276.86" y1="157.48" x2="274.32" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="139.7" x2="276.86" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="139.7" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
@@ -20979,30 +20979,30 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="254" y1="139.7" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MILED" class="0">
+<net name="LEDMI" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="157.48" x2="264.16" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MOLED" class="0">
+<net name="LEDMO" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="139.7" x2="264.16" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="LEDPWR" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="172.72" x2="35.56" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED0" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="AR"/>
+<pinref part="LED0/1" gate="G$1" pin="AR"/>
 <wire x1="58.42" y1="177.8" x2="58.42" y2="180.34" width="0.1524" layer="91"/>
 <label x="58.42" y="180.34" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -21014,7 +21014,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="LED1" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="AG"/>
+<pinref part="LED0/1" gate="G$1" pin="AG"/>
 <wire x1="58.42" y1="162.56" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
 <label x="58.42" y="160.02" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
