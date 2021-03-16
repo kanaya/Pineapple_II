@@ -6,20 +6,20 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -649,7 +649,7 @@ for MIDI IN</text>
 <wire x1="28.11" y1="57" x2="28.11" y2="59" width="0.15" layer="22"/>
 <text x="4" y="57.5" size="1" layer="26" rot="MR0" align="center-right">Vcc</text>
 <text x="4" y="55.5" size="1" layer="26" rot="MR0" align="center-right">GND</text>
-<text x="60" y="13" size="1" layer="26" rot="MR90" align="center">Relay</text>
+<text x="59" y="13" size="1" layer="26" rot="MR90" align="center">Relay</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
@@ -6312,6 +6312,18 @@ design rules under a new name.</description>
 <via x="54.6354" y="53.0352" extent="1-16" drill="0.3048"/>
 <via x="33.9852" y="7.5438" extent="1-16" drill="0.3048"/>
 <via x="35.814" y="9.3726" extent="1-16" drill="0.3048"/>
+<polygon width="0.15" layer="1">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
+<polygon width="0.15" layer="16">
+<vertex x="-4" y="-4"/>
+<vertex x="76" y="-4"/>
+<vertex x="76" y="76"/>
+<vertex x="-4" y="76"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
