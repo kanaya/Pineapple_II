@@ -8,8 +8,8 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -637,7 +637,7 @@ for MIDI IN</text>
 <text x="1" y="48" size="1" layer="25" rot="R90" align="top-center">DC9-12V</text>
 <text x="23.5" y="71.5" size="1" layer="25" align="top-center">PWR</text>
 <text x="36" y="71" size="1" layer="25" align="top-center">SPI</text>
-<text x="5" y="63.46" size="1" layer="25" rot="R90" align="center">NC</text>
+<text x="0.5" y="63.46" size="1" layer="25" rot="R90" align="top-center">NC</text>
 <wire x1="22.54" y1="18" x2="22.04" y2="17.5" width="0.15" layer="21"/>
 <wire x1="22.04" y1="17.5" x2="22.54" y2="17" width="0.15" layer="21"/>
 <wire x1="22.54" y1="17" x2="23.04" y2="17.5" width="0.15" layer="21"/>
@@ -650,9 +650,9 @@ for MIDI IN</text>
 <wire x1="18.23" y1="22" x2="18.73" y2="21.5" width="0.15" layer="22"/>
 <wire x1="18.73" y1="21.5" x2="19.23" y2="22" width="0.15" layer="22"/>
 <wire x1="19.23" y1="22" x2="18.73" y2="22.5" width="0.15" layer="22"/>
-<text x="5" y="60.92" size="1" layer="25" rot="R90" align="center">U1</text>
-<text x="5" y="57.11" size="1" layer="25" rot="R90" align="center">I2C</text>
-<text x="0.5" y="63.46" size="1" layer="25" rot="R90" align="top-center">4.7k</text>
+<text x="0.5" y="60.92" size="1" layer="25" rot="R90" align="top-center">U1</text>
+<text x="0.5" y="57.11" size="1" layer="25" rot="R90" align="top-center">I2C</text>
+<text x="4.5" y="63.46" size="1" layer="25" rot="R90" align="top-center">4.7k</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
@@ -5932,7 +5932,7 @@ design rules under a new name.</description>
 <element name="RN4" library="resistor-net" library_urn="urn:adsk.eagle:library:343" package="RN-5" package3d_urn="urn:adsk.eagle:package:24976/1" value="4.7k" x="3" y="58.38" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="3" y="58.38" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="3" y="58.38" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="0.5" y="58.38" size="1" layer="25" ratio="10" rot="R90" align="top-center"/>
+<attribute name="NAME" x="4.5" y="58.38" size="1" layer="25" ratio="10" rot="R90" align="top-center"/>
 <attribute name="OC_FARNELL" value="unknown" x="3" y="58.38" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="3" y="58.38" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="5.921" y="54.57" size="1.27" layer="27" ratio="10" rot="R90"/>
