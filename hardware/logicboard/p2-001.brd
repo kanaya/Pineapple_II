@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -14,12 +14,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -653,6 +653,19 @@ for MIDI IN</text>
 <text x="0.5" y="60.92" size="1" layer="25" rot="R90" align="top-center">U1</text>
 <text x="0.5" y="57.11" size="1" layer="25" rot="R90" align="top-center">I2C</text>
 <text x="4.5" y="63.46" size="1" layer="25" rot="R90" align="top-center">4.7k</text>
+<text x="0.5" y="63.46" size="1" layer="26" rot="MR90" align="bottom-center">NC</text>
+<text x="0.5" y="53.3" size="1" layer="26" rot="MR90" align="bottom-center">Vcc</text>
+<wire x1="3" y1="63.46" x2="5" y2="63.46" width="0.15" layer="22"/>
+<wire x1="5" y1="53.3" x2="3" y2="53.3" width="0.15" layer="22"/>
+<wire x1="4.5" y1="59.38" x2="5" y2="59.38" width="0.127" layer="22"/>
+<wire x1="5" y1="59.38" x2="5.5" y2="59.38" width="0.127" layer="22"/>
+<wire x1="5.5" y1="59.38" x2="5.5" y2="57.38" width="0.127" layer="22"/>
+<wire x1="5.5" y1="57.38" x2="5" y2="57.38" width="0.127" layer="22"/>
+<wire x1="5" y1="57.38" x2="4.5" y2="57.38" width="0.127" layer="22"/>
+<wire x1="4.5" y1="57.38" x2="4.5" y2="59.38" width="0.127" layer="22"/>
+<wire x1="5" y1="53.3" x2="5" y2="57.38" width="0.127" layer="22"/>
+<wire x1="5" y1="59.38" x2="5" y2="63.46" width="0.127" layer="22"/>
+<text x="6" y="58.38" size="1" layer="26" rot="MR90" align="bottom-center">Pull up anything!</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
