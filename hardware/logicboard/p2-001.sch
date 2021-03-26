@@ -30716,9 +30716,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <attribute name="NAME" x="317.5" y="151.638" size="1.778" layer="95"/>
 <attribute name="VALUE" x="314.706" y="149.479" size="1.778" layer="96"/>
 </instance>
-<instance part="SV2" gate="-4" x="314.96" y="149.86" smashed="yes">
-<attribute name="NAME" x="317.5" y="149.098" size="1.778" layer="95"/>
-<attribute name="VALUE" x="314.706" y="146.939" size="1.778" layer="96"/>
+<instance part="SV2" gate="-4" x="314.96" y="147.32" smashed="yes">
+<attribute name="NAME" x="317.5" y="146.558" size="1.778" layer="95"/>
+<attribute name="VALUE" x="314.706" y="144.399" size="1.778" layer="96"/>
 </instance>
 <instance part="SV2" gate="-5" x="314.96" y="144.78" smashed="yes">
 <attribute name="NAME" x="317.5" y="144.018" size="1.778" layer="95"/>
@@ -30744,29 +30744,29 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <attribute name="NAME" x="317.5" y="126.238" size="1.778" layer="95"/>
 <attribute name="VALUE" x="314.706" y="124.079" size="1.778" layer="96"/>
 </instance>
-<instance part="SV2" gate="-11" x="314.96" y="124.46" smashed="yes">
-<attribute name="NAME" x="317.5" y="123.698" size="1.778" layer="95"/>
-<attribute name="VALUE" x="314.706" y="121.539" size="1.778" layer="96"/>
+<instance part="SV2" gate="-11" x="314.96" y="121.92" smashed="yes">
+<attribute name="NAME" x="317.5" y="121.158" size="1.778" layer="95"/>
+<attribute name="VALUE" x="314.706" y="118.999" size="1.778" layer="96"/>
 </instance>
 <instance part="SV2" gate="-12" x="314.96" y="119.38" smashed="yes">
 <attribute name="NAME" x="317.5" y="118.618" size="1.778" layer="95"/>
 <attribute name="VALUE" x="314.706" y="116.459" size="1.778" layer="96"/>
 </instance>
-<instance part="SV2" gate="-13" x="314.96" y="116.84" smashed="yes">
-<attribute name="NAME" x="317.5" y="116.078" size="1.778" layer="95"/>
-<attribute name="VALUE" x="314.706" y="113.919" size="1.778" layer="96"/>
-</instance>
-<instance part="SV2" gate="-14" x="314.96" y="114.3" smashed="yes">
+<instance part="SV2" gate="-13" x="314.96" y="114.3" smashed="yes">
 <attribute name="NAME" x="317.5" y="113.538" size="1.778" layer="95"/>
 <attribute name="VALUE" x="314.706" y="111.379" size="1.778" layer="96"/>
+</instance>
+<instance part="SV2" gate="-14" x="314.96" y="111.76" smashed="yes">
+<attribute name="NAME" x="317.5" y="110.998" size="1.778" layer="95"/>
+<attribute name="VALUE" x="314.706" y="108.839" size="1.778" layer="96"/>
 </instance>
 <instance part="SV2" gate="-15" x="314.96" y="109.22" smashed="yes">
 <attribute name="NAME" x="317.5" y="108.458" size="1.778" layer="95"/>
 <attribute name="VALUE" x="314.706" y="106.299" size="1.778" layer="96"/>
 </instance>
-<instance part="SV2" gate="-16" x="314.96" y="106.68" smashed="yes">
-<attribute name="NAME" x="317.5" y="105.918" size="1.778" layer="95"/>
-<attribute name="VALUE" x="314.706" y="103.759" size="1.778" layer="96"/>
+<instance part="SV2" gate="-16" x="314.96" y="104.14" smashed="yes">
+<attribute name="NAME" x="317.5" y="103.378" size="1.778" layer="95"/>
+<attribute name="VALUE" x="314.706" y="101.219" size="1.778" layer="96"/>
 </instance>
 <instance part="SV2" gate="-17" x="314.96" y="101.6" smashed="yes">
 <attribute name="NAME" x="317.5" y="100.838" size="1.778" layer="95"/>
@@ -31378,21 +31378,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="231.14" y="203.2" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-4" pin="S"/>
-<wire x1="312.42" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
-<label x="309.88" y="149.86" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-6" pin="S"/>
-<wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
-<label x="309.88" y="139.7" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-12" pin="S"/>
-<wire x1="312.42" y1="119.38" x2="309.88" y2="119.38" width="0.1524" layer="91"/>
-<label x="309.88" y="119.38" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J11" gate="J1" pin="GND"/>
 <wire x1="40.64" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="43.18" y="58.42" size="0.8128" layer="95" xref="yes"/>
@@ -31497,6 +31482,21 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="236.22" y1="111.76" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
 <junction x="236.22" y="111.76"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-11" pin="S"/>
+<wire x1="312.42" y1="121.92" x2="309.88" y2="121.92" width="0.1524" layer="91"/>
+<label x="309.88" y="121.92" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-13" pin="S"/>
+<wire x1="312.42" y1="114.3" x2="309.88" y2="114.3" width="0.1524" layer="91"/>
+<label x="309.88" y="114.3" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-16" pin="S"/>
+<wire x1="312.42" y1="104.14" x2="309.88" y2="104.14" width="0.1524" layer="91"/>
+<label x="309.88" y="104.14" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -31668,11 +31668,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="99.06" y="15.24" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-19" pin="S"/>
-<wire x1="312.42" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="JP5" gate="A" pin="2"/>
 <wire x1="35.56" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
 <label x="43.18" y="165.1" size="0.8128" layer="95" xref="yes"/>
@@ -31686,6 +31681,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <pinref part="RN4" gate="1" pin="1"/>
 <wire x1="233.68" y1="160.02" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
 <label x="233.68" y="162.56" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-12" pin="S"/>
+<wire x1="312.42" y1="119.38" x2="309.88" y2="119.38" width="0.1524" layer="91"/>
+<label x="309.88" y="119.38" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -31736,9 +31736,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="172.72" y="55.88" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-15" pin="S"/>
-<wire x1="312.42" y1="109.22" x2="309.88" y2="109.22" width="0.1524" layer="91"/>
-<label x="309.88" y="109.22" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-9" pin="S"/>
+<wire x1="312.42" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
+<label x="309.88" y="129.54" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MTX-" class="0">
@@ -31753,9 +31753,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="172.72" y="53.34" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-16" pin="S"/>
-<wire x1="312.42" y1="106.68" x2="309.88" y2="106.68" width="0.1524" layer="91"/>
-<label x="309.88" y="106.68" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-10" pin="S"/>
+<wire x1="312.42" y1="127" x2="309.88" y2="127" width="0.1524" layer="91"/>
+<label x="309.88" y="127" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -32094,6 +32094,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="99.06" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91"/>
 <label x="101.6" y="33.02" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="-19" pin="S"/>
+<wire x1="312.42" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="309.88" y="93.98" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="GATE" class="0">
 <segment>
@@ -32151,9 +32156,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="213.36" y="144.78" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-9" pin="S"/>
-<wire x1="312.42" y1="129.54" x2="309.88" y2="129.54" width="0.1524" layer="91"/>
-<label x="309.88" y="129.54" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-6" pin="S"/>
+<wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
+<label x="309.88" y="139.7" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MRX-" class="0">
@@ -32168,9 +32173,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="213.36" y="142.24" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-11" pin="S"/>
-<wire x1="312.42" y1="124.46" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
-<label x="309.88" y="124.46" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-8" pin="S"/>
+<wire x1="312.42" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
+<label x="309.88" y="134.62" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MRX" class="0">
@@ -32193,9 +32198,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <junction x="157.48" y="109.22"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-10" pin="S"/>
-<wire x1="312.42" y1="127" x2="309.88" y2="127" width="0.1524" layer="91"/>
-<label x="309.88" y="127" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-7" pin="S"/>
+<wire x1="312.42" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MIN" class="0">
@@ -32321,17 +32326,12 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <pinref part="RN3" gate="B" pin="2"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="-7" pin="S"/>
-<wire x1="312.42" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
-<label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-4" pin="S"/>
+<wire x1="312.42" y1="147.32" x2="309.88" y2="147.32" width="0.1524" layer="91"/>
+<label x="309.88" y="147.32" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MIRTN" class="0">
-<segment>
-<pinref part="SV2" gate="-8" pin="S"/>
-<wire x1="312.42" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
-<label x="309.88" y="134.62" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="208.28" y1="119.38" x2="210.82" y2="119.38" width="0.1524" layer="91"/>
@@ -32342,29 +32342,34 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="213.36" y="116.84" size="0.8128" layer="95" xref="yes"/>
 <pinref part="OK1" gate="A" pin="C1"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="-5" pin="S"/>
+<wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="309.88" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MORTN" class="0">
-<segment>
-<pinref part="SV2" gate="-14" pin="S"/>
-<wire x1="312.42" y1="114.3" x2="309.88" y2="114.3" width="0.1524" layer="91"/>
-<label x="309.88" y="114.3" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
 <segment>
 <label x="210.82" y="38.1" size="0.8128" layer="95" xref="yes"/>
 <wire x1="210.82" y1="38.1" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RN3" gate="F" pin="2"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="-15" pin="S"/>
+<wire x1="312.42" y1="109.22" x2="309.88" y2="109.22" width="0.1524" layer="91"/>
+<label x="309.88" y="109.22" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="MOSND" class="0">
-<segment>
-<pinref part="SV2" gate="-13" pin="S"/>
-<wire x1="312.42" y1="116.84" x2="309.88" y2="116.84" width="0.1524" layer="91"/>
-<label x="309.88" y="116.84" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
 <segment>
 <label x="210.82" y="43.18" size="0.8128" layer="95" xref="yes"/>
 <wire x1="210.82" y1="43.18" x2="205.74" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="RN3" gate="E" pin="2"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="-14" pin="S"/>
+<wire x1="312.42" y1="111.76" x2="309.88" y2="111.76" width="0.1524" layer="91"/>
+<label x="309.88" y="111.76" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MO2RTN" class="0">
@@ -32500,11 +32505,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <junction x="81.28" y="33.02"/>
 <pinref part="JP6" gate="A" pin="1"/>
 <label x="81.28" y="33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV2" gate="-5" pin="S"/>
-<wire x1="312.42" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="309.88" y="144.78" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ANLG1R" class="0">
@@ -32708,6 +32708,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <approved hash="113,1,205.74,17.78,X5,,,,,"/>
 <approved hash="113,1,195.58,17.78,X8,,,,,"/>
 <approved hash="113,1,233.68,134.62,X1,,,,,"/>
+<approved hash="113,1,264.16,114.3,X2,,,,,"/>
+<approved hash="113,1,30.2006,184.147,V+,,,,,"/>
+<approved hash="113,1,30.2006,207.007,VIN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
