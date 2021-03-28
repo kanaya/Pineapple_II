@@ -31916,11 +31916,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="99.06" y="200.66" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="RN1" gate="1" pin="2"/>
-<wire x1="251.46" y1="149.86" x2="254" y2="149.86" width="0.1524" layer="91"/>
-<label x="254" y="149.86" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC11" gate="A" pin="1Y"/>
 <wire x1="121.92" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -32220,6 +32215,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="132.08" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 <junction x="139.7" y="144.78"/>
 <pinref part="OK1" gate="A" pin="VO1"/>
+</segment>
+<segment>
+<pinref part="RN1" gate="1" pin="2"/>
+<wire x1="251.46" y1="149.86" x2="254" y2="149.86" width="0.1524" layer="91"/>
+<label x="254" y="149.86" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D7" class="0">
