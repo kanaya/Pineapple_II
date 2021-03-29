@@ -25882,149 +25882,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-phoenix-508" urn="urn:adsk.eagle:library:176">
-<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt;&lt;p&gt;
-Grid 5.08 mm&lt;p&gt;
-Based on the previous libraries:
-&lt;ul&gt;
-&lt;li&gt;pho508a.lbr
-&lt;li&gt;pho508b.lbr
-&lt;li&gt;pho508c.lbr
-&lt;li&gt;pho508d.lbr
-&lt;li&gt;pho508e.lbr
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MKDSN1,5/2-5,08" urn="urn:adsk.eagle:footprint:9541/1" library_version="3">
-<description>&lt;b&gt;MKDSN 1,5/ 2-5,08&lt;/b&gt; Printklemme&lt;p&gt;
-Nennstrom: 13,5 A&lt;br&gt;
-Nennspannung: 250 V&lt;br&gt;
-Rastermaß: 5,08 mm&lt;br&gt;
-Polzahl: 2&lt;br&gt;
-Anschlussart: Schraubanschluss&lt;br&gt;
-Montage: Löten&lt;br&gt;
-Anschlussrichtung Leiter/Platine: 0 °&lt;br&gt;
-Artikelnummer: 1729128&lt;br&gt;
-Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
-<wire x1="-5.1011" y1="-4.05" x2="5.0589" y2="-4.05" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="2.5243" x2="5.0589" y2="2.5243" width="0.2032" layer="21"/>
-<wire x1="-2.7211" y1="-0.63" x2="-3.6341" y2="-1.543" width="0.2032" layer="51"/>
-<wire x1="-5.1011" y1="-1.9555" x2="-5.1011" y2="-2.4479" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-3.327" x2="-5.2298" y2="-3.327" width="0.2032" layer="21"/>
-<wire x1="-5.2298" y1="-2.913" x2="-5.1011" y2="-2.913" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-3.1279" x2="-5.1011" y2="-2.913" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-3.327" x2="-5.1011" y2="-3.1279" width="0.2032" layer="21"/>
-<wire x1="-5.6711" y1="-2.763" x2="-5.4081" y2="-2.763" width="0.2032" layer="21"/>
-<wire x1="-5.6711" y1="-3.477" x2="-5.4081" y2="-3.477" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-2.913" x2="-5.1011" y2="-2.4479" width="0.2032" layer="21"/>
-<wire x1="-5.2298" y1="-3.327" x2="-5.4081" y2="-3.477" width="0.2032" layer="21"/>
-<wire x1="-5.6711" y1="-2.763" x2="-5.6711" y2="-3.477" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="2.5243" x2="-5.1011" y2="2.0413" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-1.9555" x2="-5.1011" y2="2.0413" width="0.2032" layer="21"/>
-<wire x1="-5.4081" y1="-2.763" x2="-5.2298" y2="-2.913" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-2.4479" x2="-5.1011" y2="-2.4479" width="0.2032" layer="21"/>
-<wire x1="-2.5611" y1="-0.47" x2="-2.7211" y2="-0.63" width="0.2032" layer="51"/>
-<wire x1="-3.2001" y1="-0.119" x2="-2.5611" y2="0.52" width="0.2032" layer="51"/>
-<wire x1="-4.1291" y1="-1.048" x2="-3.2001" y2="-0.119" width="0.2032" layer="51"/>
-<wire x1="0.9509" y1="-1.048" x2="1.8799" y2="-0.119" width="0.2032" layer="51"/>
-<wire x1="5.0589" y1="-1.9555" x2="5.0589" y2="-2.4479" width="0.2032" layer="21"/>
-<wire x1="2.3589" y1="-0.63" x2="1.4459" y2="-1.543" width="0.2032" layer="51"/>
-<wire x1="1.8799" y1="-0.119" x2="2.5189" y2="0.52" width="0.2032" layer="51"/>
-<wire x1="2.5189" y1="-0.47" x2="2.3589" y2="-0.63" width="0.2032" layer="51"/>
-<wire x1="4.0869" y1="1.098" x2="3.1489" y2="0.16" width="0.2032" layer="51"/>
-<wire x1="2.6379" y1="0.639" x2="3.5919" y2="1.593" width="0.2032" layer="51"/>
-<wire x1="3.1489" y1="0.16" x2="2.5189" y2="-0.47" width="0.2032" layer="51"/>
-<wire x1="2.5189" y1="0.52" x2="2.6379" y2="0.639" width="0.2032" layer="51"/>
-<wire x1="-1.9311" y1="0.16" x2="-2.5611" y2="-0.47" width="0.2032" layer="51"/>
-<wire x1="-2.5611" y1="0.52" x2="-2.4421" y2="0.639" width="0.2032" layer="51"/>
-<wire x1="-2.4421" y1="0.639" x2="-1.4881" y2="1.593" width="0.2032" layer="51"/>
-<wire x1="-0.9931" y1="1.098" x2="-1.9311" y2="0.16" width="0.2032" layer="51"/>
-<wire x1="-5.1011" y1="-3.1279" x2="5.0589" y2="-3.1279" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-3.1279" x2="5.0589" y2="-2.4479" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-1.9555" x2="5.0589" y2="2.0413" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="2.5243" x2="5.0589" y2="2.0413" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="2.5243" x2="5.0589" y2="4.05" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-3.75" x2="-5.1011" y2="-3.327" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-3.75" x2="5.0589" y2="-3.1279" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="4.05" x2="5.0589" y2="4.05" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="2.5243" x2="-5.1011" y2="4.05" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-3.75" x2="-5.1011" y2="-3.75" width="0.2032" layer="21"/>
-<wire x1="-5.1011" y1="-3.75" x2="-5.1011" y2="-4.05" width="0.2032" layer="21"/>
-<wire x1="5.0589" y1="-3.75" x2="5.0589" y2="-4.05" width="0.2032" layer="21"/>
-<wire x1="-3.2001" y1="-0.119" x2="-2.7211" y2="-0.63" width="0.2032" layer="51" curve="65.201851"/>
-<wire x1="1.8799" y1="-0.119" x2="2.3589" y2="-0.63" width="0.2032" layer="51" curve="65.201851"/>
-<wire x1="3.1489" y1="0.16" x2="2.6379" y2="0.639" width="0.2032" layer="51" curve="65.201851"/>
-<wire x1="-1.9311" y1="0.16" x2="-2.4421" y2="0.639" width="0.2032" layer="51" curve="65.201851"/>
-<circle x="-2.5611" y="0.025" radius="1.915" width="0.2032" layer="21"/>
-<circle x="2.5189" y="0.025" radius="1.915" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5611" y="0.025" drill="1.3" diameter="2"/>
-<pad name="2" x="2.5189" y="0.025" drill="1.3" diameter="2"/>
-<text x="-4.7511" y="4.445" size="1.27" layer="25">&gt;NAME</text>
-<text x="6.985" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="MKDSN1,5/2-5,08" urn="urn:adsk.eagle:package:9630/1" type="box" library_version="3">
-<description>MKDSN 1,5/ 2-5,08 Printklemme
-Nennstrom: 13,5 A
-Nennspannung: 250 V
-Rastermaß: 5,08 mm
-Polzahl: 2
-Anschlussart: Schraubanschluss
-Montage: Löten
-Anschlussrichtung Leiter/Platine: 0 °
-Artikelnummer: 1729128
-Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
-<packageinstances>
-<packageinstance name="MKDSN1,5/2-5,08"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="KLV" urn="urn:adsk.eagle:symbol:9467/1" library_version="3">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="3.048" y="-0.889" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="KL" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MKDSN1,5/2-5,08" urn="urn:adsk.eagle:component:9705/2" prefix="X" library_version="3">
-<description>&lt;b&gt;MKDSN 1,5/ 2-5,08&lt;/b&gt; Printklemme&lt;p&gt;
-Nennstrom: 13,5 A&lt;br&gt;
-Nennspannung: 250 V&lt;br&gt;
-Rastermaß: 5,08 mm&lt;br&gt;
-Polzahl: 2&lt;br&gt;
-Anschlussart: Schraubanschluss&lt;br&gt;
-Montage: Löten&lt;br&gt;
-Anschlussrichtung Leiter/Platine: 0 °&lt;br&gt;
-Artikelnummer: 1729128&lt;br&gt;
-Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
-<gates>
-<gate name="-1" symbol="KLV" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="KLV" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="MKDSN1,5/2-5,08">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:9630/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="14" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26115,12 +25972,11 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
 <part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
-<part name="J10" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1"/>
-<part name="X3" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1"/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -26607,17 +26463,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <attribute name="NAME" x="355.6" y="121.412" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="355.6" y="119.126" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J10" gate="G$1" x="358.14" y="96.52" smashed="yes">
+<instance part="J0" gate="G$1" x="358.14" y="96.52" smashed="yes">
 <attribute name="NAME" x="350.52" y="101.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="350.52" y="91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="X3" gate="-1" x="340.36" y="58.42" smashed="yes" rot="MR0">
-<attribute name="NAME" x="337.312" y="57.531" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="342.9" y="54.737" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="X3" gate="-2" x="340.36" y="53.34" smashed="yes" rot="MR0">
-<attribute name="NAME" x="337.312" y="52.451" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="342.9" y="49.657" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R3" gate="G$1" x="93.98" y="33.02" smashed="yes">
 <attribute name="NAME" x="93.98" y="35.56" size="1.778" layer="95" align="bottom-center"/>
@@ -26631,9 +26479,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <attribute name="NAME" x="77.47" y="41.275" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="77.47" y="27.94" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="JP5" gate="G$1" x="30.48" y="165.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="36.83" y="170.815" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="36.83" y="160.02" size="1.778" layer="96" rot="MR0"/>
+<instance part="JP5" gate="A" x="33.02" y="165.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="39.37" y="170.815" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="39.37" y="157.48" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -26769,18 +26617,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="231.14" y="203.2" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
-<label x="43.18" y="58.42" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
-<label x="43.18" y="43.18" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
-<label x="43.18" y="12.7" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="J$1" pin="1"/>
 <wire x1="73.66" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
 <label x="76.2" y="45.72" size="0.8128" layer="95" xref="yes"/>
@@ -26796,16 +26632,8 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="43.18" y="139.7" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
-<label x="43.18" y="27.94" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <label x="101.6" y="35.56" size="0.8128" layer="95" xref="yes"/>
-<wire x1="73.66" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="35.56" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
-<junction x="78.74" y="35.56"/>
-<wire x1="78.74" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="2"/>
 </segment>
 <segment>
@@ -26880,8 +26708,8 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="309.88" y="104.14" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="KL"/>
-<wire x1="342.9" y1="58.42" x2="347.98" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="1"/>
+<wire x1="35.56" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -26925,22 +26753,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="137.16" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
 <label x="43.18" y="137.16" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
-<label x="43.18" y="60.96" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
-<label x="43.18" y="45.72" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<label x="43.18" y="30.48" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
-<label x="43.18" y="15.24" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VDD"/>
@@ -27022,6 +26834,10 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <pinref part="SV2" gate="-12" pin="S"/>
 <wire x1="312.42" y1="119.38" x2="309.88" y2="119.38" width="0.1524" layer="91"/>
 <label x="309.88" y="119.38" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="A" pin="2"/>
+<wire x1="35.56" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
@@ -27282,22 +27098,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="43.18" y="147.32" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="40.64" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-<label x="43.18" y="63.5" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
-<label x="43.18" y="48.26" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
-<label x="43.18" y="33.02" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
-<label x="43.18" y="17.78" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="RN4" gate="1" pin="2"/>
 <wire x1="233.68" y1="149.86" x2="236.22" y2="149.86" width="0.1524" layer="91"/>
 <label x="236.22" y="149.86" size="0.8128" layer="95" xref="yes"/>
@@ -27318,22 +27118,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <pinref part="JP2" gate="G$1" pin="4"/>
 <wire x1="40.64" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
 <label x="43.18" y="144.78" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
-<label x="43.18" y="66.04" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
-<label x="43.18" y="50.8" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
-<label x="43.18" y="35.56" size="0.8128" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
-<label x="43.18" y="20.32" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="1" pin="3"/>
@@ -27576,11 +27360,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="LED1A" class="0">
 <segment>
-<wire x1="88.9" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="22.86" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<junction x="76.2" y="38.1"/>
-<wire x1="76.2" y1="22.86" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 <label x="81.28" y="38.1" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="JP3" gate="A" pin="1"/>
@@ -27756,17 +27536,13 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="309.88" y="157.48" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="342.9" y1="53.34" x2="347.98" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="3"/>
+<wire x1="35.56" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED0A" class="0">
 <segment>
-<wire x1="81.28" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="17.78" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<junction x="81.28" y="33.02"/>
+<wire x1="88.9" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <label x="81.28" y="33.02" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="JP3" gate="A" pin="3"/>
