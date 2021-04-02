@@ -20289,9 +20289,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="10n"/>
 <part name="SV1" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML16LE" device="" package3d_urn="urn:adsk.eagle:package:8682/1"/>
-<part name="J21" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
-<part name="J22" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
-<part name="J23" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
+<part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
+<part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
+<part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
 <part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1" value="DC9V"/>
 <part name="J11" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AUDIO_JACK_3.5MM" device="_PTH" package3d_urn="urn:adsk.eagle:package:37997/1"/>
 <part name="J12" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="AUDIO_JACK_3.5MM" device="_PTH" package3d_urn="urn:adsk.eagle:package:37997/1"/>
@@ -20485,15 +20485,15 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <attribute name="NAME" x="35.56" y="77.978" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="38.354" y="75.819" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="J21" gate="G$1" x="91.44" y="236.22" smashed="yes">
+<instance part="J7" gate="G$1" x="91.44" y="236.22" smashed="yes">
 <attribute name="NAME" x="91.44" y="230.632" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="91.44" y="228.346" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J22" gate="G$1" x="91.44" y="205.74" smashed="yes">
+<instance part="J8" gate="G$1" x="91.44" y="205.74" smashed="yes">
 <attribute name="NAME" x="91.44" y="200.152" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="91.44" y="197.866" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="J23" gate="G$1" x="91.44" y="172.72" smashed="yes">
+<instance part="J9" gate="G$1" x="91.44" y="172.72" smashed="yes">
 <attribute name="NAME" x="91.44" y="167.132" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="91.44" y="164.846" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
@@ -20644,13 +20644,13 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="53.34" y="195.58" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J22" gate="G$1" pin="2"/>
+<pinref part="J8" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="215.9" x2="91.44" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="218.44" x2="101.6" y2="218.44" width="0.1524" layer="91"/>
 <label x="101.6" y="218.44" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J23" gate="G$1" pin="2"/>
+<pinref part="J9" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="182.88" x2="91.44" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="185.42" x2="101.6" y2="185.42" width="0.1524" layer="91"/>
 <label x="101.6" y="185.42" size="0.8128" layer="95" xref="yes"/>
@@ -20862,13 +20862,6 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="104.14" y="17.78" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="MRX+" class="0">
-<segment>
-<pinref part="SV2" gate="-6" pin="S"/>
-<wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
-<label x="309.88" y="139.7" size="0.8128" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="MRX-" class="0">
 <segment>
 <pinref part="SV2" gate="-8" pin="S"/>
@@ -20878,9 +20871,9 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="MRXDTCT" class="0">
 <segment>
-<pinref part="SV2" gate="-7" pin="S"/>
-<wire x1="312.42" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
-<label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="-6" pin="S"/>
+<wire x1="312.42" y1="139.7" x2="309.88" y2="139.7" width="0.1524" layer="91"/>
+<label x="309.88" y="139.7" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="VCC/2" class="2">
@@ -20927,7 +20920,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="MISND" class="0">
 <segment>
-<pinref part="J21" gate="G$1" pin="4"/>
+<pinref part="J7" gate="G$1" pin="4"/>
 <wire x1="99.06" y1="241.3" x2="101.6" y2="241.3" width="0.1524" layer="91"/>
 <label x="101.6" y="241.3" size="0.8128" layer="95" xref="yes"/>
 </segment>
@@ -20939,7 +20932,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="MIRTN" class="0">
 <segment>
-<pinref part="J21" gate="G$1" pin="5"/>
+<pinref part="J7" gate="G$1" pin="5"/>
 <wire x1="83.82" y1="241.3" x2="81.28" y2="241.3" width="0.1524" layer="91"/>
 <label x="81.28" y="241.3" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20956,7 +20949,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="MORTN" class="0">
 <segment>
-<pinref part="J23" gate="G$1" pin="5"/>
+<pinref part="J9" gate="G$1" pin="5"/>
 <wire x1="83.82" y1="177.8" x2="81.28" y2="177.8" width="0.1524" layer="91"/>
 <label x="81.28" y="177.8" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -20968,7 +20961,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 </net>
 <net name="MOSND" class="0">
 <segment>
-<pinref part="J23" gate="G$1" pin="4"/>
+<pinref part="J9" gate="G$1" pin="4"/>
 <wire x1="99.06" y1="177.8" x2="101.6" y2="177.8" width="0.1524" layer="91"/>
 <label x="101.6" y="177.8" size="0.8128" layer="95" xref="yes"/>
 </segment>
@@ -21060,7 +21053,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="309.88" y="101.6" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J22" gate="G$1" pin="4"/>
+<pinref part="J8" gate="G$1" pin="4"/>
 <wire x1="99.06" y1="210.82" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
 <label x="101.6" y="210.82" size="0.8128" layer="95" xref="yes"/>
 </segment>
@@ -21072,7 +21065,7 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <label x="309.88" y="99.06" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J22" gate="G$1" pin="5"/>
+<pinref part="J8" gate="G$1" pin="5"/>
 <wire x1="83.82" y1="210.82" x2="81.28" y2="210.82" width="0.1524" layer="91"/>
 <label x="81.28" y="210.82" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -21153,6 +21146,13 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <pinref part="IC1" gate="E" pin="O"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="139.7" x2="254" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MRX+" class="0">
+<segment>
+<pinref part="SV2" gate="-7" pin="S"/>
+<wire x1="312.42" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="309.88" y="137.16" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 </nets>
