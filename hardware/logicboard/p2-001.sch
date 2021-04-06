@@ -32200,21 +32200,22 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 </net>
 <net name="MIN" class="0">
 <segment>
-<pinref part="IC11" gate="A" pin="1C1"/>
-<wire x1="149.86" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="132.08" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="139.7" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
-<junction x="152.4" y="132.08"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="157.48" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IN" gate="1" pin="P"/>
 <wire x1="139.7" y1="144.78" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 <junction x="139.7" y="144.78"/>
+<pinref part="IC11" gate="A" pin="1C1"/>
+<wire x1="149.86" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="132.08" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="139.7" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<junction x="152.4" y="132.08"/>
+<label x="147.32" y="139.7" size="1.778" layer="95"/>
 <pinref part="OK1" gate="A" pin="VO1"/>
+<wire x1="167.64" y1="119.38" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="1" pin="2"/>
