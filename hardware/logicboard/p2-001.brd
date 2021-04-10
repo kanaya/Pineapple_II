@@ -5757,7 +5757,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="36" y="4" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="36" y="5" size="0.8128" layer="27" ratio="10" align="bottom-center"/>
 </element>
-<element name="J11" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="48" smashed="yes" rot="MR90">
+<element name="J101" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="48" smashed="yes" rot="MR90">
 <attribute name="NAME" x="8" y="48" size="1" layer="26" ratio="20" rot="MR90" align="center"/>
 <attribute name="VALUE" x="4" y="48" size="0.8128" layer="28" ratio="20" rot="MR90" align="bottom-center"/>
 </element>
@@ -5794,15 +5794,15 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="11" y="28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-0.43" y="27.9746" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="J12" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="38" smashed="yes" rot="MR90">
+<element name="J102" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="38" smashed="yes" rot="MR90">
 <attribute name="NAME" x="8" y="38" size="1" layer="26" ratio="20" rot="MR90" align="center"/>
 <attribute name="VALUE" x="2.698" y="36.349" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="J13" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="28" smashed="yes" rot="MR90">
+<element name="J103" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="28" smashed="yes" rot="MR90">
 <attribute name="NAME" x="8" y="28" size="1" layer="26" ratio="20" rot="MR90" align="center"/>
 <attribute name="VALUE" x="2.698" y="26.349" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="J14" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="18" smashed="yes" rot="MR90">
+<element name="J104" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04_1MM_RA" package3d_urn="urn:adsk.eagle:package:38096/1" value="Qwiic" x="6" y="18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="8" y="18" size="1" layer="26" ratio="20" rot="MR90" align="center"/>
 <attribute name="VALUE" x="2.698" y="16.349" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
@@ -5997,13 +5997,13 @@ design rules under a new name.</description>
 <contactref element="C101" pad="2"/>
 <contactref element="MC1" pad="P$21"/>
 <contactref element="MC1" pad="P$12"/>
-<contactref element="J11" pad="1"/>
-<contactref element="J12" pad="1"/>
-<contactref element="J14" pad="1"/>
+<contactref element="J101" pad="1"/>
+<contactref element="J102" pad="1"/>
+<contactref element="J104" pad="1"/>
 <contactref element="J2" pad="1"/>
 <contactref element="J1" pad="1"/>
 <contactref element="JP2" pad="2"/>
-<contactref element="J13" pad="1"/>
+<contactref element="J103" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C1" pad="2"/>
@@ -6340,10 +6340,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="3"/>
 <contactref element="J1" pad="5"/>
 <contactref element="JP2" pad="1"/>
-<contactref element="J11" pad="2"/>
-<contactref element="J12" pad="2"/>
-<contactref element="J13" pad="2"/>
-<contactref element="J14" pad="2"/>
+<contactref element="J101" pad="2"/>
+<contactref element="J102" pad="2"/>
+<contactref element="J103" pad="2"/>
+<contactref element="J104" pad="2"/>
 <contactref element="IC2" pad="14"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C9" pad="1"/>
@@ -6947,10 +6947,10 @@ design rules under a new name.</description>
 <contactref element="MC1" pad="P$11"/>
 <contactref element="J1" pad="2"/>
 <contactref element="JP2" pad="5"/>
-<contactref element="J11" pad="3"/>
-<contactref element="J12" pad="3"/>
-<contactref element="J13" pad="3"/>
-<contactref element="J14" pad="3"/>
+<contactref element="J101" pad="3"/>
+<contactref element="J102" pad="3"/>
+<contactref element="J103" pad="3"/>
+<contactref element="J104" pad="3"/>
 <contactref element="RN3" pad="2"/>
 <wire x1="5.6388" y1="48.5394" x2="5.9436" y2="48.5394" width="0.1524" layer="16"/>
 <wire x1="4.572" y1="49.6062" x2="5.6388" y2="48.5394" width="0.1524" layer="16"/>
@@ -7037,10 +7037,10 @@ design rules under a new name.</description>
 <contactref element="MC1" pad="P$10"/>
 <contactref element="J1" pad="3"/>
 <contactref element="JP2" pad="4"/>
-<contactref element="J11" pad="4"/>
-<contactref element="J12" pad="4"/>
-<contactref element="J13" pad="4"/>
-<contactref element="J14" pad="4"/>
+<contactref element="J101" pad="4"/>
+<contactref element="J102" pad="4"/>
+<contactref element="J103" pad="4"/>
+<contactref element="J104" pad="4"/>
 <contactref element="RN3" pad="3"/>
 <wire x1="66.0654" y1="58.4454" x2="66.0654" y2="58.9788" width="0.1524" layer="16"/>
 <wire x1="67.437" y1="57.0738" x2="66.0654" y2="58.4454" width="0.1524" layer="16"/>
