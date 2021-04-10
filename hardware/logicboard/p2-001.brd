@@ -6317,6 +6317,18 @@ design rules under a new name.</description>
 <via x="51.054" y="23.3934" extent="1-16" drill="0.3048"/>
 <via x="39.1668" y="23.3172" extent="1-16" drill="0.3048"/>
 <via x="7.1628" y="36.4998" extent="1-16" drill="0.3048"/>
+<polygon width="0.2" layer="1">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-4" y="-4"/>
+<vertex x="76" y="-4"/>
+<vertex x="76" y="76"/>
+<vertex x="-4" y="76"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
