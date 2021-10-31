@@ -32278,7 +32278,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="76.2" y="35.56" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VIN" class="2">
+<net name="VIN" class="5">
 <segment>
 <pinref part="MC1" gate="G$1" pin="9V"/>
 <wire x1="71.12" y1="198.12" x2="68.58" y2="198.12" width="0.1524" layer="91"/>
@@ -32294,7 +32294,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <pinref part="VIN" gate="1" pin="P"/>
 </segment>
 </net>
-<net name="VCC/2" class="2">
+<net name="VCC/2" class="5">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="157.48" x2="284.48" y2="160.02" width="0.1524" layer="91"/>
@@ -32399,7 +32399,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <pinref part="RN4" gate="H" pin="2"/>
 </segment>
 </net>
-<net name="VOUTRAW2" class="2">
+<net name="VOUTRAW2" class="5">
 <segment>
 <pinref part="F1" gate="1" pin="1"/>
 <wire x1="162.56" y1="218.44" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
@@ -32527,7 +32527,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="261.62" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ANLG1R" class="0">
+<net name="ANLG1R" class="3">
 <segment>
 <pinref part="SV1" gate="-4" pin="S"/>
 <wire x1="40.64" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
@@ -32539,7 +32539,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="63.5" y="137.16" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ANLG2R" class="0">
+<net name="ANLG2R" class="3">
 <segment>
 <pinref part="SV1" gate="-8" pin="S"/>
 <wire x1="40.64" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
@@ -32551,7 +32551,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="63.5" y="124.46" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ANLG3R" class="0">
+<net name="ANLG3R" class="3">
 <segment>
 <pinref part="SV1" gate="-12" pin="S"/>
 <wire x1="40.64" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
@@ -32563,7 +32563,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="63.5" y="111.76" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="ANLG4R" class="0">
+<net name="ANLG4R" class="3">
 <segment>
 <pinref part="SV1" gate="-16" pin="S"/>
 <wire x1="40.64" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
