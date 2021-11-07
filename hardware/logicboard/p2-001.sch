@@ -32603,6 +32603,7 @@ Source: www.kingbright.com</description>
 <part name="VIN" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="LED00" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="B152" package3d_urn="urn:adsk.eagle:package:15803/1"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33196,6 +33197,7 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="51.435" y="183.388" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY3" gate="GND" x="45.72" y="177.8" smashed="yes"/>
+<instance part="SUPPLY6" gate="GND" x="259.08" y="83.82" smashed="yes"/>
 </instances>
 <busses>
 <bus name="ANLG[1..4]">
@@ -33433,6 +33435,9 @@ Source: www.kingbright.com</description>
 <junction x="259.08" y="106.68"/>
 <wire x1="259.08" y1="91.44" x2="246.38" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="2"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<wire x1="259.08" y1="91.44" x2="259.08" y2="86.36" width="0.1524" layer="91"/>
+<junction x="259.08" y="91.44"/>
 </segment>
 <segment>
 <pinref part="RN2" gate="1" pin="1"/>
@@ -34090,7 +34095,7 @@ Source: www.kingbright.com</description>
 <label x="43.18" y="81.28" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LED0" class="0">
+<net name="LED1" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="13"/>
 <wire x1="71.12" y1="233.68" x2="68.58" y2="233.68" width="0.1524" layer="91"/>
@@ -34139,7 +34144,7 @@ Source: www.kingbright.com</description>
 <label x="68.58" y="231.14" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="LED1" class="0">
+<net name="LED2" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="11"/>
 <wire x1="96.52" y1="231.14" x2="99.06" y2="231.14" width="0.1524" layer="91"/>
@@ -34329,7 +34334,7 @@ Source: www.kingbright.com</description>
 <label x="45.72" y="205.74" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="LED1A" class="0">
+<net name="LED2A" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="J6" gate="J$1" pin="3"/>
@@ -34517,7 +34522,7 @@ Source: www.kingbright.com</description>
 <label x="314.96" y="154.94" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="LED0A" class="0">
+<net name="LED1A" class="0">
 <segment>
 <wire x1="261.62" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
