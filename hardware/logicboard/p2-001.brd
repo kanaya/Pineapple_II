@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -449,7 +449,6 @@ Here</text>
 <text x="17" y="10" size="1" layer="26" rot="MR0" align="top-center">Don't
 Close</text>
 <text x="47.04" y="67.5" size="1" layer="26" rot="MR90" align="center-left">OUT2</text>
-<rectangle x1="58.25" y1="46.34" x2="58.75" y2="48.34" layer="21"/>
 <rectangle x1="58.25" y1="46.34" x2="58.75" y2="48.34" layer="22"/>
 <rectangle x1="13.25" y1="33.35" x2="13.75" y2="35.35" layer="22"/>
 <rectangle x1="13.25" y1="28.27" x2="13.75" y2="30.27" layer="22"/>
@@ -667,6 +666,7 @@ IN</text>
 <text x="52" y="29" size="1" layer="26" rot="MR0" align="top-center">MIDI
 OUT</text>
 <text x="26" y="33.62" size="1" layer="25" rot="R90" align="center">MNTR</text>
+<text x="58.5" y="46.73" size="1" layer="25" rot="R90" align="center">MNTR</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
