@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -618,7 +618,7 @@ for MIDI IN</text>
 <wire x1="23.5" y1="69" x2="23.5" y2="65" width="0.15" layer="22"/>
 <wire x1="23.5" y1="65" x2="23" y2="65" width="0.15" layer="22"/>
 <text x="23" y="65" size="1" layer="26" rot="MR0" align="center-left">Vcc</text>
-<text x="28.11" y="61" size="1" layer="26" rot="MR90" align="center">LED</text>
+<text x="28.11" y="61" size="1" layer="26" rot="MR90" align="center">L00</text>
 <wire x1="28.11" y1="65" x2="28.11" y2="63" width="0.15" layer="22"/>
 <wire x1="28.11" y1="57" x2="28.11" y2="59" width="0.15" layer="22"/>
 <text x="34" y="70" size="1" layer="26" rot="MR0" align="bottom-center">V</text>
@@ -677,6 +677,16 @@ OUT</text>
 <wire x1="50.5" y1="44.96" x2="51.5" y2="44.96" width="0.15" layer="21"/>
 <wire x1="51.5" y1="44.96" x2="51" y2="45.96" width="0.15" layer="21"/>
 <wire x1="51.5" y1="45.96" x2="50.5" y2="45.96" width="0.15" layer="21"/>
+<wire x1="45.5" y1="48" x2="49.5" y2="48" width="0.15" layer="22" style="shortdash"/>
+<wire x1="49.5" y1="48" x2="49.5" y2="43" width="0.15" layer="22" style="shortdash"/>
+<wire x1="49.5" y1="43" x2="45.5" y2="43" width="0.15" layer="22" style="shortdash"/>
+<wire x1="45.5" y1="43" x2="45.5" y2="48" width="0.15" layer="22" style="shortdash"/>
+<text x="47.5" y="42.5" size="1" layer="26" rot="MR0" align="top-center">L00
+Vcc/2
+Monitor</text>
+<wire x1="47.5" y1="46" x2="47" y2="45" width="0.15" layer="22"/>
+<wire x1="47" y1="45" x2="48" y2="45" width="0.15" layer="22"/>
+<wire x1="48" y1="45" x2="47.5" y2="46" width="0.15" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
