@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -238,7 +238,7 @@ Module (12708)</text>
 <text x="36" y="9" size="1" layer="25" align="bottom-center">Arduino Micro</text>
 <text x="52" y="30" size="1" layer="25" rot="R90" align="center">74LS06</text>
 <text x="20" y="37" size="1" layer="25" rot="R90" align="center">4066B</text>
-<text x="52.5" y="48" size="1" layer="25" rot="R90" align="center">TLP2630</text>
+<text x="52" y="48" size="1" layer="25" rot="R90" align="center">TLP2630</text>
 <text x="36" y="26" size="1" layer="26" rot="MR270" align="center">LTC485</text>
 <text x="36" y="45" size="1" layer="26" rot="MR270" align="center">LTC485</text>
 <text x="36" y="14" size="1" layer="26" rot="MR90" align="center">74153</text>
@@ -486,10 +486,10 @@ Close</text>
 <vertex x="36.5" y="52"/>
 </polygon>
 <polygon width="0.15" layer="21">
-<vertex x="54" y="48.5"/>
-<vertex x="53.5" y="48"/>
-<vertex x="54" y="47.5"/>
-<vertex x="54.5" y="48"/>
+<vertex x="53.5" y="48.5"/>
+<vertex x="53" y="48"/>
+<vertex x="53.5" y="47.5"/>
+<vertex x="54" y="48"/>
 </polygon>
 <polygon width="0.15" layer="21">
 <vertex x="61.5" y="59.5"/>
