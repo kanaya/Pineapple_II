@@ -31803,7 +31803,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="241.3" y="137.16" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ANLG4" class="3">
+<net name="ANLG3" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A3"/>
 <wire x1="71.12" y1="218.44" x2="68.58" y2="218.44" width="0.1524" layer="91"/>
@@ -31823,7 +31823,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="88.9" y1="86.36" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ANLG3" class="3">
+<net name="ANLG2" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A2"/>
 <wire x1="71.12" y1="220.98" x2="68.58" y2="220.98" width="0.1524" layer="91"/>
@@ -31843,7 +31843,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="83.82" y1="86.36" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ANLG2" class="3">
+<net name="ANLG1" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A1"/>
 <wire x1="71.12" y1="223.52" x2="68.58" y2="223.52" width="0.1524" layer="91"/>
@@ -31863,7 +31863,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="78.74" y1="86.36" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ANLG1" class="3">
+<net name="ANLG0" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A0"/>
 <wire x1="71.12" y1="226.06" x2="68.58" y2="226.06" width="0.1524" layer="91"/>
@@ -32041,7 +32041,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="218.44" y="198.12" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DTCT1" class="0">
+<net name="DTCT0" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="6"/>
 <wire x1="96.52" y1="218.44" x2="99.06" y2="218.44" width="0.1524" layer="91"/>
@@ -32053,7 +32053,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="43.18" y="119.38" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DTCT2" class="0">
+<net name="DTCT1" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="9"/>
 <wire x1="96.52" y1="226.06" x2="99.06" y2="226.06" width="0.1524" layer="91"/>
@@ -32065,7 +32065,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="43.18" y="106.68" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DTCT3" class="0">
+<net name="DTCT2" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="10"/>
 <wire x1="96.52" y1="228.6" x2="99.06" y2="228.6" width="0.1524" layer="91"/>
@@ -32077,7 +32077,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="43.18" y="93.98" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DTCT4" class="0">
+<net name="DTCT3" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="12"/>
 <wire x1="96.52" y1="233.68" x2="99.06" y2="233.68" width="0.1524" layer="91"/>
@@ -32089,7 +32089,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="43.18" y="81.28" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="LED1" class="0">
+<net name="LED0" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="13"/>
 <wire x1="71.12" y1="233.68" x2="68.58" y2="233.68" width="0.1524" layer="91"/>
@@ -32113,7 +32113,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="68.58" y="231.14" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="LED2" class="0">
+<net name="LED1" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="11"/>
 <wire x1="96.52" y1="231.14" x2="99.06" y2="231.14" width="0.1524" layer="91"/>
@@ -32244,7 +32244,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="93.98" y="142.24" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO2" class="0">
+<net name="GPIO1" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="8"/>
 <wire x1="96.52" y1="223.52" x2="99.06" y2="223.52" width="0.1524" layer="91"/>
@@ -32256,7 +32256,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="76.2" y="38.1" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO1" class="0">
+<net name="GPIO0" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="5"/>
 <wire x1="96.52" y1="215.9" x2="99.06" y2="215.9" width="0.1524" layer="91"/>
@@ -32321,7 +32321,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="236.22" y="63.5" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="LED2A" class="0">
+<net name="LED1A" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="J6" gate="J$1" pin="3"/>
@@ -32509,7 +32509,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="314.96" y="154.94" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="LED1A" class="0">
+<net name="LED0A" class="0">
 <segment>
 <wire x1="261.62" y1="88.9" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
