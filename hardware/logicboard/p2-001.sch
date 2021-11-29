@@ -30539,7 +30539,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
-<part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="RLYJMP"/>
 <part name="IC103" library="linear-technology" library_urn="urn:adsk.eagle:library:261" deviceset="LTC485" device="S" package3d_urn="urn:adsk.eagle:package:16057/2" value="LTC485S"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="R103" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="120"/>
@@ -30612,6 +30611,8 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="V+" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="VIN" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="VO" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
+<part name="VOR" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -30888,10 +30889,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 </instance>
 <instance part="SUPPLY11" gate="GND" x="246.38" y="198.12" smashed="yes"/>
 <instance part="SUPPLY28" gate="GND" x="93.98" y="157.48" smashed="yes"/>
-<instance part="JP4" gate="G$1" x="154.94" y="213.36" smashed="yes" rot="MR0">
-<attribute name="NAME" x="149.86" y="213.36" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="152.4" y="213.36" size="1.778" layer="96" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="IC103" gate="G$1" x="137.16" y="45.72" smashed="yes">
 <attribute name="NAME" x="137.16" y="50.8" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="137.16" y="35.56" size="1.778" layer="96" align="bottom-center"/>
@@ -31201,9 +31198,17 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <attribute name="VALUE" x="26.797" y="202.438" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="259.08" y="83.82" smashed="yes"/>
+<instance part="VO" gate="1" x="154.94" y="215.9" smashed="yes">
+<attribute name="NAME" x="153.797" y="217.7542" size="1.778" layer="95"/>
+<attribute name="VALUE" x="153.797" y="212.598" size="1.778" layer="96"/>
+</instance>
+<instance part="VOR" gate="1" x="154.94" y="210.82" smashed="yes">
+<attribute name="NAME" x="153.797" y="212.6742" size="1.778" layer="95"/>
+<attribute name="VALUE" x="153.797" y="207.518" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
-<bus name="ANLG[1..4]">
+<bus name="ANLG[0..3]">
 <segment>
 <wire x1="96.52" y1="134.62" x2="96.52" y2="91.44" width="0.762" layer="92"/>
 <wire x1="96.52" y1="91.44" x2="93.98" y2="88.9" width="0.762" layer="92" curve="-90"/>
@@ -32400,9 +32405,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="162.56" y1="218.44" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="O"/>
 <wire x1="162.56" y1="215.9" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="215.9" x2="157.48" y2="215.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="215.9"/>
+<pinref part="VO" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="VOUT" class="5">
@@ -32444,14 +32449,14 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <pinref part="K1" gate="2" pin="P"/>
 <wire x1="170.18" y1="208.28" x2="170.18" y2="205.74" width="0.1524" layer="91"/>
 <junction x="170.18" y="205.74"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="213.36" x2="162.56" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="213.36" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="210.82" x2="162.56" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="210.82" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
 <junction x="162.56" y="205.74"/>
 <wire x1="172.72" y1="205.74" x2="180.34" y2="205.74" width="0.1524" layer="91"/>
 <junction x="172.72" y="205.74"/>
 <wire x1="180.34" y1="205.74" x2="180.34" y2="226.06" width="0.1524" layer="91"/>
 <label x="180.34" y="226.06" size="0.8128" layer="95" rot="R90" xref="yes"/>
+<pinref part="VOR" gate="1" pin="P"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
@@ -32748,6 +32753,8 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <approved hash="113,1,131.801,143.507,IN,,,,,"/>
 <approved hash="113,1,30.2006,184.147,V+,,,,,"/>
 <approved hash="113,1,30.2006,207.007,VIN,,,,,"/>
+<approved hash="113,1,157.201,217.167,VOUT,,,,,"/>
+<approved hash="113,1,159.95,214.627,VOUTRAW,,,,,"/>
 </errors>
 </schematic>
 </drawing>
