@@ -32753,8 +32753,8 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <approved hash="113,1,131.801,143.507,IN,,,,,"/>
 <approved hash="113,1,30.2006,184.147,V+,,,,,"/>
 <approved hash="113,1,30.2006,207.007,VIN,,,,,"/>
-<approved hash="113,1,157.201,217.167,VOUT,,,,,"/>
-<approved hash="113,1,159.95,214.627,VOUTRAW,,,,,"/>
+<approved hash="113,1,157.201,217.167,VO,,,,,"/>
+<approved hash="113,1,157.201,212.087,VOR,,,,,"/>
 </errors>
 </schematic>
 </drawing>
