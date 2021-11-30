@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -184,7 +184,7 @@
 <circle x="44" y="3" radius="2.25" width="0.2" layer="41"/>
 <circle x="44" y="69" radius="2.25" width="0.2" layer="42"/>
 <circle x="44" y="3" radius="2.25" width="0.2" layer="42"/>
-<text x="6" y="67.5" size="1" layer="25" align="center-left">2.4.1-B</text>
+<text x="6" y="67.5" size="1" layer="25" align="center-left">2.5.0-RC</text>
 <text x="26" y="63.46" size="1" layer="25" rot="R90" align="center">SD</text>
 <text x="26" y="60.92" size="1" layer="25" rot="R90" align="center">SC</text>
 <text x="26" y="53.3" size="1" layer="25" rot="R90" align="center">5V</text>
@@ -264,10 +264,10 @@ Module (12708)</text>
 <text x="60" y="71" size="1" layer="26" rot="MR0" align="top-center">G1</text>
 <text x="58" y="71" size="1" layer="25" align="top-center">GPIO</text>
 <text x="6" y="4" size="1" layer="25" rot="R90" align="center">LED</text>
-<text x="1" y="43" size="1" layer="25" align="center-left">GeekPort 2.0</text>
+<text x="1" y="43" size="1" layer="25" align="center-left">GeekPort II</text>
 <text x="8" y="53.5" size="1" layer="26" rot="MR90" align="center-left">Qwiic/5V</text>
 <text x="71" y="59" size="1" layer="25" rot="R90" align="bottom-center">MKR</text>
-<text x="58.5" y="30" size="1" layer="25" rot="R90" align="bottom-center">BackPort 2.0</text>
+<text x="58.5" y="30" size="1" layer="25" rot="R90" align="bottom-center">BackPort II</text>
 <rectangle x1="64" y1="66.75" x2="66" y2="67.25" layer="21"/>
 <text x="52.5" y="8" size="1" layer="25" align="center-left">1u</text>
 <text x="52.5" y="18" size="1" layer="25" align="center-left">470n</text>
@@ -712,6 +712,10 @@ Monitor</text>
 <wire x1="10.92" y1="13" x2="21.08" y2="13" width="0.15" layer="21"/>
 <wire x1="21.08" y1="13" x2="21.08" y2="11" width="0.15" layer="21"/>
 <text x="16" y="13.5" size="1" layer="25" align="bottom-center">(JP4)</text>
+<text x="26.5" y="43.7" size="1" layer="26" rot="MR90" align="center">A0</text>
+<text x="26.5" y="41.16" size="1" layer="26" rot="MR90" align="center">A1</text>
+<text x="26.5" y="38.62" size="1" layer="26" rot="MR90" align="center">A2</text>
+<text x="26.5" y="36.08" size="1" layer="26" rot="MR90" align="center">A3</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
@@ -6383,6 +6387,18 @@ design rules under a new name.</description>
 <via x="8.4582" y="8.9916" extent="1-16" drill="0.3048"/>
 <via x="40.767" y="23.3934" extent="1-16" drill="0.3048"/>
 <via x="57.912" y="41.9862" extent="1-16" drill="0.3048"/>
+<polygon width="0.2" layer="1">
+<vertex x="-1" y="-1"/>
+<vertex x="73" y="-1"/>
+<vertex x="73" y="73"/>
+<vertex x="-1" y="73"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
