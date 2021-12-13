@@ -7500,7 +7500,7 @@ design rules under a new name.</description>
 <wire x1="39.0906" y1="12.1158" x2="39.0734" y2="12.095" width="0.1524" layer="16"/>
 <wire x1="38.6334" y1="27.8892" x2="38.6" y2="27.905" width="0.1524" layer="16"/>
 </signal>
-<signal name="MRXDTCT">
+<signal name="NDX">
 <contactref element="IC101" pad="14"/>
 <contactref element="R101" pad="1"/>
 <contactref element="SV2" pad="4"/>
