@@ -32178,7 +32178,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="162.56" y1="144.78" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MRXDTCT" class="0">
+<net name="NDX" class="0">
 <segment>
 <pinref part="IC101" gate="A" pin="A"/>
 <wire x1="149.86" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
