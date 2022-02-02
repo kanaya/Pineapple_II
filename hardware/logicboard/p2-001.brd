@@ -655,7 +655,7 @@ instead of DS18B20+</text>
 <text x="0.5" y="60.92" size="1" layer="26" rot="MR90" align="bottom-center">U1</text>
 <text x="0.5" y="58.38" size="1" layer="26" rot="MR90" align="bottom-center">SC</text>
 <text x="0.5" y="55.84" size="1" layer="26" rot="MR90" align="bottom-center">SD</text>
-<text x="36" y="0.5" size="1" layer="25" align="bottom-center">Pineapple Computer (2021)</text>
+<text x="36" y="0.5" size="1" layer="25" align="bottom-center">Pineapple Computer (2022)</text>
 <text x="49" y="51.81" size="1" layer="26" rot="MR0" align="center-right">SND</text>
 <text x="49" y="49.27" size="1" layer="26" rot="MR0" align="center-right">RTN</text>
 <text x="52" y="47" size="1" layer="26" rot="MR0" align="top-center">MIDI
