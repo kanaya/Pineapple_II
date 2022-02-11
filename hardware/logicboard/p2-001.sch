@@ -30544,7 +30544,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="R103" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M2012" package3d_urn="urn:adsk.eagle:package:23561/2" value="120"/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="JST" package3d_urn="urn:adsk.eagle:package:38120/1" value="MKR"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="120"/>
+<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="102"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="JP0" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN"/>
 <part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
@@ -30574,7 +30574,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="JP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="" package3d_urn="urn:adsk.eagle:package:38104/1" value="RTC"/>
 <part name="J6" library="SparkFun-Connectors" deviceset="CONN_03" device="JST-PTH" value="LED"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="120"/>
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="102"/>
 <part name="XIC101_09" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="PAD-N" device=""/>
 <part name="IC101" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*153" device="D" package3d_urn="urn:adsk.eagle:package:2918/1" technology="LS"/>
 <part name="IC102" library="linear-technology" library_urn="urn:adsk.eagle:library:261" deviceset="LTC485" device="S" package3d_urn="urn:adsk.eagle:package:16057/2"/>
