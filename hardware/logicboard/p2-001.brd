@@ -6394,6 +6394,18 @@ design rules under a new name.</description>
 <via x="31.3944" y="16.4592" extent="1-16" drill="0.3048"/>
 <via x="5.9436" y="40.3098" extent="1-16" drill="0.3048"/>
 <via x="3.5052" y="27.5082" extent="1-16" drill="0.3048"/>
+<polygon width="0.2" layer="1">
+<vertex x="-1" y="-1"/>
+<vertex x="73" y="-1"/>
+<vertex x="73" y="73"/>
+<vertex x="-1" y="73"/>
+</polygon>
+<polygon width="0.2" layer="16">
+<vertex x="-2" y="-2"/>
+<vertex x="74" y="-2"/>
+<vertex x="74" y="74"/>
+<vertex x="-2" y="74"/>
+</polygon>
 </signal>
 <signal name="VCC" class="2">
 <contactref element="IC1" pad="14"/>
