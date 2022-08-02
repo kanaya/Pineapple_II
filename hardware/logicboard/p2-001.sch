@@ -30601,7 +30601,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="RX" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="IN" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="LED"/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2MM-SMT" package3d_urn="urn:adsk.eagle:package:38042/1" value="RLY"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="JST-PTH-2" package3d_urn="urn:adsk.eagle:package:38053/1" value="Vcc"/>
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="JST-VERT" package3d_urn="urn:adsk.eagle:package:38111/1" value="SPI"/>
 <part name="RN4" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="8R-N" device="" package3d_urn="urn:adsk.eagle:package:922/2" value="220"/>
@@ -30613,6 +30612,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="VO" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="VOR" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
+<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-SMD" package3d_urn="urn:adsk.eagle:package:38075/1" value="3-PIN SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -31132,10 +31132,6 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <attribute name="NAME" x="238.76" y="91.44" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="241.3" y="91.44" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 </instance>
-<instance part="J4" gate="G$1" x="88.9" y="43.18" smashed="yes">
-<attribute name="VALUE" x="86.36" y="43.18" size="1.778" layer="96" rot="R90" align="bottom-center"/>
-<attribute name="NAME" x="83.82" y="43.18" size="1.778" layer="95" rot="R90" align="bottom-center"/>
-</instance>
 <instance part="J3" gate="G$1" x="88.9" y="58.42" smashed="yes">
 <attribute name="VALUE" x="86.36" y="58.42" size="1.778" layer="96" rot="R90" align="bottom-center"/>
 <attribute name="NAME" x="83.82" y="58.42" size="1.778" layer="95" rot="R90" align="bottom-center"/>
@@ -31205,6 +31201,10 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <instance part="VOR" gate="1" x="154.94" y="210.82" smashed="yes">
 <attribute name="NAME" x="153.797" y="212.6742" size="1.778" layer="95"/>
 <attribute name="VALUE" x="153.797" y="207.518" size="1.778" layer="96"/>
+</instance>
+<instance part="J4" gate="J$1" x="88.9" y="45.72" smashed="yes">
+<attribute name="VALUE" x="86.36" y="38.354" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="86.36" y="51.308" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -32409,6 +32409,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <junction x="162.56" y="215.9"/>
 <pinref part="VO" gate="1" pin="P"/>
 </segment>
+<segment>
+<pinref part="J4" gate="J$1" pin="3"/>
+<wire x1="96.52" y1="48.26" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<label x="99.06" y="48.26" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="VOUT" class="5">
 <segment>
@@ -32461,7 +32466,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <segment>
 <wire x1="96.52" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 <label x="99.06" y="45.72" size="0.8128" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="J4" gate="J$1" pin="2"/>
 </segment>
 </net>
 <net name="RLYOUT" class="0">
@@ -32474,7 +32479,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <segment>
 <wire x1="96.52" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="99.06" y="43.18" size="0.8128" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J4" gate="J$1" pin="1"/>
 </segment>
 </net>
 <net name="V+" class="5">
