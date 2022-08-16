@@ -32769,9 +32769,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="99.06" y="33.02" size="0.8128" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
-<label x="76.2" y="35.56" size="0.8128" layer="95" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<label x="76.2" y="33.02" size="0.8128" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -32958,9 +32958,9 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <label x="314.96" y="91.44" size="0.8128" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
-<label x="76.2" y="33.02" size="0.8128" layer="95" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
+<label x="76.2" y="35.56" size="0.8128" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MIDIINSND" class="0">
