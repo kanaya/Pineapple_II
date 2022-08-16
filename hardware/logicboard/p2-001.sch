@@ -33672,6 +33672,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="162.56" y1="215.9" x2="157.48" y2="215.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="215.9"/>
 <pinref part="VO" gate="1" pin="P"/>
+<label x="157.48" y="215.9" size="0.8128" layer="95"/>
 </segment>
 <segment>
 <pinref part="J4" gate="J$1" pin="3"/>
