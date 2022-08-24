@@ -723,6 +723,7 @@ Monitor</text>
 <text x="37.905" y="71" size="1" layer="26" rot="MR0" align="top-center">R</text>
 <text x="39.175" y="71" size="1" layer="26" rot="MR0" align="top-center">G</text>
 <text x="28" y="69" size="1" layer="25" rot="R90" align="top-center">12V</text>
+<text x="48.5" y="69" size="1" layer="25" rot="R90" align="center">GPIO</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
