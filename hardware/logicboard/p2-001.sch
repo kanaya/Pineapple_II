@@ -31881,6 +31881,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-SMD" package3d_urn="urn:adsk.eagle:package:38075/1" value="3-PIN SMD"/>
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="1.27MM" package3d_urn="urn:adsk.eagle:package:38131/1" value="SPI"/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38101/1" value="GPIO"/>
+<part name="J20" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="1.27MM" package3d_urn="urn:adsk.eagle:package:38086/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -32469,6 +32470,10 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <instance part="J2" gate="G$1" x="68.58" y="35.56" smashed="yes">
 <attribute name="VALUE" x="63.5" y="28.194" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="63.5" y="43.688" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="J20" gate="G$1" x="68.58" y="17.78" smashed="yes">
+<attribute name="VALUE" x="63.5" y="10.414" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="63.5" y="25.908" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -33524,6 +33529,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="73.66" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
 <label x="76.2" y="40.64" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J20" gate="G$1" pin="4"/>
+<wire x1="73.66" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<label x="76.2" y="22.86" size="0.8128" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
@@ -33535,6 +33545,11 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <wire x1="73.66" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 <label x="76.2" y="38.1" size="0.8128" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="J20" gate="G$1" pin="3"/>
+<wire x1="73.66" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
+<label x="76.2" y="20.32" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="5">
