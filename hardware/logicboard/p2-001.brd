@@ -184,7 +184,7 @@
 <circle x="44" y="3" radius="2.25" width="0.2" layer="41"/>
 <circle x="44" y="69" radius="2.25" width="0.2" layer="42"/>
 <circle x="44" y="3" radius="2.25" width="0.2" layer="42"/>
-<text x="19" y="69" size="1" layer="25" align="center">2.6.7-RC</text>
+<text x="19" y="69" size="1" layer="25" align="center">2.7.0-RC</text>
 <text x="26" y="63.46" size="1" layer="25" rot="R90" align="center">SD</text>
 <text x="26" y="60.92" size="1" layer="25" rot="R90" align="center">SC</text>
 <text x="26" y="53.3" size="1" layer="25" rot="R90" align="center">5V</text>
