@@ -169,7 +169,6 @@
 <vertex x="42" y="33"/>
 </polygon>
 <rectangle x1="51.75" y1="12" x2="52.25" y2="14" layer="21"/>
-<text x="19.5" y="70" size="1.27" layer="25" align="bottom-center">P2</text>
 <text x="1" y="14" size="1" layer="26" rot="MR0" align="center-right">LED1</text>
 <text x="1" y="6" size="1" layer="26" rot="MR0" align="center-right">LED0</text>
 <text x="36" y="7.5" size="1" layer="25" align="bottom-center">MC1</text>
@@ -727,6 +726,7 @@ Monitor</text>
 <text x="26.92" y="67" size="1" layer="25" align="center">N</text>
 <text x="25.65" y="67" size="1" layer="25" align="center">N</text>
 <rectangle x1="7.25" y1="66.93" x2="7.75" y2="68.93" layer="21"/>
+<text x="19.5" y="70.5" size="1" layer="25" align="center">Pineapple II</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
