@@ -719,6 +719,7 @@ Monitor</text>
 <text x="25.65" y="71" size="1" layer="26" rot="MR0" align="top-center">N</text>
 <text x="14.54" y="71" size="1" layer="26" rot="MR0" align="top-center">V+</text>
 <text x="9.46" y="71" size="1" layer="26" rot="MR0" align="top-center">G</text>
+<text x="16" y="68" size="1" layer="26" rot="MR0" align="center-right">To ICB-288&gt;</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
